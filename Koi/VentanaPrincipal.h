@@ -1,5 +1,5 @@
 #pragma once
-
+#include "Ventana2.h"
 namespace Koi {
 
 	using namespace System;
@@ -36,6 +36,7 @@ namespace Koi {
 		}
 	private: System::Windows::Forms::Label^ label1;
 	private: System::Windows::Forms::TextBox^ textBox1;
+	private: System::Windows::Forms::Button^ button1;
 	protected:
 
 	private:
@@ -53,6 +54,7 @@ namespace Koi {
 		{
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
+			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// label1
@@ -60,27 +62,41 @@ namespace Koi {
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 25, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label1->Location = System::Drawing::Point(371, 66);
+			this->label1->Location = System::Drawing::Point(516, 105);
+			this->label1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(76, 39);
+			this->label1->Size = System::Drawing::Size(111, 58);
 			this->label1->TabIndex = 0;
 			this->label1->Text = L"KOI";
 			// 
 			// textBox1
 			// 
-			this->textBox1->Location = System::Drawing::Point(273, 176);
+			this->textBox1->Location = System::Drawing::Point(410, 271);
+			this->textBox1->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(216, 20);
+			this->textBox1->Size = System::Drawing::Size(322, 26);
 			this->textBox1->TabIndex = 1;
 			this->textBox1->TextChanged += gcnew System::EventHandler(this, &VentanaPrincipal::textBox1_TextChanged);
 			// 
+			// button1
+			// 
+			this->button1->Location = System::Drawing::Point(813, 360);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(128, 36);
+			this->button1->TabIndex = 2;
+			this->button1->Text = L"button1";
+			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &VentanaPrincipal::button1_Click);
+			// 
 			// VentanaPrincipal
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(777, 498);
+			this->ClientSize = System::Drawing::Size(1166, 766);
+			this->Controls->Add(this->button1);
 			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->label1);
+			this->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->Name = L"VentanaPrincipal";
 			this->Text = L"VentanaPrincipal";
 			this->ResumeLayout(false);
@@ -91,5 +107,10 @@ namespace Koi {
 	private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 	}
 	
+	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+		Ventana2^ Ov = gcnew Ventana2();
+		Ov->Show();
+	}
 	};
+
 }

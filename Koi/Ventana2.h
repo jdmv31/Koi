@@ -48,11 +48,17 @@ namespace Koi {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->components = gcnew System::ComponentModel::Container();
-			this->Size = System::Drawing::Size(300,300);
-			this->Text = L"Ventana2";
-			this->Padding = System::Windows::Forms::Padding(0);
+			this->SuspendLayout();
+			// 
+			// Ventana2
+			// 
+			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->ClientSize = System::Drawing::Size(900, 600);
+			this->Name = L"Ventana2";
+			this->Text = L"Ventana2";
+			this->ResumeLayout(false);
+
 		}
 #pragma endregion
 	};
