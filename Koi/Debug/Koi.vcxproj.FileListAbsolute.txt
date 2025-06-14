@@ -1,0 +1,3 @@
+C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\Debug\Koi.vcxproj.AssemblyReference.cache
+C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\Debug\Koi.VentanaPrincipal.resources
+C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\Debug\Koi.vcxproj.GenerateResource.cache
