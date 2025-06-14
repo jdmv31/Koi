@@ -9,6 +9,123 @@ nodo* arbol = nullptr;
 juegos juego[CANT_JUEGOS];
 int cola[CANT_JUEGOS];
 int tope = -1;
+bool aux = true;
+int *ID = new int [10];
+
+void GenerarJuegos(nodo*& nuevonodo, int n) {
+    srand(time(NULL));
+    for (int i = 0; i < n; i++) {
+        nuevonodo->usuario.juegos[i] = rand() % (CANT_JUEGOS + 1) - 1;
+    }
+}
+
+nodo* CrearNodo(int id, int indice) {
+    nodo* nuevonodo = new nodo();
+    nuevonodo->usuario.ID = id;
+    switch (indice) {
+    case 1:
+        nuevonodo->usuario.nombre = "Ivan";
+        nuevonodo->usuario.apellido = "Maidana";
+        nuevonodo->usuario.username = "Sanguchito";
+        nuevonodo->usuario.password = "Madonna33";
+        break;
+    case 2:
+        nuevonodo->usuario.nombre = "Abigail";
+        nuevonodo->usuario.apellido = "Alcala";
+        nuevonodo->usuario.username = "Graftemon";
+        nuevonodo->usuario.password = "Abigail12345";
+        break;
+    case 3:
+        nuevonodo->usuario.nombre = "Sofia";
+        nuevonodo->usuario.apellido = "Mendoza";
+        nuevonodo->usuario.username = "Skyline";
+        nuevonodo->usuario.password = "Sofi99";
+        break;
+
+    case 4:
+        nuevonodo->usuario.nombre = "Benjamin";
+        nuevonodo->usuario.apellido = "Lopez";
+        nuevonodo->usuario.username = "BenchoStyle";
+        nuevonodo->usuario.password = "Avila123";
+        break;
+
+    case 5:
+        nuevonodo->usuario.nombre = "Camila";
+        nuevonodo->usuario.apellido = "Veracierta";
+        nuevonodo->usuario.username = "Sr Sot";
+        nuevonodo->usuario.password = "Sodimac39";
+        break;
+
+    case 6:
+        nuevonodo->usuario.nombre = "Valentina";
+        nuevonodo->usuario.apellido = "Urdaneta";
+        nuevonodo->usuario.username = "Pariah";
+        nuevonodo->usuario.password = "Golf77$";
+        break;
+
+    case 7:
+        nuevonodo->usuario.nombre = "Juan";
+        nuevonodo->usuario.apellido = "Perez";
+        nuevonodo->usuario.username = "Butanero";
+        nuevonodo->usuario.password = "40minutos29";
+        break;
+
+    case 8:
+        nuevonodo->usuario.nombre = "Lucas";
+        nuevonodo->usuario.apellido = "Zapata";
+        nuevonodo->usuario.username = "karkreed";
+        nuevonodo->usuario.password = "Obs50";
+        break;
+
+    case 9:
+        nuevonodo->usuario.nombre = "Victor";
+        nuevonodo->usuario.apellido = "Medina";
+        nuevonodo->usuario.username = "Iowa3107";
+        nuevonodo->usuario.password = "Macuin19";
+        break;
+    }
+    nuevonodo->usuario.cant_juegos = rand() % 10 + 1;
+    GenerarJuegos(nuevonodo, nuevonodo->usuario.cant_juegos);
+
+    nuevonodo->izq = nullptr;
+    nuevonodo->der = nullptr;
+    return nuevonodo;
+}
+
+bool IDUnica(int n, int id) {
+    for (int i = 0; i < n; i++) {
+        if (id == ID[i])
+            return false;
+    }
+    return true;
+}
+
+void InsertarNodo(nodo*& arbol, int id, int indice) {
+    if (arbol == nullptr) {
+        arbol = CrearNodo(id,indice);
+    }
+    else {
+        if (id > arbol->usuario.ID)
+            InsertarNodo(arbol->der, id,indice);
+        else
+            InsertarNodo(arbol->izq, id,indice);
+    }
+}
+
+
+void GenerarArbol(nodo*& arbol) {
+    srand(time(NULL));
+    int aux;
+
+    for (int i = 1; i < 10; i++) {
+        do {
+            aux = rand() % 500 + 1;
+        } while (!IDUnica(i, aux));
+
+        ID[i] = aux;
+        InsertarNodo(arbol, aux, i);
+    }
+}
 
 
 void PreCargarJuegos(int n) {
