@@ -120,10 +120,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="funciones.cpp" />
     <ClCompile Include="Ventana2.cpp" />
     <ClCompile Include="VentanaPrincipal.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="funciones.h" />
     <ClInclude Include="Ventana2.h">
       <FileType>CppForm</FileType>
     </ClInclude>

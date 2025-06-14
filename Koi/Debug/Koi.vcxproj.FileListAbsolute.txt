@@ -5,3 +5,4 @@ C:\Users\Nicole Flores\Downloads\prueba interfaz\Koi\Koi\Debug\Koi.vcxproj.Assem
 C:\Users\Nicole Flores\Downloads\prueba interfaz\Koi\Koi\Debug\Koi.VentanaPrincipal.resources
 C:\Users\Nicole Flores\Downloads\prueba interfaz\Koi\Koi\Debug\Koi.vcxproj.GenerateResource.cache
 C:\Users\Nicole Flores\Downloads\prueba interfaz\Koi\Koi\Debug\Koi.Ventana2.resources
+C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\Debug\Koi.Ventana2.resources
