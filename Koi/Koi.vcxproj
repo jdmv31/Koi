@@ -126,6 +126,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="funciones.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="Ventana2.h">
       <FileType>CppForm</FileType>
     </ClInclude>

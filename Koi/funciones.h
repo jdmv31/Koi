@@ -29,4 +29,4 @@ struct nodo {
 	nodo* der;
 };
 
-externc nodo* arbol;
+extern nodo *arbol;
