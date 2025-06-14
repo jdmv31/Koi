@@ -20,7 +20,7 @@ struct perfil {
 	std::string password;
 	int ID;
 	int cant_juegos;
-	juegos juegos[CANT_JUEGOS];
+	int juegos[CANT_JUEGOS]; // esto va a almacenar las ID de cada juego
 };
 
 struct nodo {
@@ -30,3 +30,15 @@ struct nodo {
 };
 
 extern nodo *arbol;
+extern juegos juego[CANT_JUEGOS];
+extern int cola[CANT_JUEGOS];
+extern int tope;
+extern int *ID;
+extern bool aux;
+
+void PreCargarJuegos(int n);
+void GenerarJuegos(nodo*& nuevonodo, int n);
+void GenerarArbol(nodo*& arbol);
+nodo* CrearNodo(int id, int indice);
+void InsertarNodo(nodo*& arbol, int id, int indice);
+bool IDUnica(int n, int id);
