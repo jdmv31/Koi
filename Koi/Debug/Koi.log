@@ -1,2 +1,8 @@
-﻿  funciones.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
-  Koi.vcxproj -> C:\Users\Nicole Flores\Downloads\prueba interfaz\Koi\Debug\Koi.exe
+﻿  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
+  Ventana2.cpp
+  VentanaPrincipal.cpp
+  funciones.cpp
+C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\VentanaPrincipal.cpp(6,6): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
+  Generating Code...
+  funciones.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  Koi.vcxproj -> C:\Users\josue\OneDrive\Desktop\Koi\Koi\Debug\Koi.exe

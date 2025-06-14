@@ -30,3 +30,8 @@ struct nodo {
 };
 
 extern nodo *arbol;
+extern juegos juego[CANT_JUEGOS];
+extern int cola[CANT_JUEGOS];
+extern int tope;
+
+void PreCargarJuegos(int n);
