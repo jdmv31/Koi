@@ -60,6 +60,7 @@ namespace Koi {
 	private: System::Windows::Forms::TextBox^ txtNombre;
 
 	private: System::Windows::Forms::Label^ label1;
+	private: System::Windows::Forms::PictureBox^ pictureBox1;
 
 
 	protected:
@@ -77,6 +78,7 @@ namespace Koi {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(VentanaPrincipal::typeid));
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->txtPassword = (gcnew System::Windows::Forms::TextBox());
@@ -87,13 +89,15 @@ namespace Koi {
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->txtNombre = (gcnew System::Windows::Forms::TextBox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// button1
 			// 
 			this->button1->Font = (gcnew System::Drawing::Font(L"Nirmala Text", 10));
 			this->button1->Location = System::Drawing::Point(341, 357);
-			this->button1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->button1->Margin = System::Windows::Forms::Padding(2);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(213, 33);
 			this->button1->TabIndex = 2;
@@ -117,7 +121,7 @@ namespace Koi {
 			// txtPassword
 			// 
 			this->txtPassword->Location = System::Drawing::Point(341, 307);
-			this->txtPassword->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->txtPassword->Margin = System::Windows::Forms::Padding(2);
 			this->txtPassword->Name = L"txtPassword";
 			this->txtPassword->Size = System::Drawing::Size(215, 20);
 			this->txtPassword->TabIndex = 23;
@@ -138,7 +142,7 @@ namespace Koi {
 			// txtUsername
 			// 
 			this->txtUsername->Location = System::Drawing::Point(341, 250);
-			this->txtUsername->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->txtUsername->Margin = System::Windows::Forms::Padding(2);
 			this->txtUsername->Name = L"txtUsername";
 			this->txtUsername->Size = System::Drawing::Size(215, 20);
 			this->txtUsername->TabIndex = 21;
@@ -159,7 +163,7 @@ namespace Koi {
 			// txtApellido
 			// 
 			this->txtApellido->Location = System::Drawing::Point(339, 196);
-			this->txtApellido->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->txtApellido->Margin = System::Windows::Forms::Padding(2);
 			this->txtApellido->Name = L"txtApellido";
 			this->txtApellido->Size = System::Drawing::Size(215, 20);
 			this->txtApellido->TabIndex = 19;
@@ -180,7 +184,7 @@ namespace Koi {
 			// txtNombre
 			// 
 			this->txtNombre->Location = System::Drawing::Point(339, 137);
-			this->txtNombre->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->txtNombre->Margin = System::Windows::Forms::Padding(2);
 			this->txtNombre->Name = L"txtNombre";
 			this->txtNombre->Size = System::Drawing::Size(215, 20);
 			this->txtNombre->TabIndex = 17;
@@ -198,6 +202,16 @@ namespace Koi {
 			this->label1->TabIndex = 27;
 			this->label1->Text = L"Login";
 			// 
+			// pictureBox1
+			// 
+			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
+			this->pictureBox1->Location = System::Drawing::Point(12, 12);
+			this->pictureBox1->Name = L"pictureBox1";
+			this->pictureBox1->Size = System::Drawing::Size(293, 431);
+			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
+			this->pictureBox1->TabIndex = 28;
+			this->pictureBox1->TabStop = false;
+			// 
 			// VentanaPrincipal
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -205,6 +219,7 @@ namespace Koi {
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(14)), static_cast<System::Int32>(static_cast<System::Byte>(14)),
 				static_cast<System::Int32>(static_cast<System::Byte>(14)));
 			this->ClientSize = System::Drawing::Size(600, 455);
+			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->label4);
 			this->Controls->Add(this->txtPassword);
@@ -218,6 +233,7 @@ namespace Koi {
 			this->Name = L"VentanaPrincipal";
 			this->Text = L"KOI";
 			this->Load += gcnew System::EventHandler(this, &VentanaPrincipal::VentanaPrincipal_Load);
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
