@@ -3,24 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\Ventana2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|solutionrelative:Koi\\Ventana2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\VentanaPrincipal.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|solutionrelative:Koi\\VentanaPrincipal.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\funciones.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|solutionrelative:Koi\\funciones.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\funciones.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|solutionrelative:Koi\\funciones.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\Ventana2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
-      "RelativeMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|solutionrelative:Koi\\Ventana2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,62 +19,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Ventana2.h",
-              "DocumentMoniker": "C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\Ventana2.h",
-              "RelativeDocumentMoniker": "Koi\\Ventana2.h",
-              "ToolTip": "C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\Ventana2.h",
-              "RelativeToolTip": "Koi\\Ventana2.h",
-              "ViewState": "AgIAAH4AAAAAAAAAAAAAAIcAAACEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-14T20:05:51.704Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Ventana2.h [Design]",
-              "DocumentMoniker": "C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\Ventana2.h",
-              "RelativeDocumentMoniker": "Koi\\Ventana2.h",
-              "ToolTip": "C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\Ventana2.h [Design]",
-              "RelativeToolTip": "Koi\\Ventana2.h [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
-              "WhenOpened": "2025-06-14T20:05:23.426Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "VentanaPrincipal.h",
               "DocumentMoniker": "C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\VentanaPrincipal.h",
               "RelativeDocumentMoniker": "Koi\\VentanaPrincipal.h",
               "ToolTip": "C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\VentanaPrincipal.h",
               "RelativeToolTip": "Koi\\VentanaPrincipal.h",
-              "ViewState": "AgIAAPkAAAAAAAAAAAAAAAgBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
-              "WhenOpened": "2025-06-14T15:12:59.749Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "funciones.h",
-              "DocumentMoniker": "C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\funciones.h",
-              "RelativeDocumentMoniker": "Koi\\funciones.h",
-              "ToolTip": "C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\funciones.h",
-              "RelativeToolTip": "Koi\\funciones.h",
-              "ViewState": "AgIAACAAAAAAAAAAAAAAACkAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-14T14:48:54.186Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "funciones.cpp",
-              "DocumentMoniker": "C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\funciones.cpp",
-              "RelativeDocumentMoniker": "Koi\\funciones.cpp",
-              "ToolTip": "C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\funciones.cpp",
-              "RelativeToolTip": "Koi\\funciones.cpp",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAACoAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-14T14:48:31.707Z"
+              "WhenOpened": "2025-06-22T01:11:33.259Z",
+              "EditorCaption": ""
             }
           ]
         }

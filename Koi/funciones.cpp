@@ -12,16 +12,10 @@ int tope = -1;
 bool aux = true;
 int *ID = new int [10];
 
-void GenerarJuegos(nodo*& nuevonodo, int n) {
-    srand(time(NULL));
-    for (int i = 0; i < n; i++) {
-        nuevonodo->usuario.juegos[i] = rand() % (CANT_JUEGOS + 1) - 1;
-    }
-}
-
 nodo* CrearNodo(int id, int indice) {
     nodo* nuevonodo = new nodo();
     nuevonodo->usuario.ID = id;
+
     switch (indice) {
     case 1:
         nuevonodo->usuario.nombre = "Ivan";
@@ -67,7 +61,7 @@ nodo* CrearNodo(int id, int indice) {
         nuevonodo->usuario.nombre = "Juan";
         nuevonodo->usuario.apellido = "Perez";
         nuevonodo->usuario.username = "Butanero";
-        nuevonodo->usuario.password = "40minutos29";
+        nuevonodo->usuario.password = "40minutos3r";
         break;
 
     case 8:
@@ -84,8 +78,6 @@ nodo* CrearNodo(int id, int indice) {
         nuevonodo->usuario.password = "Macuin19";
         break;
     }
-    nuevonodo->usuario.cant_juegos = rand() % 10 + 1;
-    GenerarJuegos(nuevonodo, nuevonodo->usuario.cant_juegos);
 
     nuevonodo->izq = nullptr;
     nuevonodo->der = nullptr;

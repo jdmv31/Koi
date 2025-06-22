@@ -216,6 +216,7 @@ namespace Koi {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->AutoSizeMode = System::Windows::Forms::AutoSizeMode::GrowAndShrink;
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(14)), static_cast<System::Int32>(static_cast<System::Byte>(14)),
 				static_cast<System::Int32>(static_cast<System::Byte>(14)));
 			this->ClientSize = System::Drawing::Size(600, 455);
@@ -230,8 +231,13 @@ namespace Koi {
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->txtNombre);
 			this->Controls->Add(this->button1);
+			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
+			this->MaximizeBox = false;
+			this->MaximumSize = System::Drawing::Size(616, 494);
+			this->MinimumSize = System::Drawing::Size(616, 494);
 			this->Name = L"VentanaPrincipal";
-			this->Text = L"KOI";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
+			this->Text = L"Koi";
 			this->Load += gcnew System::EventHandler(this, &VentanaPrincipal::VentanaPrincipal_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
@@ -251,9 +257,33 @@ namespace Koi {
 		arbol->usuario.apellido = msclr::interop::marshal_as<std::string>(txtApellido->Text);
 		arbol->usuario.username = msclr::interop::marshal_as<std::string>(txtUsername->Text);
 		arbol->usuario.password = msclr::interop::marshal_as<std::string>(txtPassword->Text);
+
 		if (arbol->usuario.password.empty() || arbol->usuario.username.empty()
-			|| arbol->usuario.nombre.empty() || arbol->usuario.apellido.empty())
+			|| arbol->usuario.nombre.empty() || arbol->usuario.apellido.empty()) {
+			MessageBox::Show("Error. Ingrese todos los campos requeridos para continuar con el registro", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
 			aux = false;
+		}
+		else {
+			if (arbol->usuario.nombre.length() < 3) {
+				MessageBox::Show("Error. Su nombre debe contener al menos 3 caracteres", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+				aux = false;
+			}
+				
+			if (arbol->usuario.apellido.length() < 3) {
+				MessageBox::Show("Error. Su apellido debe contener al menos 3 caracteres", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+				aux = false;
+			}
+
+			if (arbol->usuario.username.length() < 3) {
+				MessageBox::Show("Error. Su nombre de usuario debe contener al menos 3 caracteres", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+				aux = false;
+			}
+			if (arbol->usuario.password.length() < 5) {
+				MessageBox::Show("Error. Su contraseña debe contener al menos 5 caracteres", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+				aux = false;
+			}
+
+		}
 
 		txtNombre->Text = "";
 		txtApellido->Text = "";
@@ -264,16 +294,16 @@ namespace Koi {
 			arbol->usuario.ID = rand() % 500 + 1;
 			ID[0] = arbol->usuario.ID;
 			GenerarArbol(arbol);
-			delete [] ID;
+			delete[] ID;
 			ID = nullptr;
 			Ventana2^ Ov = gcnew Ventana2();
 			Ov->Show();
+			Application::OpenForms[0]->Hide();
 		}
-		else {
-			MessageBox::Show("Error. Ingrese todos los campos requeridos para continuar con el registro", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+		else
 			aux = true;
-		}
 	}
+
 private: System::Void VentanaPrincipal_Load(System::Object^ sender, System::EventArgs^ e) {
 }
 };

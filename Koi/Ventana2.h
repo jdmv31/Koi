@@ -57,6 +57,7 @@ namespace Koi {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(Ventana2::typeid));
 			this->labelBienvenida = (gcnew System::Windows::Forms::Label());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->treeViewUsuarios = (gcnew System::Windows::Forms::TreeView());
@@ -88,18 +89,18 @@ namespace Koi {
 			// 
 			// treeViewUsuarios
 			// 
-			this->treeViewUsuarios->Location = System::Drawing::Point(293, 31);
+			this->treeViewUsuarios->Location = System::Drawing::Point(345, 75);
 			this->treeViewUsuarios->Name = L"treeViewUsuarios";
 			this->treeViewUsuarios->Size = System::Drawing::Size(233, 158);
 			this->treeViewUsuarios->TabIndex = 2;
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(76, 182);
+			this->button1->Location = System::Drawing::Point(61, 210);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(75, 23);
+			this->button1->Size = System::Drawing::Size(131, 23);
 			this->button1->TabIndex = 3;
-			this->button1->Text = L"button1";
+			this->button1->Text = L"Mostrar Arbol";
 			this->button1->UseVisualStyleBackColor = true;
 			this->button1->Click += gcnew System::EventHandler(this, &Ventana2::button1_Click);
 			// 
@@ -114,9 +115,14 @@ namespace Koi {
 			this->Controls->Add(this->treeViewUsuarios);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->labelBienvenida);
+			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Margin = System::Windows::Forms::Padding(2);
+			this->MaximizeBox = false;
+			this->MinimumSize = System::Drawing::Size(616, 429);
 			this->Name = L"Ventana2";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Ventana2";
+			this->WindowState = System::Windows::Forms::FormWindowState::Maximized;
 			this->Load += gcnew System::EventHandler(this, &Ventana2::Ventana2_Load);
 			this->ResumeLayout(false);
 			this->PerformLayout();

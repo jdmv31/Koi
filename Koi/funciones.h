@@ -19,8 +19,11 @@ struct perfil {
 	std::string username;
 	std::string password;
 	int ID;
-	int cant_juegos;
-	int juegos[CANT_JUEGOS]; // esto va a almacenar las ID de cada juego
+};
+
+struct nodo2 {
+	juegos dato;
+	nodo2* siguiente;
 };
 
 struct nodo {
