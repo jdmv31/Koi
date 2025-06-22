@@ -313,6 +313,9 @@ namespace Koi {
 	}
 
 private: System::Void VentanaPrincipal_Load(System::Object^ sender, System::EventArgs^ e) {
+	for (int i = 0; i < CANT_JUEGOS; i++) {
+		PreCargarJuegos(i);
+	}
 }
 private: System::Void pictureBox2_Click(System::Object^ sender, System::EventArgs^ e) {
 }

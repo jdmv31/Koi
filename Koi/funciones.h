@@ -3,6 +3,24 @@
 
 const int CANT_JUEGOS = 50;
 
+enum Genero{
+	FPS,
+	MOBA,
+	RPG,
+	Accion,
+	Aventura,
+	SurvivalHorror,
+	Plataformas,
+	Roguelike,
+	Estrategia,
+	Carreras,
+	Peleas,
+	Sandbox,
+	Shooter,
+	Indie,
+	MundoAbierto
+};
+
 struct juegos {
 	int ID;
 	std::string nombre;
@@ -10,6 +28,8 @@ struct juegos {
 	float precio;
 	float peso;
 	bool visitado;
+	int calidad;
+	Genero generos[4];
 };
 
 
@@ -45,3 +65,4 @@ void GenerarArbol(nodo*& arbol);
 nodo* CrearNodo(int id, int indice);
 void InsertarNodo(nodo*& arbol, int id, int indice);
 bool IDUnica(int n, int id);
+std::string GeneroAString(int genero);
