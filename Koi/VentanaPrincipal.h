@@ -99,10 +99,9 @@ namespace Koi {
 			// button1
 			// 
 			this->button1->Font = (gcnew System::Drawing::Font(L"Nirmala Text", 10));
-			this->button1->Location = System::Drawing::Point(341, 357);
-			this->button1->Margin = System::Windows::Forms::Padding(2);
+			this->button1->Location = System::Drawing::Point(491, 542);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(213, 33);
+			this->button1->Size = System::Drawing::Size(324, 56);
 			this->button1->TabIndex = 2;
 			this->button1->Text = L"Registrar";
 			this->button1->UseVisualStyleBackColor = true;
@@ -114,19 +113,17 @@ namespace Koi {
 			this->label4->Font = (gcnew System::Drawing::Font(L"Myanmar Text", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label4->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
-			this->label4->Location = System::Drawing::Point(338, 281);
-			this->label4->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label4->Location = System::Drawing::Point(490, 439);
 			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(82, 25);
+			this->label4->Size = System::Drawing::Size(113, 36);
 			this->label4->TabIndex = 24;
 			this->label4->Text = L"Contraseña";
 			// 
 			// txtPassword
 			// 
-			this->txtPassword->Location = System::Drawing::Point(341, 307);
-			this->txtPassword->Margin = System::Windows::Forms::Padding(2);
+			this->txtPassword->Location = System::Drawing::Point(491, 479);
 			this->txtPassword->Name = L"txtPassword";
-			this->txtPassword->Size = System::Drawing::Size(215, 20);
+			this->txtPassword->Size = System::Drawing::Size(324, 26);
 			this->txtPassword->TabIndex = 23;
 			// 
 			// label5
@@ -135,19 +132,17 @@ namespace Koi {
 			this->label5->Font = (gcnew System::Drawing::Font(L"Myanmar Text", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label5->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
-			this->label5->Location = System::Drawing::Point(338, 224);
-			this->label5->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label5->Location = System::Drawing::Point(490, 351);
 			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(59, 25);
+			this->label5->Size = System::Drawing::Size(82, 36);
 			this->label5->TabIndex = 22;
 			this->label5->Text = L"Usuario\r\n";
 			// 
 			// txtUsername
 			// 
-			this->txtUsername->Location = System::Drawing::Point(341, 250);
-			this->txtUsername->Margin = System::Windows::Forms::Padding(2);
+			this->txtUsername->Location = System::Drawing::Point(491, 392);
 			this->txtUsername->Name = L"txtUsername";
-			this->txtUsername->Size = System::Drawing::Size(215, 20);
+			this->txtUsername->Size = System::Drawing::Size(324, 26);
 			this->txtUsername->TabIndex = 21;
 			// 
 			// label3
@@ -156,19 +151,17 @@ namespace Koi {
 			this->label3->Font = (gcnew System::Drawing::Font(L"Myanmar Text", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label3->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
-			this->label3->Location = System::Drawing::Point(337, 169);
-			this->label3->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label3->Location = System::Drawing::Point(489, 265);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(61, 25);
+			this->label3->Size = System::Drawing::Size(89, 36);
 			this->label3->TabIndex = 20;
 			this->label3->Text = L"Apellido";
 			// 
 			// txtApellido
 			// 
-			this->txtApellido->Location = System::Drawing::Point(339, 196);
-			this->txtApellido->Margin = System::Windows::Forms::Padding(2);
+			this->txtApellido->Location = System::Drawing::Point(491, 306);
 			this->txtApellido->Name = L"txtApellido";
-			this->txtApellido->Size = System::Drawing::Size(215, 20);
+			this->txtApellido->Size = System::Drawing::Size(324, 26);
 			this->txtApellido->TabIndex = 19;
 			// 
 			// label2
@@ -177,40 +170,38 @@ namespace Koi {
 			this->label2->Font = (gcnew System::Drawing::Font(L"Myanmar Text", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label2->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
-			this->label2->Location = System::Drawing::Point(337, 112);
-			this->label2->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label2->Location = System::Drawing::Point(489, 176);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(62, 25);
+			this->label2->Size = System::Drawing::Size(88, 36);
 			this->label2->TabIndex = 18;
 			this->label2->Text = L"Nombre";
 			// 
 			// txtNombre
 			// 
-			this->txtNombre->Location = System::Drawing::Point(339, 137);
-			this->txtNombre->Margin = System::Windows::Forms::Padding(2);
+			this->txtNombre->Location = System::Drawing::Point(491, 216);
 			this->txtNombre->Name = L"txtNombre";
-			this->txtNombre->Size = System::Drawing::Size(215, 20);
+			this->txtNombre->Size = System::Drawing::Size(324, 26);
 			this->txtNombre->TabIndex = 17;
 			// 
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 24, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->label1->Font = (gcnew System::Drawing::Font(L"Palatino Linotype", 28, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label1->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
-			this->label1->Location = System::Drawing::Point(336, 58);
-			this->label1->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label1->Location = System::Drawing::Point(566, 78);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(101, 37);
+			this->label1->Size = System::Drawing::Size(181, 76);
 			this->label1->TabIndex = 27;
 			this->label1->Text = L"Login";
 			// 
 			// pictureBox1
 			// 
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(12, 12);
+			this->pictureBox1->Location = System::Drawing::Point(-40, -1);
+			this->pictureBox1->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(293, 431);
+			this->pictureBox1->Size = System::Drawing::Size(490, 730);
 			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
 			this->pictureBox1->TabIndex = 28;
 			this->pictureBox1->TabStop = false;
@@ -218,22 +209,22 @@ namespace Koi {
 			// pictureBox2
 			// 
 			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
-			this->pictureBox2->Location = System::Drawing::Point(488, 12);
+			this->pictureBox2->Location = System::Drawing::Point(694, -33);
+			this->pictureBox2->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->pictureBox2->Name = L"pictureBox2";
-			this->pictureBox2->Size = System::Drawing::Size(100, 66);
+			this->pictureBox2->Size = System::Drawing::Size(229, 163);
 			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
 			this->pictureBox2->TabIndex = 29;
 			this->pictureBox2->TabStop = false;
+			this->pictureBox2->Click += gcnew System::EventHandler(this, &VentanaPrincipal::pictureBox2_Click);
 			// 
 			// VentanaPrincipal
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->AutoSizeMode = System::Windows::Forms::AutoSizeMode::GrowAndShrink;
-			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(14)), static_cast<System::Int32>(static_cast<System::Byte>(14)),
-				static_cast<System::Int32>(static_cast<System::Byte>(14)));
-			this->ClientSize = System::Drawing::Size(600, 455);
-			this->Controls->Add(this->pictureBox2);
+			this->BackColor = System::Drawing::Color::Black;
+			this->ClientSize = System::Drawing::Size(891, 674);
 			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->label4);
@@ -245,10 +236,12 @@ namespace Koi {
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->txtNombre);
 			this->Controls->Add(this->button1);
+			this->Controls->Add(this->pictureBox2);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
+			this->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->MaximizeBox = false;
-			this->MaximumSize = System::Drawing::Size(616, 494);
-			this->MinimumSize = System::Drawing::Size(616, 494);
+			this->MaximumSize = System::Drawing::Size(913, 730);
+			this->MinimumSize = System::Drawing::Size(913, 730);
 			this->Name = L"VentanaPrincipal";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Koi";
@@ -320,6 +313,8 @@ namespace Koi {
 	}
 
 private: System::Void VentanaPrincipal_Load(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void pictureBox2_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 
