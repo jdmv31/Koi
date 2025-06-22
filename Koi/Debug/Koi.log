@@ -1,6 +1,7 @@
-﻿  Ventana2.cpp
+﻿  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
+  Ventana2.cpp
   VentanaPrincipal.cpp
-C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\VentanaPrincipal.h(252,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\VentanaPrincipal.h(267,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   (compiling source file 'VentanaPrincipal.cpp')
   
 C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\VentanaPrincipal.cpp(6,6): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'

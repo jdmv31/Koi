@@ -1,14 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\",
+  "WorkspaceRootPath": "C:\\Users\\josue\\OneDrive\\Desktop\\proyecto\\Koi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\VentanaPrincipal.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|C:\\Users\\josue\\OneDrive\\Desktop\\proyecto\\Koi\\Koi\\VentanaPrincipal.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|solutionrelative:Koi\\VentanaPrincipal.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\resource.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|solutionrelative:Koi\\resource.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,28 +14,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "resource.h",
-              "DocumentMoniker": "C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\resource.h",
-              "RelativeDocumentMoniker": "Koi\\resource.h",
-              "ToolTip": "C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\resource.h",
-              "RelativeToolTip": "Koi\\resource.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-22T01:23:22.004Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "VentanaPrincipal.h",
-              "DocumentMoniker": "C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\VentanaPrincipal.h",
+              "DocumentMoniker": "C:\\Users\\josue\\OneDrive\\Desktop\\proyecto\\Koi\\Koi\\VentanaPrincipal.h",
               "RelativeDocumentMoniker": "Koi\\VentanaPrincipal.h",
-              "ToolTip": "C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\VentanaPrincipal.h",
+              "ToolTip": "C:\\Users\\josue\\OneDrive\\Desktop\\proyecto\\Koi\\Koi\\VentanaPrincipal.h",
               "RelativeToolTip": "Koi\\VentanaPrincipal.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
