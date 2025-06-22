@@ -65,4 +65,3 @@ void GenerarArbol(nodo*& arbol);
 nodo* CrearNodo(int id, int indice);
 void InsertarNodo(nodo*& arbol, int id, int indice);
 bool IDUnica(int n, int id);
-std::string GeneroAString(int genero);

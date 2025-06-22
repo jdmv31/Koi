@@ -39,9 +39,10 @@ namespace Koi {
 		}
 	private: System::Windows::Forms::Label^ labelBienvenida;
 	private: System::Windows::Forms::Label^ label1;
-	private: System::Windows::Forms::TreeView^ treeViewUsuarios;
-	private: System::Windows::Forms::Button^ button1;
+
+
 	private: System::Windows::Forms::Label^ label2;
+	private: System::Windows::Forms::CheckedListBox^ checkedListBox1;
 
 
 
@@ -66,9 +67,8 @@ namespace Koi {
 			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(Ventana2::typeid));
 			this->labelBienvenida = (gcnew System::Windows::Forms::Label());
 			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->treeViewUsuarios = (gcnew System::Windows::Forms::TreeView());
-			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->label2 = (gcnew System::Windows::Forms::Label());
+			this->checkedListBox1 = (gcnew System::Windows::Forms::CheckedListBox());
 			this->SuspendLayout();
 			// 
 			// labelBienvenida
@@ -94,35 +94,26 @@ namespace Koi {
 			this->label1->Text = L".";
 			this->label1->Click += gcnew System::EventHandler(this, &Ventana2::label1_Click);
 			// 
-			// treeViewUsuarios
-			// 
-			this->treeViewUsuarios->Location = System::Drawing::Point(536, 75);
-			this->treeViewUsuarios->Name = L"treeViewUsuarios";
-			this->treeViewUsuarios->Size = System::Drawing::Size(42, 24);
-			this->treeViewUsuarios->TabIndex = 2;
-			// 
-			// button1
-			// 
-			this->button1->Location = System::Drawing::Point(536, 114);
-			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(41, 23);
-			this->button1->TabIndex = 3;
-			this->button1->Text = L"Mostrar Arbol";
-			this->button1->UseVisualStyleBackColor = true;
-			this->button1->Click += gcnew System::EventHandler(this, &Ventana2::button1_Click);
-			// 
 			// label2
 			// 
 			this->label2->AutoSize = true;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label2->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-			this->label2->Location = System::Drawing::Point(25, 75);
+			this->label2->Location = System::Drawing::Point(37, 81);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(272, 24);
 			this->label2->TabIndex = 4;
 			this->label2->Text = L"Indícanos que juegos te gustan";
 			this->label2->Click += gcnew System::EventHandler(this, &Ventana2::label2_Click);
+			// 
+			// checkedListBox1
+			// 
+			this->checkedListBox1->FormattingEnabled = true;
+			this->checkedListBox1->Location = System::Drawing::Point(31, 143);
+			this->checkedListBox1->Name = L"checkedListBox1";
+			this->checkedListBox1->Size = System::Drawing::Size(487, 94);
+			this->checkedListBox1->TabIndex = 5;
 			// 
 			// Ventana2
 			// 
@@ -131,9 +122,8 @@ namespace Koi {
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(14)), static_cast<System::Int32>(static_cast<System::Byte>(14)),
 				static_cast<System::Int32>(static_cast<System::Byte>(14)));
 			this->ClientSize = System::Drawing::Size(600, 390);
+			this->Controls->Add(this->checkedListBox1);
 			this->Controls->Add(this->label2);
-			this->Controls->Add(this->button1);
-			this->Controls->Add(this->treeViewUsuarios);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->labelBienvenida);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
@@ -151,30 +141,48 @@ namespace Koi {
 		}
 #pragma endregion
 
+		std::string GeneroAString(int genero) {
+			switch (genero) {
+			case FPS: return "FPS";
+			case MOBA: return "MOBA";
+			case RPG: return "RPG";
+			case Accion: return "Acción";
+			case Aventura: return "Aventura";
+			case SurvivalHorror: return "Survival Horror";
+			case Plataformas: return "Plataformas";
+			case Roguelike: return "Roguelike";
+			case Estrategia: return "Estrategia";
+			case Carreras: return "Carreras";
+			case Peleas: return "Peleas";
+			case Sandbox: return "Sandbox";
+			case Shooter: return "Shooter";
+			case Indie: return "Indie";
+			case MundoAbierto: return "Mundo Abierto";
+			default: return "Desconocido";
+			}
+		}
+		std::string GenerosToString(Genero generos[4]) {
+			std::string resultado;
+			for (int i = 0; i < 4; ++i) {
+				if (generos[i] != -1) {
+					if (!resultado.empty()) resultado += ", ";
+					resultado += GeneroAString(generos[i]);
+				}
+			}
+			return resultado;
+		}
 	private: System::Void Ventana2_Load(System::Object^ sender, System::EventArgs^ e) {
 		label1->Text = gcnew System::String(("Bienvenid@ " + arbol->usuario.username + "!").c_str());
-	}
+		for (int i = 0; i < CANT_JUEGOS; ++i) {
+			std::string texto = juego[i].nombre +
+				" | Géneros: " + GenerosToString(juego[i].generos) +
+				" | Calidad: " + std::to_string(juego[i].calidad);
 
-	private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
-	}
-
-	void AgregarNodoTreeView(nodo* arbol, TreeNode^ parentNode, TreeView^ treeViewUsuarios) {
-		if (arbol != nullptr) {
-			TreeNode^ nuevoNodo = gcnew TreeNode("ID: " + arbol->usuario.ID + " - " + gcnew System::String(arbol->usuario.username.c_str()));
-			if (parentNode != nullptr) {
-				parentNode->Nodes->Add(nuevoNodo);
-			}
-			else {
-				treeViewUsuarios->Nodes->Add(nuevoNodo);
-			}
-			AgregarNodoTreeView(arbol->izq, nuevoNodo, treeViewUsuarios);
-			AgregarNodoTreeView(arbol->der, nuevoNodo, treeViewUsuarios);
+			checkedListBox1->Items->Add(gcnew String(texto.c_str()));
 		}
 	}
 
-	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-		treeViewUsuarios->Nodes->Clear();
-		AgregarNodoTreeView(arbol, nullptr, treeViewUsuarios);
+	private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
 private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e) {
 }

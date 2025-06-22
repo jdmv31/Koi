@@ -313,7 +313,26 @@ namespace Koi {
 	}
 
 private: System::Void VentanaPrincipal_Load(System::Object^ sender, System::EventArgs^ e) {
+	srand(time(NULL));
+	float aux, aux2;
 	for (int i = 0; i < CANT_JUEGOS; i++) {
+		do {
+			aux = rand() % 200 + 1;
+			aux2 = rand() % 200 + 1;
+			if (aux > aux2)
+				juego[i].precio = aux / aux2;
+		} while (aux < aux2);
+
+		juego[i].ID = i + 1;
+		juego[i].peso = rand() % 50000 + 1;
+		juego[i].visitado = false;
+		aux = rand() % 5 + 1;
+		juego[i].calidad = static_cast<int>(aux);
+
+		for (int j = 0; j < 4; j++) {
+			juego[i].generos[j] = static_cast<Genero>(-1);
+		}
+
 		PreCargarJuegos(i);
 	}
 }

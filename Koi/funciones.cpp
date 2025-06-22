@@ -13,56 +13,6 @@ int tope = -1;
 bool aux = true;
 int *ID = new int [10];
 
-string GeneroAString(int genero){
-    switch (genero) {
-    case FPS: 
-        return "FPS";
-        break;
-    case MOBA: 
-        return "MOBA";
-        break;
-    case RPG: 
-        return "RPG"; 
-        break;
-    case Accion: 
-        return "Acción";
-        break;
-    case Aventura: 
-        return "Aventura";
-        break;
-    case SurvivalHorror: 
-        return "Survival Horror";
-        break;
-    case Plataformas: 
-        return "Plataformas";
-        break;
-    case Roguelike: 
-        return "Roguelike";
-        break;
-    case Estrategia: 
-        return "Estrategia";
-        break;
-    case Carreras: 
-        return "Carreras";
-        break;
-    case Peleas: 
-        return "Peleas";
-        break;
-    case Sandbox: 
-        return "Sandbox";
-        break;
-    case Shooter: 
-        return "Shooter";
-        break;
-    case Indie: 
-        return "Indie";
-        break;
-    case MundoAbierto: 
-        return "Mundo Abierto";
-        break;
-    }
-}
-
 nodo* CrearNodo(int id, int indice) {
     nodo* nuevonodo = new nodo();
     nuevonodo->usuario.ID = id;
@@ -171,20 +121,6 @@ void GenerarArbol(nodo*& arbol) {
 }
 
 void PreCargarJuegos(int n) {
-
-    srand(time(NULL));
-    float aux, aux2;
-    do {
-        aux = rand() % 200 + 1;
-        aux2 = rand() % 200 + 1;
-        if (aux > aux2)
-            juego[n].precio = aux / aux2;
-    } while (aux < aux2);
-
-    juego[n].ID = n + 1;
-    juego[n].peso = rand() % 50000 + 1;
-    juego[n].visitado = false;
-    juego[n].calidad = rand() % 5 + 1;
 
     switch (n) {
     case 0:
