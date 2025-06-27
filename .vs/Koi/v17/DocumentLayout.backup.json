@@ -1,26 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\",
+  "WorkspaceRootPath": "C:\\Users\\Nicole Flores\\Desktop\\clonekoi\\Koi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\VentanaPrincipal.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|solutionrelative:Koi\\VentanaPrincipal.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|C:\\Users\\Nicole Flores\\Desktop\\clonekoi\\Koi\\Koi\\Ventana2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
+      "RelativeMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|solutionrelative:Koi\\Ventana2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\funciones.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|solutionrelative:Koi\\funciones.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\funciones.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|solutionrelative:Koi\\funciones.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\Ventana2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|C:\\Users\\Nicole Flores\\Desktop\\clonekoi\\Koi\\Koi\\Ventana2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|solutionrelative:Koi\\Ventana2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\Ventana2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
-      "RelativeMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|solutionrelative:Koi\\Ventana2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
+      "AbsoluteMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|C:\\Users\\Nicole Flores\\Desktop\\clonekoi\\Koi\\Koi\\VentanaPrincipal.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|solutionrelative:Koi\\VentanaPrincipal.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|C:\\Users\\Nicole Flores\\Desktop\\clonekoi\\Koi\\Koi\\sage.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|solutionrelative:Koi\\sage.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|C:\\Users\\Nicole Flores\\Desktop\\clonekoi\\Koi\\Koi\\sagee.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "RelativeMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|solutionrelative:Koi\\sagee.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|C:\\Users\\Nicole Flores\\Desktop\\clonekoi\\Koi\\Koi\\funciones.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|solutionrelative:Koi\\funciones.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|C:\\Users\\Nicole Flores\\Desktop\\clonekoi\\Koi\\Koi\\funciones.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|solutionrelative:Koi\\funciones.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,28 +38,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "sagee.png",
+              "DocumentMoniker": "C:\\Users\\Nicole Flores\\Desktop\\clonekoi\\Koi\\Koi\\sagee.png",
+              "RelativeDocumentMoniker": "Koi\\sagee.png",
+              "ToolTip": "C:\\Users\\Nicole Flores\\Desktop\\clonekoi\\Koi\\Koi\\sagee.png",
+              "RelativeToolTip": "Koi\\sagee.png",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-06-27T22:48:40.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "sage.resx",
+              "DocumentMoniker": "C:\\Users\\Nicole Flores\\Desktop\\clonekoi\\Koi\\Koi\\sage.resx",
+              "RelativeDocumentMoniker": "Koi\\sage.resx",
+              "ToolTip": "C:\\Users\\Nicole Flores\\Desktop\\clonekoi\\Koi\\Koi\\sage.resx",
+              "RelativeToolTip": "Koi\\sage.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-06-27T22:48:25.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "VentanaPrincipal.h",
-              "DocumentMoniker": "C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\VentanaPrincipal.h",
+              "DocumentMoniker": "C:\\Users\\Nicole Flores\\Desktop\\clonekoi\\Koi\\Koi\\VentanaPrincipal.h",
               "RelativeDocumentMoniker": "Koi\\VentanaPrincipal.h",
-              "ToolTip": "C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\VentanaPrincipal.h",
+              "ToolTip": "C:\\Users\\Nicole Flores\\Desktop\\clonekoi\\Koi\\Koi\\VentanaPrincipal.h",
               "RelativeToolTip": "Koi\\VentanaPrincipal.h",
-              "ViewState": "AgIAADkBAAAAAAAAAAAAAE4BAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE4BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-06-22T23:48:51.141Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "funciones.cpp",
-              "DocumentMoniker": "C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\funciones.cpp",
+              "DocumentMoniker": "C:\\Users\\Nicole Flores\\Desktop\\clonekoi\\Koi\\Koi\\funciones.cpp",
               "RelativeDocumentMoniker": "Koi\\funciones.cpp",
-              "ToolTip": "C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\funciones.cpp",
+              "ToolTip": "C:\\Users\\Nicole Flores\\Desktop\\clonekoi\\Koi\\Koi\\funciones.cpp",
               "RelativeToolTip": "Koi\\funciones.cpp",
               "ViewState": "AgIAAHUAAAAAAAAAAAAAAHsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -60,41 +96,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "funciones.h",
-              "DocumentMoniker": "C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\funciones.h",
+              "DocumentMoniker": "C:\\Users\\Nicole Flores\\Desktop\\clonekoi\\Koi\\Koi\\funciones.h",
               "RelativeDocumentMoniker": "Koi\\funciones.h",
-              "ToolTip": "C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\funciones.h",
+              "ToolTip": "C:\\Users\\Nicole Flores\\Desktop\\clonekoi\\Koi\\Koi\\funciones.h",
               "RelativeToolTip": "Koi\\funciones.h",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-06-22T23:25:48.234Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Ventana2.h",
-              "DocumentMoniker": "C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\Ventana2.h",
+              "DocumentMoniker": "C:\\Users\\Nicole Flores\\Desktop\\clonekoi\\Koi\\Koi\\Ventana2.h",
               "RelativeDocumentMoniker": "Koi\\Ventana2.h",
-              "ToolTip": "C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\Ventana2.h",
-              "RelativeToolTip": "Koi\\Ventana2.h",
-              "ViewState": "AgIAAJ0AAAAAAAAAAAAAAKkAAAAFAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Nicole Flores\\Desktop\\clonekoi\\Koi\\Koi\\Ventana2.h*",
+              "RelativeToolTip": "Koi\\Ventana2.h*",
+              "ViewState": "AgIAANgAAAAAAAAAAAAAAMkAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-06-22T23:05:56.897Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Ventana2.h [Design]",
-              "DocumentMoniker": "C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\Ventana2.h",
+              "DocumentIndex": 0,
+              "Title": "Ventana2.h [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Nicole Flores\\Desktop\\clonekoi\\Koi\\Koi\\Ventana2.h",
               "RelativeDocumentMoniker": "Koi\\Ventana2.h",
-              "ToolTip": "C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\Ventana2.h [Design]",
-              "RelativeToolTip": "Koi\\Ventana2.h [Design]",
+              "ToolTip": "C:\\Users\\Nicole Flores\\Desktop\\clonekoi\\Koi\\Koi\\Ventana2.h [Dise\u00F1o]*",
+              "RelativeToolTip": "Koi\\Ventana2.h [Dise\u00F1o]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-06-22T23:05:50.14Z",
-              "EditorCaption": " [Design]"
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }

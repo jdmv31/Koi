@@ -135,7 +135,9 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Recurso.resx" />
     <EmbeddedResource Include="Resource.resx" />
+    <EmbeddedResource Include="sage.resx" />
     <EmbeddedResource Include="Ventana2.resx">
       <DependentUpon>Ventana2.h</DependentUpon>
     </EmbeddedResource>
@@ -144,7 +146,9 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Image Include="logopetit.png" />
     <Image Include="portada.png" />
+    <Image Include="sagee.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

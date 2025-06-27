@@ -43,9 +43,21 @@
     <EmbeddedResource Include="Resource.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
+    <EmbeddedResource Include="Recurso.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sage.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Image Include="portada.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="logopetit.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="sagee.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
