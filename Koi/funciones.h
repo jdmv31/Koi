@@ -23,13 +23,13 @@ enum Genero{
 };
 
 struct juegos {
-	int ID;
 	string nombre;
 	string publisher;
+	string descripcion;
 	float precio;
 	float peso;
-	bool visitado;
-	int calidad;
+	short calidad;
+	short ID;
 	Genero generos[4];
 };
 
@@ -43,7 +43,7 @@ struct perfil {
 	string apellido;
 	string username;
 	string password;
-	int ID;
+	short ID;
 	nodo2* lista; // josue: lista simple que va a contener los juegos preferidos de cada usuario
 };
 
@@ -55,8 +55,6 @@ struct nodo {
 
 extern nodo *arbol;
 extern juegos juego[CANT_JUEGOS];
-extern int cola[CANT_JUEGOS];
-extern int tope;
 extern int *ID;
 extern bool aux;
 extern nodo2* heap;
@@ -70,3 +68,6 @@ std::string GeneroAString(int genero);
 std::string GenerosString(Genero generos[]);
 nodo2* NuevoJuego(juegos juego);
 int BuscarJuego(std::string nombrejuego);
+std::string PublisherFavorito(void);
+std::string HallarPublisher(string* nombres, int cant);
+void QuickSort(juegos vec[], int inicio, int fin, string publisherFav);

@@ -326,7 +326,6 @@ private: System::Void VentanaPrincipal_Load(System::Object^ sender, System::Even
 
 		juego[i].ID = i + 1;
 		juego[i].peso = rand() % 50000 + 1;
-		juego[i].visitado = false;
 		aux = rand() % 5 + 1;
 		juego[i].calidad = static_cast<int>(aux);
 

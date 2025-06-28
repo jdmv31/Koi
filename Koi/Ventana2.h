@@ -258,13 +258,8 @@ namespace Koi {
 				posicion = BuscarJuego(aux);
 				arbol->usuario.lista = NuevoJuego(juego[posicion]);
 			}
-			nodo2* temp = arbol->usuario.lista;
-			while (temp != nullptr) {
-				aux2 = msclr::interop::marshal_as<String^>(temp->dato.nombre);
-				MessageBox::Show(aux2, "a");
-				temp = temp->siguiente;
-			}
-
+			aux = PublisherFavorito();
+			QuickSort(juego, 0, CANT_JUEGOS - 1, aux);
 		}
 	}
 };

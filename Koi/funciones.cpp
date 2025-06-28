@@ -8,11 +8,99 @@ using namespace std;
 
 nodo* arbol = nullptr;
 juegos juego[CANT_JUEGOS];
-int cola[CANT_JUEGOS];
-int tope = -1;
 bool aux = true;
 int *ID = new int [10];
 nodo2* heap = nullptr;
+
+void QuickSort(juegos vec[], int inicio, int fin, string publisherFav) {
+    if (inicio >= fin) return;
+
+    int izq = inicio;
+    int der = fin;
+    juegos pivote = vec[(inicio + fin) / 2];
+
+    while (izq <= der) {
+        while (vec[izq].publisher == publisherFav ||
+            (vec[izq].publisher != publisherFav && pivote.publisher != publisherFav && vec[izq].publisher < pivote.publisher)) {
+            izq++;
+        }
+
+        while (vec[der].publisher == publisherFav ||
+            (vec[der].publisher != publisherFav && pivote.publisher != publisherFav && vec[der].publisher > pivote.publisher)) {
+            der--;
+        }
+
+        if (izq <= der) {
+            swap(vec[izq], vec[der]);
+            izq++;
+            der--;
+        }
+    }
+
+    if (inicio < der) {
+        QuickSort(vec, inicio, der, publisherFav);
+    }
+    if (izq < fin) {
+        QuickSort(vec, izq, fin, publisherFav);
+    }
+}
+
+string HallarPublisher(string* nombres, int cant) {
+    string fav, aux;
+    int cont = 1, max = 0;
+
+    for (int i = 0; i < cant - 1; i++) {
+        aux = nombres[i];
+
+        for (int j = i + 1; j < cant; j++) {
+            if (aux.compare(nombres[j]) == 0) {
+                cont++;
+            }
+        }
+
+        if (i == 0) {
+            max = cont;
+            fav = aux;
+        }
+        else if (cont > max) {
+            max = cont;
+            fav = aux;
+        }
+
+        cont = 1;
+    }
+
+    return fav;
+}
+
+string PublisherFavorito(void){
+    nodo2* aux = new nodo2();
+    aux = arbol->usuario.lista;
+    int cant = 0;
+
+    while (aux != nullptr) {
+        cant++;
+        aux = aux->siguiente;
+    }
+    string* nombres = new string[cant];
+    cant = 0;
+    aux = arbol->usuario.lista;
+
+    while (aux != nullptr) {
+        nombres[cant] = aux->dato.publisher;
+        cant++;
+        aux = aux->siguiente;
+    }
+
+    string fav = HallarPublisher(nombres,cant);
+
+    delete[] nombres;
+    delete aux;
+    nombres = nullptr;
+    aux = nullptr;
+
+    return fav;
+}
 
 int BuscarJuego(std::string nombrejuego) {
     string aux;
@@ -477,3 +565,6 @@ void PreCargarJuegos(int n) {
     }
 
 }
+
+
+ 
