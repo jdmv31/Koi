@@ -12,10 +12,72 @@ int cola[CANT_JUEGOS];
 int tope = -1;
 bool aux = true;
 int *ID = new int [10];
+nodo2* heap = nullptr;
+
+int BuscarJuego(std::string nombrejuego) {
+    string aux;
+    for (int i = 0; i < CANT_JUEGOS; i++) {
+        aux = juego[i].nombre;
+        if (nombrejuego.compare(aux) == 0)
+            return i;
+    }
+    return -1;
+}
+
+string GenerosString(Genero generos[]) {
+    string resultado;
+    for (int i = 0; i < 4; ++i) {
+        if (generos[i] != -1) {
+            if (!resultado.empty()) resultado += ", ";
+            resultado += GeneroAString(generos[i]);
+        }
+    }
+    return resultado;
+}
+
+string GeneroAString(int genero) {
+    switch (genero) {
+    case FPS: return "FPS";
+    case MOBA: return "MOBA";
+    case RPG: return "RPG";
+    case Accion: return "Acción";
+    case Aventura: return "Aventura";
+    case SurvivalHorror: return "Survival Horror";
+    case Plataformas: return "Plataformas";
+    case Roguelike: return "Roguelike";
+    case Estrategia: return "Estrategia";
+    case Carreras: return "Carreras";
+    case Peleas: return "Peleas";
+    case Sandbox: return "Sandbox";
+    case Shooter: return "Shooter";
+    case Indie: return "Indie";
+    case MundoAbierto: return "Mundo Abierto";
+    default: return "Desconocido";
+    }
+}
+
+nodo2* NuevoJuego(juegos juego) {
+    nodo2* nuevo = new nodo2();
+    nuevo->dato = juego;
+    nuevo->siguiente = heap;
+    heap = nuevo;
+
+    return nuevo;
+}
 
 nodo* CrearNodo(int id, int indice) {
+    srand(time(NULL));
     nodo* nuevonodo = new nodo();
     nuevonodo->usuario.ID = id;
+    int aux = 0, aux2 = 0;
+    aux = rand() % 6 + 3; // josue: cada usuario precargado tendra entre 3 y 6 juegos favoritos tildados
+    for (int i = 0; i < aux; i++) {
+        aux2 = rand() % 50 + 1;
+        aux2 -= 1;
+        nuevonodo->usuario.lista = NuevoJuego(juego[aux2]);
+    }
+    heap = nullptr;
+
 
     switch (indice) {
     case 1:

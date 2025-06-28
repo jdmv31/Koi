@@ -301,6 +301,7 @@ namespace Koi {
 		if (aux) {
 			arbol->usuario.ID = rand() % 500 + 1;
 			ID[0] = arbol->usuario.ID;
+			arbol->usuario.lista = nullptr;
 			GenerarArbol(arbol);
 			delete[] ID;
 			ID = nullptr;

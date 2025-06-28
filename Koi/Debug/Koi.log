@@ -1,24 +1,24 @@
 ﻿  Ventana2.cpp
   VentanaPrincipal.cpp
-C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\VentanaPrincipal.h(260,13): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-  (compilando archivo de origen "VentanaPrincipal.cpp")
+C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\VentanaPrincipal.h(260,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  (compiling source file 'VentanaPrincipal.cpp')
   
-C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\VentanaPrincipal.h(316,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-  (compilando archivo de origen "VentanaPrincipal.cpp")
+C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\VentanaPrincipal.h(317,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  (compiling source file 'VentanaPrincipal.cpp')
   
-C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\VentanaPrincipal.h(320,23): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-  (compilando archivo de origen "VentanaPrincipal.cpp")
+C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\VentanaPrincipal.h(321,23): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'VentanaPrincipal.cpp')
   
-C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\VentanaPrincipal.h(321,24): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-  (compilando archivo de origen "VentanaPrincipal.cpp")
+C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\VentanaPrincipal.h(322,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'VentanaPrincipal.cpp')
   
-C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\VentanaPrincipal.h(327,34): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-  (compilando archivo de origen "VentanaPrincipal.cpp")
+C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\VentanaPrincipal.h(328,34): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'VentanaPrincipal.cpp')
   
-C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\VentanaPrincipal.h(329,20): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-  (compilando archivo de origen "VentanaPrincipal.cpp")
+C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\VentanaPrincipal.h(330,20): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'VentanaPrincipal.cpp')
   
-C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\VentanaPrincipal.cpp(6,6): warning C4829: Parámetros posiblemente incorrectos para la función main. Utilice 'int main(Platform::Array<Platform::String^>^ argv)'
-  Generando código...
-  funciones.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
-  Koi.vcxproj -> C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Debug\Koi.exe
+C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\VentanaPrincipal.cpp(6,6): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
+  Generating Code...
+  funciones.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  Koi.vcxproj -> C:\Users\josue\OneDrive\Desktop\Koi\Koi\Debug\Koi.exe

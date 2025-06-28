@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+using namespace std;
 
 const int CANT_JUEGOS = 50;
 
@@ -23,8 +24,8 @@ enum Genero{
 
 struct juegos {
 	int ID;
-	std::string nombre;
-	std::string publisher;
+	string nombre;
+	string publisher;
 	float precio;
 	float peso;
 	bool visitado;
@@ -32,18 +33,18 @@ struct juegos {
 	Genero generos[4];
 };
 
-
-struct perfil {
-	std::string nombre;
-	std::string apellido;
-	std::string username;
-	std::string password;
-	int ID;
-};
-
 struct nodo2 {
 	juegos dato;
 	nodo2* siguiente;
+};
+
+struct perfil {
+	string nombre;
+	string apellido;
+	string username;
+	string password;
+	int ID;
+	nodo2* lista; // josue: lista simple que va a contener los juegos preferidos de cada usuario
 };
 
 struct nodo {
@@ -58,10 +59,14 @@ extern int cola[CANT_JUEGOS];
 extern int tope;
 extern int *ID;
 extern bool aux;
+extern nodo2* heap;
 
 void PreCargarJuegos(int n);
-void GenerarJuegos(nodo*& nuevonodo, int n);
 void GenerarArbol(nodo*& arbol);
 nodo* CrearNodo(int id, int indice);
 void InsertarNodo(nodo*& arbol, int id, int indice);
 bool IDUnica(int n, int id);
+std::string GeneroAString(int genero);
+std::string GenerosString(Genero generos[]);
+nodo2* NuevoJuego(juegos juego);
+int BuscarJuego(std::string nombrejuego);
