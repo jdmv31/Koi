@@ -159,11 +159,20 @@ namespace Koi {
 
 			checkedListBox1->Items->Add(gcnew String(texto.c_str()));
 
-			texto = juego[i].publisher + " (" + std::to_string(CantidadPublisher(juego[i].publisher)) + ")";
-			checkedListBox3->Items->Add(gcnew String(texto.c_str()));
+			std::string aux = juego[i].publisher;
+
+			if (i == 0) {
+				texto = juego[i].publisher + " (" + std::to_string(CantidadPublisher(juego[i].publisher)) + ")";
+				checkedListBox3->Items->Add(gcnew String(texto.c_str()));
+			}
+			else if (!PublisherRegistrado(juego[i].publisher, i)) {
+				texto = juego[i].publisher + " (" + std::to_string(CantidadPublisher(juego[i].publisher)) + ")";
+				checkedListBox3->Items->Add(gcnew String(texto.c_str()));
+
+			}
 		}
 
-		string* aux = new string[15];
+		string* aux = new string[14];
 
 		aux[0] = "FPS";
 		aux[1] = "MOBA";
@@ -173,16 +182,15 @@ namespace Koi {
 		aux[5] = "SurvivalHorror";
 		aux[6] = "Plataformas";
 		aux[7] = "Roguelike";
-		aux[8] = "Estrategia";
-		aux[9] = "Carreras";
-		aux[10] = "Peleas";
-		aux[11] = "Sandbox";
-		aux[12] = "Shooter";
-		aux[13] = "Indie";
-		aux[14] = "MundoAbierto";
+		aux[8] = "Carreras";
+		aux[9] = "Peleas";
+		aux[10] = "Sandbox";
+		aux[11] = "Shooter";
+		aux[12] = "Indie";
+		aux[13] = "MundoAbierto";
 
-		for (int i = 0; i < 15; i++) {
-			std::string texto = aux[i] + " (" + std::to_string(CantidadEtiquetas(aux[i])) + ")";
+		for (int i = 0; i < 14; i++) {
+			std::string texto = aux[i] + " (" + std::to_string(CantidadEtiquetas(aux[i], i)) + ")";
 			checkedListBox2->Items->Add(gcnew String(texto.c_str()));
 		}
 

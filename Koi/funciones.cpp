@@ -13,20 +13,26 @@ int *ID = new int [10];
 nodo2* heap = nullptr;
 
 
-int CantidadEtiquetas(string nombre) {
+bool PublisherRegistrado(string nombre, int cant) {
+    for (int i = 0; i < cant; i++) {
+        if (nombre.compare(juego[i].publisher) == 0)
+            return true;
+    }
+    
+    return false;
+}
+
+int CantidadEtiquetas(string nombre, int elemento) {
     int acum = 0;
     int j = 0;
 
     for (int i = 0; i < CANT_JUEGOS; i++) {
-        while (juego[i].generos[j] != -1) {
-            if (nombre == to_string(juego[i].generos[j])) {
-                acum++;
+        for (int j = 0; j < 4; j++) {
+            if (juego[i].generos[j] == -1)
                 break;
-            }
-
-            j++;
+            else if (elemento == juego[i].generos[j])
+                acum++;
         }
-        j = 0;
     }
 
     return acum;
@@ -193,7 +199,6 @@ string GeneroAString(int genero) {
     case SurvivalHorror: return "Survival Horror";
     case Plataformas: return "Plataformas";
     case Roguelike: return "Roguelike";
-    case Estrategia: return "Estrategia";
     case Carreras: return "Carreras";
     case Peleas: return "Peleas";
     case Sandbox: return "Sandbox";
