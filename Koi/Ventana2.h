@@ -81,15 +81,14 @@ namespace Koi {
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			this->SuspendLayout();
-			this->FormClosing += gcnew System::Windows::Forms::FormClosingEventHandler(
-				this, &Ventana2::Ventana2_FormClosing);
 			// 
 			// labelBienvenida
 			// 
 			this->labelBienvenida->AutoSize = true;
-			this->labelBienvenida->Location = System::Drawing::Point(58, 31);
+			this->labelBienvenida->Location = System::Drawing::Point(87, 48);
+			this->labelBienvenida->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->labelBienvenida->Name = L"labelBienvenida";
-			this->labelBienvenida->Size = System::Drawing::Size(0, 13);
+			this->labelBienvenida->Size = System::Drawing::Size(0, 20);
 			this->labelBienvenida->TabIndex = 0;
 			// 
 			// label1
@@ -97,12 +96,13 @@ namespace Koi {
 			this->label1->AutoSize = true;
 			this->label1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(14)), static_cast<System::Int32>(static_cast<System::Byte>(14)),
 				static_cast<System::Int32>(static_cast<System::Byte>(14)));
-			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 32, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 24, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label1->ForeColor = System::Drawing::SystemColors::ButtonFace;
-			this->label1->Location = System::Drawing::Point(63, 19);
+			this->label1->Location = System::Drawing::Point(95, 20);
+			this->label1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(35, 51);
+			this->label1->Size = System::Drawing::Size(38, 55);
 			this->label1->TabIndex = 1;
 			this->label1->Text = L".";
 			this->label1->Click += gcnew System::EventHandler(this, &Ventana2::label1_Click);
@@ -114,9 +114,10 @@ namespace Koi {
 			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 22, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label2->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-			this->label2->Location = System::Drawing::Point(337, 66);
+			this->label2->Location = System::Drawing::Point(584, 93);
+			this->label2->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(306, 44);
+			this->label2->Size = System::Drawing::Size(883, 59);
 			this->label2->TabIndex = 4;
 			this->label2->Text = L"Indícanos qué juegos te gustan";
 			this->label2->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -134,19 +135,19 @@ namespace Koi {
 				static_cast<System::Byte>(0)));
 			this->checkedListBox1->ForeColor = System::Drawing::Color::Firebrick;
 			this->checkedListBox1->FormattingEnabled = true;
-			this->checkedListBox1->Location = System::Drawing::Point(443, 116);
+			this->checkedListBox1->Location = System::Drawing::Point(550, 171);
+			this->checkedListBox1->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->checkedListBox1->Name = L"checkedListBox1";
-			this->checkedListBox1->Size = System::Drawing::Size(128, 124);
+			this->checkedListBox1->Size = System::Drawing::Size(981, 400);
 			this->checkedListBox1->TabIndex = 5;
 			this->checkedListBox1->SelectedIndexChanged += gcnew System::EventHandler(this, &Ventana2::checkedListBox1_SelectedIndexChanged);
 			// 
 			// pictureBox1
 			// 
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(-24, -12);
-			this->pictureBox1->Margin = System::Windows::Forms::Padding(2);
+			this->pictureBox1->Location = System::Drawing::Point(-36, -18);
 			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(111, 105);
+			this->pictureBox1->Size = System::Drawing::Size(141, 120);
 			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
 			this->pictureBox1->TabIndex = 6;
 			this->pictureBox1->TabStop = false;
@@ -154,24 +155,23 @@ namespace Koi {
 			// button1
 			// 
 			this->button1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Right));
-			this->button1->Location = System::Drawing::Point(8, 263);
-			this->button1->Margin = System::Windows::Forms::Padding(2);
+			this->button1->Location = System::Drawing::Point(1156, 597);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(353, 55);
+			this->button1->Size = System::Drawing::Size(375, 85);
 			this->button1->TabIndex = 7;
-			this->button1->Text = L"button1";
+			this->button1->Text = L"ENTER";
 			this->button1->UseVisualStyleBackColor = true;
 			this->button1->Click += gcnew System::EventHandler(this, &Ventana2::button1_Click);
 			// 
 			// pictureBox2
 			// 
-			this->pictureBox2->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
-				| System::Windows::Forms::AnchorStyles::Left));
+			this->pictureBox2->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
 			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
-			this->pictureBox2->Location = System::Drawing::Point(1, -25);
-			this->pictureBox2->Margin = System::Windows::Forms::Padding(2);
+			this->pictureBox2->Location = System::Drawing::Point(-77, 71);
 			this->pictureBox2->Name = L"pictureBox2";
-			this->pictureBox2->Size = System::Drawing::Size(400, 390);
+			this->pictureBox2->Size = System::Drawing::Size(425, 680);
 			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
 			this->pictureBox2->TabIndex = 8;
 			this->pictureBox2->TabStop = false;
@@ -179,10 +179,10 @@ namespace Koi {
 			// 
 			// Ventana2
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
-			this->ClientSize = System::Drawing::Size(600, 390);
+			this->ClientSize = System::Drawing::Size(1565, 760);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->checkedListBox1);
 			this->Controls->Add(this->label1);
@@ -191,13 +191,12 @@ namespace Koi {
 			this->Controls->Add(this->pictureBox2);
 			this->Controls->Add(this->label2);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
-			this->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->Margin = System::Windows::Forms::Padding(2);
-			this->MinimumSize = System::Drawing::Size(614, 423);
+			this->MinimumSize = System::Drawing::Size(910, 621);
 			this->Name = L"Ventana2";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Koi";
 			this->WindowState = System::Windows::Forms::FormWindowState::Maximized;
+			this->FormClosing += gcnew System::Windows::Forms::FormClosingEventHandler(this, &Ventana2::Ventana2_FormClosing);
 			this->Load += gcnew System::EventHandler(this, &Ventana2::Ventana2_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->EndInit();
