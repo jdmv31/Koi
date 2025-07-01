@@ -95,6 +95,8 @@ namespace Koi {
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			this->SuspendLayout();
+			this->FormClosing += gcnew System::Windows::Forms::FormClosingEventHandler(
+				this, &VentanaPrincipal::VentanaPrincipal_FormClosing);
 			// 
 			// button1
 			// 
@@ -253,6 +255,10 @@ namespace Koi {
 
 		}
 #pragma endregion
+		private: System::Void VentanaPrincipal_FormClosing(System::Object^ sender,
+			System::Windows::Forms::FormClosingEventArgs^ e) {
+			LiberarMemoria(arbol);
+		}
 	private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 	}
 	
@@ -336,6 +342,7 @@ private: System::Void VentanaPrincipal_Load(System::Object^ sender, System::Even
 		PreCargarJuegos(i);
 	}
 }
+
 private: System::Void pictureBox2_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 };

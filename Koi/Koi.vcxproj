@@ -122,12 +122,16 @@
   <ItemGroup>
     <ClCompile Include="funciones.cpp" />
     <ClCompile Include="Ventana2.cpp" />
+    <ClCompile Include="Ventana3.cpp" />
     <ClCompile Include="VentanaPrincipal.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="funciones.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Ventana2.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Ventana3.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="VentanaPrincipal.h">
@@ -140,6 +144,9 @@
     <EmbeddedResource Include="sage.resx" />
     <EmbeddedResource Include="Ventana2.resx">
       <DependentUpon>Ventana2.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventana3.resx">
+      <DependentUpon>Ventana3.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VentanaPrincipal.resx">
       <DependentUpon>VentanaPrincipal.h</DependentUpon>

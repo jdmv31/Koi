@@ -1,24 +1,28 @@
-﻿  funciones.cpp
-C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\funciones.cpp(124,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\funciones.cpp(227,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Ventana2.cpp
+﻿  Ventana2.cpp
+C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\Ventana2.h(242,11): warning C4101: 'aux2': unreferenced local variable
+  (compiling source file 'Ventana2.cpp')
+  
+  Ventana3.cpp
   VentanaPrincipal.cpp
-C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\VentanaPrincipal.h(260,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\Ventana2.h(242,11): warning C4101: 'aux2': unreferenced local variable
   (compiling source file 'VentanaPrincipal.cpp')
   
-C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\VentanaPrincipal.h(317,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\VentanaPrincipal.h(266,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   (compiling source file 'VentanaPrincipal.cpp')
   
-C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\VentanaPrincipal.h(321,23): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\VentanaPrincipal.h(323,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   (compiling source file 'VentanaPrincipal.cpp')
   
-C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\VentanaPrincipal.h(322,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\VentanaPrincipal.h(327,23): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
   (compiling source file 'VentanaPrincipal.cpp')
   
-C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\VentanaPrincipal.h(328,34): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\VentanaPrincipal.h(328,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
   (compiling source file 'VentanaPrincipal.cpp')
   
-C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\VentanaPrincipal.h(329,20): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\VentanaPrincipal.h(334,34): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'VentanaPrincipal.cpp')
+  
+C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\VentanaPrincipal.h(335,20): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
   (compiling source file 'VentanaPrincipal.cpp')
   
 C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\VentanaPrincipal.cpp(6,6): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'

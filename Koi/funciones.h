@@ -71,3 +71,6 @@ int BuscarJuego(std::string nombrejuego);
 std::string PublisherFavorito(void);
 std::string HallarPublisher(string* nombres, int cant);
 void QuickSort(juegos vec[], int inicio, int fin, string publisherFav);
+void LiberarMemoria(nodo*& arbol);
+int CantidadPublisher(std::string nombre);
+int CantidadEtiquetas(std::string nombre);

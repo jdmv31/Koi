@@ -4,6 +4,7 @@
 #include <iostream>
 #include <msclr/marshal_cppstd.h>
 #include <cstdlib>
+#include "Ventana3.h"
 
 namespace Koi {
 
@@ -80,6 +81,8 @@ namespace Koi {
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			this->SuspendLayout();
+			this->FormClosing += gcnew System::Windows::Forms::FormClosingEventHandler(
+				this, &Ventana2::Ventana2_FormClosing);
 			// 
 			// labelBienvenida
 			// 
@@ -141,7 +144,7 @@ namespace Koi {
 			// 
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
 			this->pictureBox1->Location = System::Drawing::Point(-24, -12);
-			this->pictureBox1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->pictureBox1->Margin = System::Windows::Forms::Padding(2);
 			this->pictureBox1->Name = L"pictureBox1";
 			this->pictureBox1->Size = System::Drawing::Size(111, 105);
 			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
@@ -152,7 +155,7 @@ namespace Koi {
 			// 
 			this->button1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Right));
 			this->button1->Location = System::Drawing::Point(8, 263);
-			this->button1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->button1->Margin = System::Windows::Forms::Padding(2);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(353, 55);
 			this->button1->TabIndex = 7;
@@ -166,7 +169,7 @@ namespace Koi {
 				| System::Windows::Forms::AnchorStyles::Left));
 			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
 			this->pictureBox2->Location = System::Drawing::Point(1, -25);
-			this->pictureBox2->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->pictureBox2->Margin = System::Windows::Forms::Padding(2);
 			this->pictureBox2->Name = L"pictureBox2";
 			this->pictureBox2->Size = System::Drawing::Size(400, 390);
 			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
@@ -178,8 +181,7 @@ namespace Koi {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(14)), static_cast<System::Int32>(static_cast<System::Byte>(14)),
-				static_cast<System::Int32>(static_cast<System::Byte>(14)));
+			this->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
 			this->ClientSize = System::Drawing::Size(600, 390);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->checkedListBox1);
@@ -189,8 +191,8 @@ namespace Koi {
 			this->Controls->Add(this->pictureBox2);
 			this->Controls->Add(this->label2);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
-			this->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
-			this->MaximizeBox = false;
+			this->ImeMode = System::Windows::Forms::ImeMode::NoControl;
+			this->Margin = System::Windows::Forms::Padding(2);
 			this->MinimumSize = System::Drawing::Size(614, 423);
 			this->Name = L"Ventana2";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
@@ -204,6 +206,11 @@ namespace Koi {
 
 		}
 #pragma endregion
+	
+	private: System::Void Ventana2_FormClosing(System::Object^ sender,
+			System::Windows::Forms::FormClosingEventArgs^ e) {
+			LiberarMemoria(arbol);
+	}
 
 	private: System::Void Ventana2_Load(System::Object^ sender, System::EventArgs^ e) {
 		label1->Text = gcnew System::String(("Bienvenid@ " + arbol->usuario.username + "!").c_str());
@@ -243,9 +250,11 @@ namespace Koi {
 				checkedListBox1->SetItemChecked(i, false);
 			}
 		}
-		else if (checkedListBox1->CheckedItems->Count > 10){
-			MessageBox::Show("Error. Debe tildar como maximo 10 juegos como favoritos", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
-			for (int i = 0; i < checkedListBox1->CheckedItems->Count; i++) {
+		else if (checkedListBox1->CheckedItems->Count > 10) {
+			MessageBox::Show("Error. Debe tildar como máximo 10 juegos como favoritos",
+				"Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+
+			for (int i = 0; i < checkedListBox1->Items->Count; i++) {
 				checkedListBox1->SetItemChecked(i, false);
 			}
 		}
@@ -258,8 +267,13 @@ namespace Koi {
 				posicion = BuscarJuego(aux);
 				arbol->usuario.lista = NuevoJuego(juego[posicion]);
 			}
+
 			aux = PublisherFavorito();
 			QuickSort(juego, 0, CANT_JUEGOS - 1, aux);
+
+			Ventana3^ Ov = gcnew Ventana3();
+			Ov->Show();
+			Application::OpenForms[1]->Hide();
 		}
 	}
 };

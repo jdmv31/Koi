@@ -12,7 +12,69 @@ bool aux = true;
 int *ID = new int [10];
 nodo2* heap = nullptr;
 
-void QuickSort(juegos vec[], int inicio, int fin, string publisherFav) {
+
+int CantidadEtiquetas(string nombre) {
+    int acum = 0;
+    int j = 0;
+
+    for (int i = 0; i < CANT_JUEGOS; i++) {
+        while (juego[i].generos[j] != -1) {
+            if (nombre == to_string(juego[i].generos[j])) {
+                acum++;
+                break;
+            }
+
+            j++;
+        }
+        j = 0;
+    }
+
+    return acum;
+}
+
+int CantidadPublisher(string nombre) {
+    int cont = 0;
+    for (int i = 0; i < CANT_JUEGOS; i++) {
+        if (juego[i].publisher == nombre)
+            cont++;
+    }
+
+    return cont;
+}
+
+void LiberarMemoria(nodo*& arbol) {
+    if (arbol == nullptr) {
+        return;
+    }
+
+    LiberarMemoria(arbol->izq);
+    LiberarMemoria(arbol->der);
+
+    nodo2* actual = arbol->usuario.lista;
+    while (actual != nullptr) {
+        nodo2* siguiente = actual->siguiente;
+        delete actual;               
+        actual = siguiente; 
+    }
+    arbol->usuario.lista = nullptr;
+
+
+    delete arbol;
+    arbol = nullptr; 
+}
+
+
+bool compararJuegos(juegos& a,juegos& b,string publisherFav) {
+    bool aEsFav = (a.publisher == publisherFav);
+    bool bEsFav = (b.publisher == publisherFav);
+
+    if (aEsFav && !bEsFav) return true;
+    if (!aEsFav && bEsFav) return false;
+
+    return a.nombre < b.nombre;
+}
+
+void QuickSort(juegos vec[], int inicio, int fin,string publisherFav) {
     if (inicio >= fin) return;
 
     int izq = inicio;
@@ -20,13 +82,11 @@ void QuickSort(juegos vec[], int inicio, int fin, string publisherFav) {
     juegos pivote = vec[(inicio + fin) / 2];
 
     while (izq <= der) {
-        while (vec[izq].publisher == publisherFav ||
-            (vec[izq].publisher != publisherFav && pivote.publisher != publisherFav && vec[izq].publisher < pivote.publisher)) {
+        while (compararJuegos(vec[izq], pivote, publisherFav)) {
             izq++;
         }
 
-        while (vec[der].publisher == publisherFav ||
-            (vec[der].publisher != publisherFav && pivote.publisher != publisherFav && vec[der].publisher > pivote.publisher)) {
+        while (compararJuegos(pivote, vec[der], publisherFav)) {
             der--;
         }
 
@@ -140,7 +200,6 @@ string GeneroAString(int genero) {
     case Shooter: return "Shooter";
     case Indie: return "Indie";
     case MundoAbierto: return "Mundo Abierto";
-    default: return "Desconocido";
     }
 }
 
