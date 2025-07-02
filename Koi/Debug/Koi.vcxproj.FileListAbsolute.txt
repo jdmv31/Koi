@@ -22,3 +22,4 @@ C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\Debug\Koi.sage.resources
 C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\Debug\Koi.Recurso.resources
 C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\Debug\Koi.sage.resources
 C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\Debug\Koi.Ventana3.resources
+C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\Debug\Koi.Ventana3.resources
