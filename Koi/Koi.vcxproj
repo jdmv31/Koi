@@ -124,6 +124,7 @@
     <ClCompile Include="Ventana2.cpp" />
     <ClCompile Include="Ventana3.cpp" />
     <ClCompile Include="VentanaPrincipal.cpp" />
+    <ClCompile Include="VentanaUsuarios.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="funciones.h" />
@@ -135,6 +136,9 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="VentanaPrincipal.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="VentanaUsuarios.h">
       <FileType>CppForm</FileType>
     </ClInclude>
   </ItemGroup>
@@ -150,6 +154,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="VentanaPrincipal.resx">
       <DependentUpon>VentanaPrincipal.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaUsuarios.resx">
+      <DependentUpon>VentanaUsuarios.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

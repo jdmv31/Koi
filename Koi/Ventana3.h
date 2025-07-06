@@ -2,6 +2,8 @@
 #include "funciones.h"
 #include <cstdlib>
 #include <string>
+#include <msclr/marshal_cppstd.h>
+#include "VentanaUsuarios.h"
 
 namespace Koi {
 
@@ -118,8 +120,9 @@ namespace Koi {
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(75, 23);
 			this->button2->TabIndex = 34;
-			this->button2->Text = L"button2";
+			this->button2->Text = L"Usuarios";
 			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &Ventana3::button2_Click);
 			// 
 			// Ventana3
 			// 
@@ -152,7 +155,7 @@ namespace Koi {
 	}
 
 	private: System::Void Ventana3_Load(System::Object^ sender, System::EventArgs^ e) {
-		for (int i = 0; i < CANT_JUEGOS; ++i) {
+		for (int i = 0; i < CANT_JUEGOS; i++) {
 			std::string texto = juego[i].nombre +
 				" | Géneros: " + GenerosString(juego[i].generos) +
 				" | Calidad: " + std::to_string(juego[i].calidad) + " / 5";
@@ -197,6 +200,28 @@ namespace Koi {
 		delete [] aux;
 		aux = nullptr;
 
+	}
+	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+		bool aux2;
+		nodo* temp = arbol;
+
+		for (int i = 0; i < 14; i++) {
+			if (generos[i] == " - 1")
+				break;
+
+			string aux = generos[i];
+			aux2 = Busqueda(temp, aux);
+			if (aux2)
+				break;
+
+		}
+
+		if (!aux2)
+			MessageBox::Show("Error. No se han encontrado usuarios con gustos similares", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+		else {
+			VentanaUsuarios^ Ov = gcnew VentanaUsuarios();
+			Ov->Show();
+		}
 	}
 };
 }

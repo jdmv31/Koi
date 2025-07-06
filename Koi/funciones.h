@@ -52,11 +52,20 @@ struct nodo {
 	nodo* der;
 };
 
+struct nodo3 {
+	int dato;
+	nodo3* siguiente;
+};
+
 extern nodo *arbol;
 extern juegos juego[CANT_JUEGOS];
 extern int *ID;
 extern bool aux;
 extern nodo2* heap;
+extern std::string generos[14];
+extern std::string username;
+extern nodo3* lista_aux;
+extern nodo3* heap_aux;
 
 void PreCargarJuegos(int n);
 void GenerarArbol(nodo*& arbol);
@@ -74,3 +83,8 @@ void LiberarMemoria(nodo*& arbol);
 int CantidadPublisher(std::string nombre);
 int CantidadEtiquetas(std::string nombre, int elemento);
 bool PublisherRegistrado(std::string nombre, int cant);
+bool GeneroComun(std::string nombre, int i);
+bool GenerosFavoritos(int cant, std::string nombre);
+bool Busqueda(nodo* temp, std::string nombre);
+void CrearNodoAux(int dato);
+bool NodoRegistrado(int dato);

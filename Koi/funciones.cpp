@@ -11,7 +11,68 @@ juegos juego[CANT_JUEGOS];
 bool aux = true;
 int *ID = new int [10];
 nodo2* heap = nullptr;
+string generos[14];
+string username;
+nodo3* lista_aux = nullptr;
+nodo3* heap_aux = nullptr;
 
+bool NodoRegistrado(int dato) {
+    nodo3* actual = heap_aux;
+    while (actual != nullptr) {
+        if (actual->dato == dato)
+            return true;
+        actual = actual->siguiente;
+    }
+    return false;
+}
+
+void CrearNodoAux(int dato) {
+    nodo3* nuevo = new nodo3;
+    nuevo->dato = dato;
+    nuevo->siguiente = heap_aux;
+    heap_aux = nuevo;
+}
+
+bool Busqueda(nodo* temp, std::string nombre) {
+    if (temp == nullptr)
+        return false;
+    else {
+        nodo2* aux = temp->usuario.lista;
+        while (aux != nullptr) {
+            for (int j = 0; j < 4; j++) {
+                if (aux->dato.generos[j] == -1)
+                    break;
+
+                if (nombre == GeneroAString(aux->dato.generos[j]))
+                    return true;
+            }
+            aux = aux->siguiente;
+        }
+        Busqueda(temp->izq,nombre);
+        Busqueda(temp->der,nombre);
+    }
+}
+
+bool GenerosFavoritos(int cant, std::string nombre) {
+    for (int i = 0; i < cant; i++) {
+        if (generos[i] == nombre)
+            return true;
+    }
+    return false;
+}
+
+bool GeneroComun(std::string nombre, int i) {
+    for (int j = 0; j < 4; j++) {
+        if (juego[i].generos[j] == -1)
+            break;
+        string genero = GeneroAString(juego[i].generos[j]);
+
+        if (nombre == genero) {
+            return true;
+        }
+    }
+    return false;
+}
 
 bool PublisherRegistrado(string nombre, int cant) {
     for (int i = 0; i < cant; i++) {
@@ -218,11 +279,10 @@ nodo2* NuevoJuego(juegos juego) {
 }
 
 nodo* CrearNodo(int id, int indice) {
-    srand(time(NULL));
     nodo* nuevonodo = new nodo();
     nuevonodo->usuario.ID = id;
     int aux = 0, aux2 = 0;
-    aux = rand() % 6 + 3; // josue: cada usuario precargado tendra entre 3 y 6 juegos favoritos tildados
+    aux = rand() % 4 + 1; // josue: cada usuario precargado tendra entre 4 y 1 juegos favoritos tildados
     for (int i = 0; i < aux; i++) {
         aux2 = rand() % 50 + 1;
         aux2 -= 1;

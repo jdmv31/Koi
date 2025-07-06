@@ -1,39 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Nicole Flores\\Desktop\\clonekoi\\Koi\\",
+  "WorkspaceRootPath": "C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|C:\\Users\\Nicole Flores\\Desktop\\clonekoi\\Koi\\Koi\\Ventana2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
-      "RelativeMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|solutionrelative:Koi\\Ventana2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|C:\\Users\\Nicole Flores\\Desktop\\clonekoi\\Koi\\Koi\\funciones.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|solutionrelative:Koi\\funciones.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\funciones.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|solutionrelative:Koi\\funciones.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-=======
-      "AbsoluteMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|C:\\Users\\Nicole Flores\\Desktop\\clonekoi\\Koi\\Koi\\Ventana2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|solutionrelative:Koi\\Ventana2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|C:\\Users\\Nicole Flores\\Desktop\\clonekoi\\Koi\\Koi\\VentanaPrincipal.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|solutionrelative:Koi\\VentanaPrincipal.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|C:\\Users\\Nicole Flores\\Desktop\\clonekoi\\Koi\\Koi\\Ventana3.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
-      "RelativeMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|solutionrelative:Koi\\Ventana3.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|C:\\Users\\Nicole Flores\\Desktop\\clonekoi\\Koi\\Koi\\Ventana3.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|solutionrelative:Koi\\Ventana3.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|C:\\Users\\Nicole Flores\\Desktop\\clonekoi\\Koi\\Koi\\funciones.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\funciones.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|solutionrelative:Koi\\funciones.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
->>>>>>> 6117a5c36923a5b350cc3f830fc4784ea96ab296
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\VentanaUsuarios.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
+      "RelativeMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|solutionrelative:Koi\\VentanaUsuarios.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\VentanaUsuarios.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|solutionrelative:Koi\\VentanaUsuarios.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\Ventana3.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{306C7053-FC2E-A3DB-8144-83AFC7BB18D7}|Koi\\Koi.vcxproj|solutionrelative:Koi\\Ventana3.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,110 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 2,
-=======
-              "DocumentIndex": 3,
-              "Title": "VentanaPrincipal.h",
-              "DocumentMoniker": "C:\\Users\\Nicole Flores\\Desktop\\clonekoi\\Koi\\Koi\\VentanaPrincipal.h",
-              "RelativeDocumentMoniker": "Koi\\VentanaPrincipal.h",
-              "ToolTip": "C:\\Users\\Nicole Flores\\Desktop\\clonekoi\\Koi\\Koi\\VentanaPrincipal.h",
-              "RelativeToolTip": "Koi\\VentanaPrincipal.h",
-              "ViewState": "AgIAAAEBAAAAAAAAAAAewAkBAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-07-01T02:56:56.722Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Ventana2.h [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Nicole Flores\\Desktop\\clonekoi\\Koi\\Koi\\Ventana2.h",
-              "RelativeDocumentMoniker": "Koi\\Ventana2.h",
-              "ToolTip": "C:\\Users\\Nicole Flores\\Desktop\\clonekoi\\Koi\\Koi\\Ventana2.h [Dise\u00F1o]*",
-              "RelativeToolTip": "Koi\\Ventana2.h [Dise\u00F1o]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-07-01T02:45:39.27Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Ventana2.h",
-              "DocumentMoniker": "C:\\Users\\Nicole Flores\\Desktop\\clonekoi\\Koi\\Koi\\Ventana2.h",
-              "RelativeDocumentMoniker": "Koi\\Ventana2.h",
-              "ToolTip": "C:\\Users\\Nicole Flores\\Desktop\\clonekoi\\Koi\\Koi\\Ventana2.h*",
-              "RelativeToolTip": "Koi\\Ventana2.h*",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAuwM0AAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-07-01T01:19:39.132Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
->>>>>>> 6117a5c36923a5b350cc3f830fc4784ea96ab296
-              "Title": "funciones.h",
-              "DocumentMoniker": "C:\\Users\\Nicole Flores\\Desktop\\clonekoi\\Koi\\Koi\\funciones.h",
-              "RelativeDocumentMoniker": "Koi\\funciones.h",
-              "ToolTip": "C:\\Users\\Nicole Flores\\Desktop\\clonekoi\\Koi\\Koi\\funciones.h",
-              "RelativeToolTip": "Koi\\funciones.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAALAAAAAAAAAA==",
+              "Title": "VentanaUsuarios.h [Design]",
+              "DocumentMoniker": "C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\VentanaUsuarios.h",
+              "RelativeDocumentMoniker": "Koi\\VentanaUsuarios.h",
+              "ToolTip": "C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\VentanaUsuarios.h [Design]",
+              "RelativeToolTip": "Koi\\VentanaUsuarios.h [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-07-01T01:23:55.321Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-06T19:17:36.854Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "funciones.cpp",
-              "DocumentMoniker": "C:\\Users\\Nicole Flores\\Desktop\\clonekoi\\Koi\\Koi\\funciones.cpp",
-              "RelativeDocumentMoniker": "Koi\\funciones.cpp",
-              "ToolTip": "C:\\Users\\Nicole Flores\\Desktop\\clonekoi\\Koi\\Koi\\funciones.cpp",
-              "RelativeToolTip": "Koi\\funciones.cpp",
-              "ViewState": "AgIAALcAAAAAAAAAAAAAAMgAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-07-01T01:21:48.794Z"
-            },
-            {
-              "$type": "Document",
-<<<<<<< HEAD
               "DocumentIndex": 0,
-=======
-              "DocumentIndex": 5,
->>>>>>> 6117a5c36923a5b350cc3f830fc4784ea96ab296
-              "Title": "Ventana3.h",
-              "DocumentMoniker": "C:\\Users\\Nicole Flores\\Desktop\\clonekoi\\Koi\\Koi\\Ventana3.h",
-              "RelativeDocumentMoniker": "Koi\\Ventana3.h",
-              "ToolTip": "C:\\Users\\Nicole Flores\\Desktop\\clonekoi\\Koi\\Koi\\Ventana3.h",
-              "RelativeToolTip": "Koi\\Ventana3.h",
-              "ViewState": "AgIAAKkAAAAAAAAAAAAowL8AAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-07-01T01:18:40.289Z",
+              "Title": "funciones.cpp",
+              "DocumentMoniker": "C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\funciones.cpp",
+              "RelativeDocumentMoniker": "Koi\\funciones.cpp",
+              "ToolTip": "C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\funciones.cpp",
+              "RelativeToolTip": "Koi\\funciones.cpp",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-07-06T18:34:49.878Z",
               "EditorCaption": ""
-<<<<<<< HEAD
-=======
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Ventana3.h [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Nicole Flores\\Desktop\\clonekoi\\Koi\\Koi\\Ventana3.h",
-              "RelativeDocumentMoniker": "Koi\\Ventana3.h",
-              "ToolTip": "C:\\Users\\Nicole Flores\\Desktop\\clonekoi\\Koi\\Koi\\Ventana3.h [Dise\u00F1o]",
-              "RelativeToolTip": "Koi\\Ventana3.h [Dise\u00F1o]",
+              "DocumentIndex": 2,
+              "Title": "VentanaUsuarios.h",
+              "DocumentMoniker": "C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\VentanaUsuarios.h",
+              "RelativeDocumentMoniker": "Koi\\VentanaUsuarios.h",
+              "ToolTip": "C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\VentanaUsuarios.h",
+              "RelativeToolTip": "Koi\\VentanaUsuarios.h",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAowKIAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-07-01T01:14:12.827Z",
-              "EditorCaption": " [Dise\u00F1o]"
->>>>>>> 6117a5c36923a5b350cc3f830fc4784ea96ab296
+              "WhenOpened": "2025-07-06T16:46:50.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Ventana3.h",
+              "DocumentMoniker": "C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\Ventana3.h",
+              "RelativeDocumentMoniker": "Koi\\Ventana3.h",
+              "ToolTip": "C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\Ventana3.h",
+              "RelativeToolTip": "Koi\\Ventana3.h",
+              "ViewState": "AgIAAMUAAAAAAAAAAAAtwNkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-07-06T02:31:01.443Z",
+              "EditorCaption": ""
             }
           ]
         }
