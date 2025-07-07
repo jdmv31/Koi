@@ -39,10 +39,11 @@ namespace Koi {
 		}
 	private: System::Windows::Forms::CheckedListBox^ checkedListBox1;
 	private: System::Windows::Forms::PictureBox^ pictureBox2;
-	private: System::Windows::Forms::CheckedListBox^ checkedListBox2;
+
 	private: System::Windows::Forms::CheckedListBox^ checkedListBox3;
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::Button^ button2;
+	private: System::Windows::Forms::CheckedListBox^ checkedListBox2;
 	protected:
 
 	private:
@@ -70,63 +71,82 @@ namespace Koi {
 			// 
 			// checkedListBox1
 			// 
+			this->checkedListBox1->CheckOnClick = true;
+			this->checkedListBox1->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->checkedListBox1->Font = (gcnew System::Drawing::Font(L"MS Reference Sans Serif", 11, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
 			this->checkedListBox1->FormattingEnabled = true;
-			this->checkedListBox1->Location = System::Drawing::Point(53, 131);
+			this->checkedListBox1->Location = System::Drawing::Point(80, 202);
+			this->checkedListBox1->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->checkedListBox1->Name = L"checkedListBox1";
-			this->checkedListBox1->Size = System::Drawing::Size(362, 229);
+			this->checkedListBox1->Size = System::Drawing::Size(541, 345);
 			this->checkedListBox1->TabIndex = 0;
 			this->checkedListBox1->SelectedIndexChanged += gcnew System::EventHandler(this, &Ventana3::checkedListBox1_SelectedIndexChanged);
 			// 
 			// pictureBox2
 			// 
 			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
-			this->pictureBox2->Location = System::Drawing::Point(-15, -15);
+			this->pictureBox2->Location = System::Drawing::Point(-22, -23);
+			this->pictureBox2->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->pictureBox2->Name = L"pictureBox2";
-			this->pictureBox2->Size = System::Drawing::Size(153, 106);
+			this->pictureBox2->Size = System::Drawing::Size(230, 163);
 			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
 			this->pictureBox2->TabIndex = 30;
 			this->pictureBox2->TabStop = false;
 			// 
 			// checkedListBox2
 			// 
+			this->checkedListBox2->CheckOnClick = true;
+			this->checkedListBox2->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->checkedListBox2->Font = (gcnew System::Drawing::Font(L"MS Reference Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
 			this->checkedListBox2->FormattingEnabled = true;
-			this->checkedListBox2->Location = System::Drawing::Point(449, 186);
+			this->checkedListBox2->Location = System::Drawing::Point(695, 202);
+			this->checkedListBox2->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->checkedListBox2->Name = L"checkedListBox2";
-			this->checkedListBox2->Size = System::Drawing::Size(195, 94);
+			this->checkedListBox2->Size = System::Drawing::Size(290, 142);
 			this->checkedListBox2->TabIndex = 31;
 			// 
 			// checkedListBox3
 			// 
+			this->checkedListBox3->CheckOnClick = true;
+			this->checkedListBox3->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->checkedListBox3->Font = (gcnew System::Drawing::Font(L"MS Reference Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
 			this->checkedListBox3->FormattingEnabled = true;
-			this->checkedListBox3->Location = System::Drawing::Point(449, 302);
+			this->checkedListBox3->Location = System::Drawing::Point(695, 405);
+			this->checkedListBox3->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->checkedListBox3->Name = L"checkedListBox3";
-			this->checkedListBox3->Size = System::Drawing::Size(195, 94);
+			this->checkedListBox3->Size = System::Drawing::Size(290, 142);
 			this->checkedListBox3->TabIndex = 32;
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(257, 43);
+			this->button1->Location = System::Drawing::Point(695, 74);
+			this->button1->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(75, 23);
+			this->button1->Size = System::Drawing::Size(112, 35);
 			this->button1->TabIndex = 33;
 			this->button1->Text = L"button1";
 			this->button1->UseVisualStyleBackColor = true;
 			// 
 			// button2
 			// 
-			this->button2->Location = System::Drawing::Point(395, 43);
+			this->button2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button2.BackgroundImage")));
+			this->button2->Location = System::Drawing::Point(901, 74);
+			this->button2->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(75, 23);
+			this->button2->Size = System::Drawing::Size(112, 35);
 			this->button2->TabIndex = 34;
 			this->button2->Text = L"button2";
 			this->button2->UseVisualStyleBackColor = true;
 			// 
 			// Ventana3
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
-			this->ClientSize = System::Drawing::Size(733, 434);
+			this->ClientSize = System::Drawing::Size(1100, 668);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->checkedListBox3);
@@ -134,6 +154,7 @@ namespace Koi {
 			this->Controls->Add(this->pictureBox2);
 			this->Controls->Add(this->checkedListBox1);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
+			this->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->Name = L"Ventana3";
 			this->Text = L"Koi";
 			this->FormClosing += gcnew System::Windows::Forms::FormClosingEventHandler(this, &Ventana3::Ventana3_FormClosing);

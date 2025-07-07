@@ -95,17 +95,18 @@ namespace Koi {
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			this->SuspendLayout();
-			this->FormClosing += gcnew System::Windows::Forms::FormClosingEventHandler(
-				this, &VentanaPrincipal::VentanaPrincipal_FormClosing);
 			// 
 			// button1
 			// 
+			this->button1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button1.BackgroundImage")));
+			this->button1->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->button1->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
 			this->button1->Font = (gcnew System::Drawing::Font(L"Nirmala Text", 10));
+			this->button1->ImageKey = L"(ninguno)";
 			this->button1->Location = System::Drawing::Point(491, 542);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(324, 56);
+			this->button1->Size = System::Drawing::Size(324, 73);
 			this->button1->TabIndex = 2;
-			this->button1->Text = L"Registrar";
 			this->button1->UseVisualStyleBackColor = true;
 			this->button1->Click += gcnew System::EventHandler(this, &VentanaPrincipal::button1_Click);
 			// 
@@ -247,6 +248,7 @@ namespace Koi {
 			this->Name = L"VentanaPrincipal";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Koi";
+			this->FormClosing += gcnew System::Windows::Forms::FormClosingEventHandler(this, &VentanaPrincipal::VentanaPrincipal_FormClosing);
 			this->Load += gcnew System::EventHandler(this, &VentanaPrincipal::VentanaPrincipal_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->EndInit();
