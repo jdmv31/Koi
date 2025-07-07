@@ -118,6 +118,7 @@ namespace Koi {
 			this->dataGridView1->Size = System::Drawing::Size(736, 150);
 			this->dataGridView1->TabIndex = 31;
 			this->dataGridView1->UseWaitCursor = true;
+			this->dataGridView1->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &VentanaUsuarios::dataGridView1_CellContentClick);
 			// 
 			// ID
 			// 
@@ -208,5 +209,7 @@ namespace Koi {
 		PreOrder(arbol->der);
 	}
 
+private: System::Void dataGridView1_CellContentClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {
+}
 };
 }

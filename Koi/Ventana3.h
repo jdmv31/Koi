@@ -40,13 +40,24 @@ namespace Koi {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::CheckedListBox^ checkedListBox1;
+
 	private: System::Windows::Forms::PictureBox^ pictureBox2;
 
 	private: System::Windows::Forms::CheckedListBox^ checkedListBox3;
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::Button^ button2;
 	private: System::Windows::Forms::CheckedListBox^ checkedListBox2;
+	private: System::Windows::Forms::DataGridView^ dataGridView1;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column1;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column2;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column3;
+
+
+
+
+
+
+
 	protected:
 
 	private:
@@ -63,36 +74,25 @@ namespace Koi {
 		void InitializeComponent(void)
 		{
 			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(Ventana3::typeid));
-			this->checkedListBox1 = (gcnew System::Windows::Forms::CheckedListBox());
 			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
 			this->checkedListBox2 = (gcnew System::Windows::Forms::CheckedListBox());
 			this->checkedListBox3 = (gcnew System::Windows::Forms::CheckedListBox());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
+			this->Column1 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column2 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column3 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			this->SuspendLayout();
-			// 
-			// checkedListBox1
-			// 
-			this->checkedListBox1->CheckOnClick = true;
-			this->checkedListBox1->Cursor = System::Windows::Forms::Cursors::Hand;
-			this->checkedListBox1->Font = (gcnew System::Drawing::Font(L"MS Reference Sans Serif", 11, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->checkedListBox1->FormattingEnabled = true;
-			this->checkedListBox1->Location = System::Drawing::Point(77, 253);
-			this->checkedListBox1->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
-			this->checkedListBox1->Name = L"checkedListBox1";
-			this->checkedListBox1->Size = System::Drawing::Size(541, 345);
-			this->checkedListBox1->TabIndex = 0;
-			this->checkedListBox1->SelectedIndexChanged += gcnew System::EventHandler(this, &Ventana3::checkedListBox1_SelectedIndexChanged);
 			// 
 			// pictureBox2
 			// 
 			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
-			this->pictureBox2->Location = System::Drawing::Point(-22, -23);
-			this->pictureBox2->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->pictureBox2->Location = System::Drawing::Point(-15, -15);
 			this->pictureBox2->Name = L"pictureBox2";
-			this->pictureBox2->Size = System::Drawing::Size(230, 163);
+			this->pictureBox2->Size = System::Drawing::Size(153, 106);
 			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
 			this->pictureBox2->TabIndex = 30;
 			this->pictureBox2->TabStop = false;
@@ -106,10 +106,9 @@ namespace Koi {
 				static_cast<System::Byte>(0)));
 			this->checkedListBox2->ForeColor = System::Drawing::Color::Firebrick;
 			this->checkedListBox2->FormattingEnabled = true;
-			this->checkedListBox2->Location = System::Drawing::Point(695, 253);
-			this->checkedListBox2->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->checkedListBox2->Location = System::Drawing::Point(463, 164);
 			this->checkedListBox2->Name = L"checkedListBox2";
-			this->checkedListBox2->Size = System::Drawing::Size(290, 142);
+			this->checkedListBox2->Size = System::Drawing::Size(195, 92);
 			this->checkedListBox2->TabIndex = 31;
 			// 
 			// checkedListBox3
@@ -120,24 +119,16 @@ namespace Koi {
 				static_cast<System::Byte>(0)));
 			this->checkedListBox3->ForeColor = System::Drawing::Color::Firebrick;
 			this->checkedListBox3->FormattingEnabled = true;
-			this->checkedListBox3->Location = System::Drawing::Point(695, 456);
-			this->checkedListBox3->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->checkedListBox3->Location = System::Drawing::Point(463, 296);
 			this->checkedListBox3->Name = L"checkedListBox3";
-			this->checkedListBox3->Size = System::Drawing::Size(290, 142);
+			this->checkedListBox3->Size = System::Drawing::Size(195, 92);
 			this->checkedListBox3->TabIndex = 32;
 			// 
 			// button1
 			// 
-<<<<<<< HEAD
-			this->button1->Location = System::Drawing::Point(669, 164);
-			this->button1->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->button1->Location = System::Drawing::Point(156, 28);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(112, 35);
-=======
-			this->button1->Location = System::Drawing::Point(234, 43);
-			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(110, 23);
->>>>>>> 53a2fbed59a1b9ded5fb1244f47846949e3fcab1
+			this->button1->Size = System::Drawing::Size(73, 15);
 			this->button1->TabIndex = 33;
 			this->button1->Text = L"Te podria gustar";
 			this->button1->UseVisualStyleBackColor = true;
@@ -146,34 +137,76 @@ namespace Koi {
 			// button2
 			// 
 			this->button2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button2.BackgroundImage")));
-			this->button2->Location = System::Drawing::Point(875, 164);
-			this->button2->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->button2->Location = System::Drawing::Point(583, 107);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(112, 35);
+			this->button2->Size = System::Drawing::Size(75, 23);
 			this->button2->TabIndex = 34;
 			this->button2->Text = L"Usuarios";
 			this->button2->UseVisualStyleBackColor = true;
 			this->button2->Click += gcnew System::EventHandler(this, &Ventana3::button2_Click);
 			// 
+			// dataGridView1
+			// 
+			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataGridView1->Columns->AddRange(gcnew cli::array< System::Windows::Forms::DataGridViewColumn^  >(3) {
+				this->Column1,
+					this->Column2, this->Column3
+			});
+			this->dataGridView1->Location = System::Drawing::Point(28, 164);
+			this->dataGridView1->Name = L"dataGridView1";
+			this->dataGridView1->ReadOnly = true;
+			this->dataGridView1->Size = System::Drawing::Size(406, 150);
+			this->dataGridView1->TabIndex = 35;
+			this->dataGridView1->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &Ventana3::dataGridView1_CellContentClick);
+			/*
+						DataGridViewImageColumn^ colImagen = gcnew DataGridViewImageColumn();
+			colImagen->Name = "colImagen";
+			colImagen->HeaderText = "Portada";
+			colImagen->ImageLayout = DataGridViewImageCellLayout::Zoom;
+			dataGridView1->Columns->Add(colImagen);
+			dataGridView1->RowTemplate->Height = 80;
+			colImagen->Width = 120;
+			
+			*/
+			
+			// 
+			// Column1
+			// 
+			this->Column1->HeaderText = L"Nombre";
+			this->Column1->Name = L"Column1";
+			this->Column1->ReadOnly = true;
+			// 
+			// Column2
+			// 
+			this->Column2->HeaderText = L"Generos";
+			this->Column2->Name = L"Column2";
+			this->Column2->ReadOnly = true;
+			// 
+			// Column3
+			// 
+			this->Column3->HeaderText = L"Calidad";
+			this->Column3->Name = L"Column3";
+			this->Column3->ReadOnly = true;
+			// 
 			// Ventana3
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
-			this->ClientSize = System::Drawing::Size(1100, 668);
+			this->ClientSize = System::Drawing::Size(733, 434);
+			this->Controls->Add(this->dataGridView1);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->checkedListBox3);
 			this->Controls->Add(this->checkedListBox2);
 			this->Controls->Add(this->pictureBox2);
-			this->Controls->Add(this->checkedListBox1);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
-			this->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->Name = L"Ventana3";
 			this->Text = L"Koi";
 			this->FormClosing += gcnew System::Windows::Forms::FormClosingEventHandler(this, &Ventana3::Ventana3_FormClosing);
 			this->Load += gcnew System::EventHandler(this, &Ventana3::Ventana3_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();
 			this->ResumeLayout(false);
 
 		}
@@ -188,13 +221,21 @@ namespace Koi {
 
 	private: System::Void Ventana3_Load(System::Object^ sender, System::EventArgs^ e) {
 		for (int i = 0; i < CANT_JUEGOS; i++) {
-			std::string texto = juego[i].nombre +
-				" | Géneros: " + GenerosString(juego[i].generos) +
-				" | Calidad: " + std::to_string(juego[i].calidad) + " / 5";
+			std::string texto;
+			std::string aux;
+			for (int j = 0; j < 4; j++) {
+				if (juego[i].generos[j] == -1)
+					break;
+				texto = GeneroAString(juego[i].generos[j]);
+				texto.append(" ");
+				aux.append(texto);
 
-			checkedListBox1->Items->Add(gcnew String(texto.c_str()));
-
-			std::string aux = juego[i].publisher;
+			}
+			dataGridView1->Rows->Add();
+			//dataGridView1->Rows[i]->Cells["colImagen"]->Value = Image::FromFile("C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\imagenes\\portadas\\terraria.jpg");
+			dataGridView1->Rows[i]->Cells["Column1"]->Value = msclr::interop::marshal_as<String^>(juego[i].nombre);
+			dataGridView1->Rows[i]->Cells["Column2"]->Value = msclr::interop::marshal_as<String^>(aux);
+			dataGridView1->Rows[i]->Cells["Column3"]->Value = juego[i].calidad.ToString();
 
 			if (i == 0) {
 				texto = juego[i].publisher + " (" + std::to_string(CantidadPublisher(juego[i].publisher)) + ")";
@@ -261,6 +302,8 @@ namespace Koi {
 	}
 	private: System::Void pictureBox2_Click(System::Object^ sender, System::EventArgs^ e) {
 
+	}
+	private: System::Void dataGridView1_CellContentClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {
 	}
 };
 }
