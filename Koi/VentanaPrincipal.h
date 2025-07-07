@@ -100,6 +100,7 @@ namespace Koi {
 			// 
 			this->button1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button1.BackgroundImage")));
 			this->button1->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->button1->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->button1->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
 			this->button1->Font = (gcnew System::Drawing::Font(L"Nirmala Text", 10));
 			this->button1->ImageKey = L"(ninguno)";
@@ -189,12 +190,12 @@ namespace Koi {
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Font = (gcnew System::Drawing::Font(L"Palatino Linotype", 28, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->label1->Font = (gcnew System::Drawing::Font(L"Sitka Banner", 28, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label1->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
-			this->label1->Location = System::Drawing::Point(566, 78);
+			this->label1->ForeColor = System::Drawing::Color::WhiteSmoke;
+			this->label1->Location = System::Drawing::Point(577, 82);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(181, 76);
+			this->label1->Size = System::Drawing::Size(163, 81);
 			this->label1->TabIndex = 27;
 			this->label1->Text = L"Login";
 			// 
