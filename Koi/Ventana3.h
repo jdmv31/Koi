@@ -76,7 +76,7 @@ namespace Koi {
 			this->checkedListBox1->Font = (gcnew System::Drawing::Font(L"MS Reference Sans Serif", 11, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->checkedListBox1->FormattingEnabled = true;
-			this->checkedListBox1->Location = System::Drawing::Point(80, 202);
+			this->checkedListBox1->Location = System::Drawing::Point(77, 253);
 			this->checkedListBox1->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->checkedListBox1->Name = L"checkedListBox1";
 			this->checkedListBox1->Size = System::Drawing::Size(541, 345);
@@ -98,10 +98,11 @@ namespace Koi {
 			// 
 			this->checkedListBox2->CheckOnClick = true;
 			this->checkedListBox2->Cursor = System::Windows::Forms::Cursors::Hand;
-			this->checkedListBox2->Font = (gcnew System::Drawing::Font(L"MS Reference Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->checkedListBox2->Font = (gcnew System::Drawing::Font(L"MS Reference Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->checkedListBox2->ForeColor = System::Drawing::Color::Firebrick;
 			this->checkedListBox2->FormattingEnabled = true;
-			this->checkedListBox2->Location = System::Drawing::Point(695, 202);
+			this->checkedListBox2->Location = System::Drawing::Point(695, 253);
 			this->checkedListBox2->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->checkedListBox2->Name = L"checkedListBox2";
 			this->checkedListBox2->Size = System::Drawing::Size(290, 142);
@@ -113,8 +114,9 @@ namespace Koi {
 			this->checkedListBox3->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->checkedListBox3->Font = (gcnew System::Drawing::Font(L"MS Reference Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->checkedListBox3->ForeColor = System::Drawing::Color::Firebrick;
 			this->checkedListBox3->FormattingEnabled = true;
-			this->checkedListBox3->Location = System::Drawing::Point(695, 405);
+			this->checkedListBox3->Location = System::Drawing::Point(695, 456);
 			this->checkedListBox3->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->checkedListBox3->Name = L"checkedListBox3";
 			this->checkedListBox3->Size = System::Drawing::Size(290, 142);
@@ -122,7 +124,7 @@ namespace Koi {
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(695, 74);
+			this->button1->Location = System::Drawing::Point(669, 164);
 			this->button1->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(112, 35);
@@ -133,7 +135,7 @@ namespace Koi {
 			// button2
 			// 
 			this->button2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button2.BackgroundImage")));
-			this->button2->Location = System::Drawing::Point(901, 74);
+			this->button2->Location = System::Drawing::Point(875, 164);
 			this->button2->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(112, 35);
