@@ -66,6 +66,9 @@ extern std::string generos[14];
 extern std::string username;
 extern nodo3* lista_aux;
 extern nodo3* heap_aux;
+extern int cola[CANT_JUEGOS];
+extern int frente;
+extern int final;
 
 void PreCargarJuegos(int n);
 void GenerarArbol(nodo*& arbol);

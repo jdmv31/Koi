@@ -112,10 +112,10 @@ namespace Koi {
 					this->intereses
 			});
 			this->dataGridView1->GridColor = System::Drawing::SystemColors::ActiveCaptionText;
-			this->dataGridView1->Location = System::Drawing::Point(33, 178);
+			this->dataGridView1->Location = System::Drawing::Point(12, 170);
 			this->dataGridView1->Name = L"dataGridView1";
 			this->dataGridView1->ReadOnly = true;
-			this->dataGridView1->Size = System::Drawing::Size(578, 150);
+			this->dataGridView1->Size = System::Drawing::Size(736, 150);
 			this->dataGridView1->TabIndex = 31;
 			this->dataGridView1->UseWaitCursor = true;
 			// 
@@ -145,7 +145,7 @@ namespace Koi {
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
-			this->ClientSize = System::Drawing::Size(714, 449);
+			this->ClientSize = System::Drawing::Size(800, 449);
 			this->Controls->Add(this->dataGridView1);
 			this->Controls->Add(this->pictureBox2);
 			this->Controls->Add(this->label1);

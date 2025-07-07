@@ -120,6 +120,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Descubrimientos.cpp" />
     <ClCompile Include="funciones.cpp" />
     <ClCompile Include="Ventana2.cpp" />
     <ClCompile Include="Ventana3.cpp" />
@@ -127,6 +128,9 @@
     <ClCompile Include="VentanaUsuarios.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Descubrimientos.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="funciones.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Ventana2.h">
@@ -143,6 +147,9 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Descubrimientos.resx">
+      <DependentUpon>Descubrimientos.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Recurso.resx" />
     <EmbeddedResource Include="Resource.resx" />
     <EmbeddedResource Include="sage.resx" />

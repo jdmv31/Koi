@@ -4,6 +4,7 @@
 #include <string>
 #include <msclr/marshal_cppstd.h>
 #include "VentanaUsuarios.h"
+#include "Descubrimientos.h"
 
 namespace Koi {
 
@@ -88,6 +89,7 @@ namespace Koi {
 			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
 			this->pictureBox2->TabIndex = 30;
 			this->pictureBox2->TabStop = false;
+			this->pictureBox2->Click += gcnew System::EventHandler(this, &Ventana3::pictureBox2_Click);
 			// 
 			// checkedListBox2
 			// 
@@ -107,12 +109,13 @@ namespace Koi {
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(257, 43);
+			this->button1->Location = System::Drawing::Point(234, 43);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(75, 23);
+			this->button1->Size = System::Drawing::Size(110, 23);
 			this->button1->TabIndex = 33;
-			this->button1->Text = L"button1";
+			this->button1->Text = L"Te podria gustar";
 			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &Ventana3::button1_Click);
 			// 
 			// button2
 			// 
@@ -222,6 +225,13 @@ namespace Koi {
 			VentanaUsuarios^ Ov = gcnew VentanaUsuarios();
 			Ov->Show();
 		}
+	}
+	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+		Descubrimientos^ Ov = gcnew Descubrimientos();
+		Ov->Show();
+	}
+	private: System::Void pictureBox2_Click(System::Object^ sender, System::EventArgs^ e) {
+
 	}
 };
 }
