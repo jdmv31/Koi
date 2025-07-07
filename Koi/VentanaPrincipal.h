@@ -274,6 +274,7 @@ namespace Koi {
 		arbol->usuario.apellido = msclr::interop::marshal_as<std::string>(txtApellido->Text);
 		arbol->usuario.username = msclr::interop::marshal_as<std::string>(txtUsername->Text);
 		arbol->usuario.password = msclr::interop::marshal_as<std::string>(txtPassword->Text);
+		username = arbol->usuario.username;
 
 		if (arbol->usuario.password.empty() || arbol->usuario.username.empty()
 			|| arbol->usuario.nombre.empty() || arbol->usuario.apellido.empty()) {
@@ -343,6 +344,9 @@ private: System::Void VentanaPrincipal_Load(System::Object^ sender, System::Even
 		}
 
 		PreCargarJuegos(i);
+	}
+	for (int i = 0; i < 14; i++) {
+		generos[i] = "-1";
 	}
 }
 

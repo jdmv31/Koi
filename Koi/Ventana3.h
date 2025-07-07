@@ -2,6 +2,9 @@
 #include "funciones.h"
 #include <cstdlib>
 #include <string>
+#include <msclr/marshal_cppstd.h>
+#include "VentanaUsuarios.h"
+#include "Descubrimientos.h"
 
 namespace Koi {
 
@@ -93,6 +96,7 @@ namespace Koi {
 			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
 			this->pictureBox2->TabIndex = 30;
 			this->pictureBox2->TabStop = false;
+			this->pictureBox2->Click += gcnew System::EventHandler(this, &Ventana3::pictureBox2_Click);
 			// 
 			// checkedListBox2
 			// 
@@ -124,13 +128,20 @@ namespace Koi {
 			// 
 			// button1
 			// 
+<<<<<<< HEAD
 			this->button1->Location = System::Drawing::Point(669, 164);
 			this->button1->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(112, 35);
+=======
+			this->button1->Location = System::Drawing::Point(234, 43);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(110, 23);
+>>>>>>> 53a2fbed59a1b9ded5fb1244f47846949e3fcab1
 			this->button1->TabIndex = 33;
-			this->button1->Text = L"button1";
+			this->button1->Text = L"Te podria gustar";
 			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &Ventana3::button1_Click);
 			// 
 			// button2
 			// 
@@ -140,8 +151,9 @@ namespace Koi {
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(112, 35);
 			this->button2->TabIndex = 34;
-			this->button2->Text = L"button2";
+			this->button2->Text = L"Usuarios";
 			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &Ventana3::button2_Click);
 			// 
 			// Ventana3
 			// 
@@ -175,18 +187,27 @@ namespace Koi {
 	}
 
 	private: System::Void Ventana3_Load(System::Object^ sender, System::EventArgs^ e) {
-		for (int i = 0; i < CANT_JUEGOS; ++i) {
+		for (int i = 0; i < CANT_JUEGOS; i++) {
 			std::string texto = juego[i].nombre +
 				" | Géneros: " + GenerosString(juego[i].generos) +
 				" | Calidad: " + std::to_string(juego[i].calidad) + " / 5";
 
 			checkedListBox1->Items->Add(gcnew String(texto.c_str()));
 
-			texto = juego[i].publisher + " (" + std::to_string(CantidadPublisher(juego[i].publisher)) + ")";
-			checkedListBox3->Items->Add(gcnew String(texto.c_str()));
+			std::string aux = juego[i].publisher;
+
+			if (i == 0) {
+				texto = juego[i].publisher + " (" + std::to_string(CantidadPublisher(juego[i].publisher)) + ")";
+				checkedListBox3->Items->Add(gcnew String(texto.c_str()));
+			}
+			else if (!PublisherRegistrado(juego[i].publisher, i)) {
+				texto = juego[i].publisher + " (" + std::to_string(CantidadPublisher(juego[i].publisher)) + ")";
+				checkedListBox3->Items->Add(gcnew String(texto.c_str()));
+
+			}
 		}
 
-		string* aux = new string[15];
+		string* aux = new string[14];
 
 		aux[0] = "FPS";
 		aux[1] = "MOBA";
@@ -196,21 +217,49 @@ namespace Koi {
 		aux[5] = "SurvivalHorror";
 		aux[6] = "Plataformas";
 		aux[7] = "Roguelike";
-		aux[8] = "Estrategia";
-		aux[9] = "Carreras";
-		aux[10] = "Peleas";
-		aux[11] = "Sandbox";
-		aux[12] = "Shooter";
-		aux[13] = "Indie";
-		aux[14] = "MundoAbierto";
+		aux[8] = "Carreras";
+		aux[9] = "Peleas";
+		aux[10] = "Sandbox";
+		aux[11] = "Shooter";
+		aux[12] = "Indie";
+		aux[13] = "MundoAbierto";
 
-		for (int i = 0; i < 15; i++) {
-			std::string texto = aux[i] + " (" + std::to_string(CantidadEtiquetas(aux[i])) + ")";
+		for (int i = 0; i < 14; i++) {
+			std::string texto = aux[i] + " (" + std::to_string(CantidadEtiquetas(aux[i], i)) + ")";
 			checkedListBox2->Items->Add(gcnew String(texto.c_str()));
 		}
 
 		delete [] aux;
 		aux = nullptr;
+
+	}
+	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+		bool aux2;
+		nodo* temp = arbol;
+
+		for (int i = 0; i < 14; i++) {
+			if (generos[i] == " - 1")
+				break;
+
+			string aux = generos[i];
+			aux2 = Busqueda(temp, aux);
+			if (aux2)
+				break;
+
+		}
+
+		if (!aux2)
+			MessageBox::Show("Error. No se han encontrado usuarios con gustos similares", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+		else {
+			VentanaUsuarios^ Ov = gcnew VentanaUsuarios();
+			Ov->Show();
+		}
+	}
+	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+		Descubrimientos^ Ov = gcnew Descubrimientos();
+		Ov->Show();
+	}
+	private: System::Void pictureBox2_Click(System::Object^ sender, System::EventArgs^ e) {
 
 	}
 };

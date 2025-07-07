@@ -243,6 +243,7 @@ namespace Koi {
 		heap = nullptr;
 		String^ aux2;
 		arbol->usuario.lista = nullptr;
+		int cont = 0;
 		// josue: al extraer el nombre del juego en la checkedlist se va a buscar su posicion
 		// en el arreglo juegos para insertarlo sin problemas en la lista enlazada
 
@@ -268,6 +269,19 @@ namespace Koi {
 				aux = msclr::interop::marshal_as<std::string>(nombre);
 				posicion = BuscarJuego(aux);
 				arbol->usuario.lista = NuevoJuego(juego[posicion]);
+				for (int j = 0; j < 4; j++) {
+					if (juego[posicion].generos[j] == -1)
+						break;
+					else {
+						string aux = GeneroAString(juego[posicion].generos[j]);
+						if (cont == 0)
+							generos[0] = aux;
+						else if (!GenerosFavoritos(cont,aux)) {
+							generos[cont] = aux;
+						}
+						cont++;
+					}
+				}
 			}
 
 			aux = PublisherFavorito();
