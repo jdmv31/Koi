@@ -327,12 +327,7 @@ private: System::Void VentanaPrincipal_Load(System::Object^ sender, System::Even
 	srand(time(NULL));
 	float aux, aux2;
 	for (int i = 0; i < CANT_JUEGOS; i++) {
-		do {
-			aux = rand() % 200 + 1;
-			aux2 = rand() % 200 + 1;
-			if (aux > aux2)
-				juego[i].precio = aux / aux2;
-		} while (aux < aux2);
+		juego[i].precio = rand() % 60 + 1;
 
 		juego[i].ID = i + 1;
 		juego[i].peso = rand() % 50000 + 1;

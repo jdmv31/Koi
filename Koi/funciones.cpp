@@ -16,8 +16,24 @@ string username;
 nodo3* lista_aux = nullptr;
 nodo3* heap_aux = nullptr;
 int cola[CANT_JUEGOS];
-int frente = 0;
+int global = 0;
 int final = -1;
+int indices = 0;
+
+bool RegistradoEnHistorial(int dato) {
+    for (int i = 0; i < indices; i++){
+        if (dato == cola[i])
+            return true;
+    }
+    
+    return false;
+}
+
+void Encolar(int dato) {
+    final = (final + 1) % CANT_JUEGOS;
+    cola[final] = dato;
+    indices++;
+}
 
 bool NodoRegistrado(int dato) {
     nodo3* actual = heap_aux;
@@ -433,7 +449,7 @@ void PreCargarJuegos(int n) {
         juego[n].descripcion = "Juego de moda y estilo en Roblox donde los jugadores compiten por el mejor outfit.";
         break;
     case 4:
-        juego[n].nombre = "Mario Kart";
+        juego[n].nombre = "Mario Kart 8 Deluxe";
         juego[n].publisher = "Nintendo";
         juego[n].generos[0] = Carreras;
         juego[n].descripcion = "Las clásicas carreras de karts con personajes de Mario y objetos caóticos.";
@@ -592,7 +608,7 @@ void PreCargarJuegos(int n) {
         juego[n].descripcion = "Roguelike de acción donde Zagreus escapa del Inframundo con ayuda de los dioses.";
         break;
     case 27:
-        juego[n].nombre = "Risk of Rain";
+        juego[n].nombre = "Risk of Rain 2";
         juego[n].publisher = "Hopoo Games";
         juego[n].generos[0] = Roguelike;
         juego[n].generos[1] = Indie;

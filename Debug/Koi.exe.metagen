@@ -1,4 +1,5 @@
   Koi.Descubrimientos.resources - Embedded, ContainedInManifestFile, 
+  Koi.Historial.resources - Embedded, ContainedInManifestFile, 
   Koi.Recurso.resources - Embedded, ContainedInManifestFile, 
   Koi.Resource.resources - Embedded, ContainedInManifestFile, 
   Koi.sage.resources - Embedded, ContainedInManifestFile, 
@@ -22,6 +23,9 @@ Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=
 Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
 Class Koi.Descubrimientos: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Koi.Historial: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class Koi.VentanaUsuarios: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit

@@ -122,6 +122,7 @@
   <ItemGroup>
     <ClCompile Include="Descubrimientos.cpp" />
     <ClCompile Include="funciones.cpp" />
+    <ClCompile Include="Historial.cpp" />
     <ClCompile Include="Ventana2.cpp" />
     <ClCompile Include="Ventana3.cpp" />
     <ClCompile Include="VentanaPrincipal.cpp" />
@@ -132,6 +133,9 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="funciones.h" />
+    <ClInclude Include="Historial.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="resource.h" />
     <ClInclude Include="Ventana2.h">
       <FileType>CppForm</FileType>
@@ -150,6 +154,9 @@
     <EmbeddedResource Include="Descubrimientos.resx">
       <DependentUpon>Descubrimientos.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Historial.resx">
+      <DependentUpon>Historial.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Recurso.resx" />
     <EmbeddedResource Include="Resource.resx" />
     <EmbeddedResource Include="sage.resx" />
@@ -167,6 +174,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Image Include="..\imagenes\portadas\Balatro.jpg" />
     <Image Include="logopetit.png" />
     <Image Include="portada.png" />
     <Image Include="sagee.png" />

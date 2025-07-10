@@ -5,6 +5,7 @@
 #include <msclr/marshal_cppstd.h>
 #include "VentanaUsuarios.h"
 #include "Descubrimientos.h"
+#include "Historial.h"
 
 namespace Koi {
 
@@ -51,6 +52,7 @@ namespace Koi {
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column1;
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column2;
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column3;
+	private: System::Windows::Forms::TextBox^ textBox1;
 
 
 
@@ -83,6 +85,7 @@ namespace Koi {
 			this->Column1 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Column2 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Column3 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			this->SuspendLayout();
@@ -106,10 +109,11 @@ namespace Koi {
 				static_cast<System::Byte>(0)));
 			this->checkedListBox2->ForeColor = System::Drawing::Color::Firebrick;
 			this->checkedListBox2->FormattingEnabled = true;
-			this->checkedListBox2->Location = System::Drawing::Point(463, 164);
+			this->checkedListBox2->Location = System::Drawing::Point(540, 164);
 			this->checkedListBox2->Name = L"checkedListBox2";
-			this->checkedListBox2->Size = System::Drawing::Size(195, 92);
+			this->checkedListBox2->Size = System::Drawing::Size(209, 92);
 			this->checkedListBox2->TabIndex = 31;
+			this->checkedListBox2->SelectedIndexChanged += gcnew System::EventHandler(this, &Ventana3::checkedListBox2_SelectedIndexChanged);
 			// 
 			// checkedListBox3
 			// 
@@ -119,10 +123,11 @@ namespace Koi {
 				static_cast<System::Byte>(0)));
 			this->checkedListBox3->ForeColor = System::Drawing::Color::Firebrick;
 			this->checkedListBox3->FormattingEnabled = true;
-			this->checkedListBox3->Location = System::Drawing::Point(463, 296);
+			this->checkedListBox3->Location = System::Drawing::Point(540, 294);
 			this->checkedListBox3->Name = L"checkedListBox3";
-			this->checkedListBox3->Size = System::Drawing::Size(195, 92);
+			this->checkedListBox3->Size = System::Drawing::Size(209, 92);
 			this->checkedListBox3->TabIndex = 32;
+			this->checkedListBox3->SelectedIndexChanged += gcnew System::EventHandler(this, &Ventana3::checkedListBox3_SelectedIndexChanged);
 			// 
 			// button1
 			// 
@@ -152,23 +157,23 @@ namespace Koi {
 				this->Column1,
 					this->Column2, this->Column3
 			});
-			this->dataGridView1->Location = System::Drawing::Point(28, 164);
+			this->dataGridView1->Location = System::Drawing::Point(12, 177);
 			this->dataGridView1->Name = L"dataGridView1";
 			this->dataGridView1->ReadOnly = true;
-			this->dataGridView1->Size = System::Drawing::Size(406, 150);
+			this->dataGridView1->Size = System::Drawing::Size(502, 150);
 			this->dataGridView1->TabIndex = 35;
 			this->dataGridView1->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &Ventana3::dataGridView1_CellContentClick);
-			/*
-						DataGridViewImageColumn^ colImagen = gcnew DataGridViewImageColumn();
-			colImagen->Name = "colImagen";
-			colImagen->HeaderText = "Portada";
-			colImagen->ImageLayout = DataGridViewImageCellLayout::Zoom;
-			dataGridView1->Columns->Add(colImagen);
-			dataGridView1->RowTemplate->Height = 80;
-			colImagen->Width = 120;
-			
-			*/
-			
+			this->dataGridView1->CellClick += gcnew DataGridViewCellEventHandler(this, &Ventana3::dataGridView1_CellClick);
+			dataGridView1->AllowUserToAddRows = false;
+			dataGridView1->AllowUserToDeleteRows = false;
+			dataGridView1->ReadOnly = true; 
+			dataGridView1->AllowUserToOrderColumns = false;
+			dataGridView1->AllowUserToResizeColumns = false;
+			dataGridView1->AllowUserToResizeRows = false;
+			dataGridView1->MultiSelect = false;
+			dataGridView1->SelectionMode = DataGridViewSelectionMode::FullRowSelect;
+			dataGridView1->Cursor = Cursors::Hand;
+			dataGridView1->AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode::AllCells;
 			// 
 			// Column1
 			// 
@@ -188,12 +193,20 @@ namespace Koi {
 			this->Column3->Name = L"Column3";
 			this->Column3->ReadOnly = true;
 			// 
+			// textBox1
+			// 
+			this->textBox1->Location = System::Drawing::Point(12, 139);
+			this->textBox1->Name = L"textBox1";
+			this->textBox1->Size = System::Drawing::Size(423, 20);
+			this->textBox1->TabIndex = 36;
+			// 
 			// Ventana3
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
 			this->ClientSize = System::Drawing::Size(733, 434);
+			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->dataGridView1);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
@@ -208,6 +221,7 @@ namespace Koi {
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();
 			this->ResumeLayout(false);
+			this->PerformLayout();
 
 		}
 #pragma endregion
@@ -220,6 +234,10 @@ namespace Koi {
 	}
 
 	private: System::Void Ventana3_Load(System::Object^ sender, System::EventArgs^ e) {
+		for each(DataGridViewColumn ^ column in dataGridView1->Columns)
+		{
+			column->SortMode = DataGridViewColumnSortMode::NotSortable;
+		}
 		for (int i = 0; i < CANT_JUEGOS; i++) {
 			std::string texto;
 			std::string aux;
@@ -296,14 +314,50 @@ namespace Koi {
 			Ov->Show();
 		}
 	}
+	private: System::Void dataGridView1_CellClick(System::Object^ sender, DataGridViewCellEventArgs^ e) {
+		if (e->RowIndex < 0) return;
+
+		DataGridViewRow^ row = dataGridView1->Rows[e->RowIndex];
+		String^ seleccion = safe_cast<String^>(row->Cells["Column1"]->Value);
+
+		std::string aux = msclr::interop::marshal_as<std::string>(seleccion);
+		int pos = BuscarJuego(aux);
+		global = pos;
+		if (pos >= 0 && pos < CANT_JUEGOS) {
+			pos = juego[pos].ID;
+			if (final == -1 || !RegistradoEnHistorial(pos))
+				Encolar(pos);
+			Historial^ Ov = gcnew Historial();
+			Ov->Show();
+		}
+	}
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-		Descubrimientos^ Ov = gcnew Descubrimientos();
-		Ov->Show();
+
+		if (final == -1)
+			MessageBox::Show("Error. Visite los juegos registrados antes de visualizar tu lista de descubrimientos", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+		else {
+			Descubrimientos^ Ov = gcnew Descubrimientos();
+			Ov->Show();
+		}
 	}
 	private: System::Void pictureBox2_Click(System::Object^ sender, System::EventArgs^ e) {
 
 	}
 	private: System::Void dataGridView1_CellContentClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {
 	}
+private: System::Void checkedListBox2_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
+	if (checkedListBox2->CheckedItems->Count != 0) {
+		for (int i = 0; i < checkedListBox2->Items->Count; i++) {
+			checkedListBox2->SetItemChecked(i, false);
+		}
+	}
+}
+private: System::Void checkedListBox3_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
+	if (checkedListBox3->CheckedItems->Count != 0) {
+		for (int i = 0; i < checkedListBox3->Items->Count; i++) {
+			checkedListBox3->SetItemChecked(i, false);
+		}
+	}
+}
 };
 }

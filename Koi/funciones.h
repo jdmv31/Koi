@@ -25,8 +25,8 @@ struct juegos {
 	string nombre;
 	string publisher;
 	string descripcion;
-	float precio;
-	float peso;
+	int peso;
+	short precio;
 	short calidad;
 	short ID;
 	Genero generos[4];
@@ -67,8 +67,9 @@ extern std::string username;
 extern nodo3* lista_aux;
 extern nodo3* heap_aux;
 extern int cola[CANT_JUEGOS];
-extern int frente;
+extern int global;
 extern int final;
+extern int indices;
 
 void PreCargarJuegos(int n);
 void GenerarArbol(nodo*& arbol);
@@ -91,3 +92,5 @@ bool GenerosFavoritos(int cant, std::string nombre);
 bool Busqueda(nodo* temp, std::string nombre);
 void CrearNodoAux(int dato);
 bool NodoRegistrado(int dato);
+bool RegistradoEnHistorial(int dato);
+void Encolar(int dato);
