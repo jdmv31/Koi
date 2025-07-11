@@ -1,6 +1,4 @@
-﻿  Descubrimientos.cpp
-  Historial.cpp
-  Ventana2.cpp
+﻿  Ventana2.cpp
 C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\Ventana2.h(244,11): warning C4101: 'aux2': unreferenced local variable
   (compiling source file 'Ventana2.cpp')
   
@@ -22,11 +20,6 @@ C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\VentanaPrincipal.h(328,13): warning 
   (compiling source file 'VentanaPrincipal.cpp')
   
 C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\VentanaPrincipal.cpp(6,6): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
-  VentanaUsuarios.cpp
-  funciones.cpp
-C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\funciones.cpp(410,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   Generating Code...
-C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\funciones.cpp(296,1): warning C4715: 'GeneroAString': not all control paths return a value
-C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\funciones.cpp(73,1): warning C4715: 'Busqueda': not all control paths return a value
   Descubrimientos.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
   Koi.vcxproj -> C:\Users\josue\OneDrive\Desktop\Koi\Koi\Debug\Koi.exe

@@ -189,7 +189,8 @@ namespace Koi {
 
 		}  
 #pragma endregion  
-	private: System::Void Historial_Load(System::Object^ sender, System::EventArgs^ e) {  
+	private: System::Void Historial_Load(System::Object^ sender, System::EventArgs^ e) { 
+		this->Text = msclr::interop::marshal_as<String^>(juego[global].nombre);
 		label1->Text = gcnew System::String((juego[global].nombre).c_str());  
 		label2->Text = gcnew System::String((juego[global].publisher).c_str());  
 		int aux = static_cast<int>(juego[global].peso);  
@@ -219,6 +220,7 @@ namespace Koi {
 			->ToLower();
 		String^ RutaRelativa = "imagenes\\portadas\\" + nombreJuego + ".jpg";
 		String^ RutaCompleta = Path::Combine(Application::StartupPath, RutaRelativa);
+
 		if (File::Exists(RutaCompleta)) {
 			try {
 				if (pictureBox1->Image != nullptr) {
