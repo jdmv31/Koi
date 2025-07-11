@@ -32,7 +32,7 @@
               "RelativeDocumentMoniker": "Koi\\Ventana3.h",
               "ToolTip": "C:\\Users\\josue\\OneDrive\\Desktop\\Koi\\Koi\\Koi\\Ventana3.h",
               "RelativeToolTip": "Koi\\Ventana3.h",
-              "ViewState": "AgIAAKECAAAAAAAAAAAiwK0CAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAACACAAAAAAAAAAAAAC8CAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-07-11T03:27:05.516Z",
               "EditorCaption": ""
@@ -47,8 +47,7 @@
               "RelativeToolTip": "Koi\\funciones.h",
               "ViewState": "AgIAAEgAAAAAAAAAAAAAAGEAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-07-01T01:23:55.321Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-01T01:23:55.321Z"
             },
             {
               "$type": "Document",
@@ -60,8 +59,7 @@
               "RelativeToolTip": "Koi\\funciones.cpp",
               "ViewState": "AgIAAAoAAAAAAAAAAAAiwCQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-07-01T01:21:48.794Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-01T01:21:48.794Z"
             }
           ]
         }

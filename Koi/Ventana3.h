@@ -460,12 +460,11 @@ namespace Koi {
 						auxiliar.append(texto);
 
 					}
-					dataGridView1->Rows->Add();
-					dataGridView1->Rows[row]->Cells["Column1"]->Value = msclr::interop::marshal_as<String^>(juego[i].nombre);
-					dataGridView1->Rows[row]->Cells["Column2"]->Value = msclr::interop::marshal_as<String^>(auxiliar);
-					dataGridView1->Rows[row]->Cells["Column3"]->Value = juego[i].calidad.ToString();
-					dataGridView1->Rows[row]->Cells["Column4"]->Value = juego[i].precio.ToString() + " $";
-					row++;
+					int filas = dataGridView1->Rows->Add();
+					dataGridView1->Rows[filas]->Cells["Column1"]->Value = msclr::interop::marshal_as<String^>(juego[i].nombre);
+					dataGridView1->Rows[filas]->Cells["Column2"]->Value = msclr::interop::marshal_as<String^>(auxiliar);
+					dataGridView1->Rows[filas]->Cells["Column3"]->Value = juego[i].calidad.ToString();
+					dataGridView1->Rows[filas]->Cells["Column4"]->Value = juego[i].precio.ToString() + " $";
 				}
 			}
 		}
@@ -482,11 +481,11 @@ namespace Koi {
 					aux.append(texto);
 
 				}
-				dataGridView1->Rows->Add();
-				dataGridView1->Rows[i]->Cells["Column1"]->Value = msclr::interop::marshal_as<String^>(juego[i].nombre);
-				dataGridView1->Rows[i]->Cells["Column2"]->Value = msclr::interop::marshal_as<String^>(aux);
-				dataGridView1->Rows[i]->Cells["Column3"]->Value = juego[i].calidad.ToString();
-				dataGridView1->Rows[i]->Cells["Column4"]->Value = juego[i].precio.ToString() + " $";
+				int filas = dataGridView1->Rows->Add();
+				dataGridView1->Rows[filas]->Cells["Column1"]->Value = msclr::interop::marshal_as<String^>(juego[i].nombre);
+				dataGridView1->Rows[filas]->Cells["Column2"]->Value = msclr::interop::marshal_as<String^>(aux);
+				dataGridView1->Rows[filas]->Cells["Column3"]->Value = juego[i].calidad.ToString();
+				dataGridView1->Rows[filas]->Cells["Column4"]->Value = juego[i].precio.ToString() + " $";
 			}
 		}
 	}
@@ -525,12 +524,11 @@ namespace Koi {
 						auxiliar.append(texto);
 
 					}
-					dataGridView1->Rows->Add();
-					dataGridView1->Rows[row]->Cells["Column1"]->Value = msclr::interop::marshal_as<String^>(juego[i].nombre);
-					dataGridView1->Rows[row]->Cells["Column2"]->Value = msclr::interop::marshal_as<String^>(auxiliar);
-					dataGridView1->Rows[row]->Cells["Column3"]->Value = juego[i].calidad.ToString();
-					dataGridView1->Rows[row]->Cells["Column4"]->Value = juego[i].precio.ToString() + " $";
-					row++;
+					int filas = dataGridView1->Rows->Add();
+					dataGridView1->Rows[filas]->Cells["Column1"]->Value = msclr::interop::marshal_as<String^>(juego[i].nombre);
+					dataGridView1->Rows[filas]->Cells["Column2"]->Value = msclr::interop::marshal_as<String^>(auxiliar);
+					dataGridView1->Rows[filas]->Cells["Column3"]->Value = juego[i].calidad.ToString();
+					dataGridView1->Rows[filas]->Cells["Column4"]->Value = juego[i].precio.ToString() + " $";
 				}
 			}
 		}
@@ -547,11 +545,11 @@ namespace Koi {
 					aux.append(texto);
 
 				}
-				dataGridView1->Rows->Add();
-				dataGridView1->Rows[i]->Cells["Column1"]->Value = msclr::interop::marshal_as<String^>(juego[i].nombre);
-				dataGridView1->Rows[i]->Cells["Column2"]->Value = msclr::interop::marshal_as<String^>(aux);
-				dataGridView1->Rows[i]->Cells["Column3"]->Value = juego[i].calidad.ToString();
-				dataGridView1->Rows[i]->Cells["Column4"]->Value = juego[i].precio.ToString() + " $";
+				int filas = dataGridView1->Rows->Add();
+				dataGridView1->Rows[filas]->Cells["Column1"]->Value = msclr::interop::marshal_as<String^>(juego[i].nombre);
+				dataGridView1->Rows[filas]->Cells["Column2"]->Value = msclr::interop::marshal_as<String^>(aux);
+				dataGridView1->Rows[filas]->Cells["Column3"]->Value = juego[i].calidad.ToString();
+				dataGridView1->Rows[filas]->Cells["Column4"]->Value = juego[i].precio.ToString() + " $";
 			}
 		}
 	}
@@ -559,6 +557,7 @@ namespace Koi {
 		BubbleSort();
 		dataGridView1->Rows->Clear();
 		trackBar1->Value = 60;
+		textBox1->Text = "";
 		if (checkedListBox3->CheckedItems->Count != 0) {
 			for (int i = 0; i < checkedListBox3->Items->Count; i++) {
 				checkedListBox3->SetItemChecked(i, false);
@@ -580,17 +579,18 @@ namespace Koi {
 				aux.append(texto);
 
 			}
-			dataGridView1->Rows->Add();
-			dataGridView1->Rows[i]->Cells["Column1"]->Value = msclr::interop::marshal_as<String^>(juego[i].nombre);
-			dataGridView1->Rows[i]->Cells["Column2"]->Value = msclr::interop::marshal_as<String^>(aux);
-			dataGridView1->Rows[i]->Cells["Column3"]->Value = juego[i].calidad.ToString();
-			dataGridView1->Rows[i]->Cells["Column4"]->Value = juego[i].precio.ToString() + " $";
+			int filas = dataGridView1->Rows->Add();
+			dataGridView1->Rows[filas]->Cells["Column1"]->Value = msclr::interop::marshal_as<String^>(juego[i].nombre);
+			dataGridView1->Rows[filas]->Cells["Column2"]->Value = msclr::interop::marshal_as<String^>(aux);
+			dataGridView1->Rows[filas]->Cells["Column3"]->Value = juego[i].calidad.ToString();
+			dataGridView1->Rows[filas]->Cells["Column4"]->Value = juego[i].precio.ToString() + " $";
 		}
 	}
 	private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
 		BubbleSort2();
 		dataGridView1->Rows->Clear();
 		trackBar1->Value = 60;
+		textBox1->Text = "";
 		if (checkedListBox3->CheckedItems->Count != 0) {
 			for (int i = 0; i < checkedListBox3->Items->Count; i++) {
 				checkedListBox3->SetItemChecked(i, false);
@@ -613,11 +613,11 @@ namespace Koi {
 				aux.append(texto);
 
 			}
-			dataGridView1->Rows->Add();
-			dataGridView1->Rows[i]->Cells["Column1"]->Value = msclr::interop::marshal_as<String^>(juego[i].nombre);
-			dataGridView1->Rows[i]->Cells["Column2"]->Value = msclr::interop::marshal_as<String^>(aux);
-			dataGridView1->Rows[i]->Cells["Column3"]->Value = juego[i].calidad.ToString();
-			dataGridView1->Rows[i]->Cells["Column4"]->Value = juego[i].precio.ToString() + " $";
+			int filas = dataGridView1->Rows->Add();
+			dataGridView1->Rows[filas]->Cells["Column1"]->Value = msclr::interop::marshal_as<String^>(juego[i].nombre);
+			dataGridView1->Rows[filas]->Cells["Column2"]->Value = msclr::interop::marshal_as<String^>(aux);
+			dataGridView1->Rows[filas]->Cells["Column3"]->Value = juego[i].calidad.ToString();
+			dataGridView1->Rows[filas]->Cells["Column4"]->Value = juego[i].precio.ToString() + " $";
 		}
 	}
 	private: System::Void trackBar1_ValueChanged(System::Object^ sender, System::EventArgs^ e) {
@@ -637,11 +637,11 @@ namespace Koi {
 					aux.append(texto);
 
 				}
-				int row = dataGridView1->Rows->Add();
-				dataGridView1->Rows[row]->Cells["Column1"]->Value = msclr::interop::marshal_as<String^>(juego[i].nombre);
-				dataGridView1->Rows[row]->Cells["Column2"]->Value = msclr::interop::marshal_as<String^>(texto);
-				dataGridView1->Rows[row]->Cells["Column3"]->Value = juego[i].calidad.ToString();
-				dataGridView1->Rows[row]->Cells["Column4"]->Value = juego[i].precio.ToString() + " $";
+				int filas = dataGridView1->Rows->Add();
+				dataGridView1->Rows[filas]->Cells["Column1"]->Value = msclr::interop::marshal_as<String^>(juego[i].nombre);
+				dataGridView1->Rows[filas]->Cells["Column2"]->Value = msclr::interop::marshal_as<String^>(aux);
+				dataGridView1->Rows[filas]->Cells["Column3"]->Value = juego[i].calidad.ToString();
+				dataGridView1->Rows[filas]->Cells["Column4"]->Value = juego[i].precio.ToString() + " $";
 			}
 		}
 	}
@@ -650,6 +650,7 @@ namespace Koi {
 	private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
 		String^ texto = textBox1->Text->Trim();
 		String^ temp = texto;
+		textBox1->Text = "";
 
 		if (String::IsNullOrWhiteSpace(texto)) {
 			MessageBox::Show("Por favor ingrese un término de búsqueda", "Búsqueda",
@@ -671,11 +672,11 @@ namespace Koi {
 				for (int j = 0; j < 4 && juego[i].generos[j] != -1; j++) {
 					generos += GeneroAString(juego[i].generos[j]) + " ";
 				}
-				int fila = dataGridView1->Rows->Add();
-				dataGridView1->Rows[fila]->Cells["Column1"]->Value = nombreJuego;
-				dataGridView1->Rows[fila]->Cells["Column2"]->Value = msclr::interop::marshal_as<String^>(generos);
-				dataGridView1->Rows[fila]->Cells["Column3"]->Value = juego[i].calidad.ToString();
-				dataGridView1->Rows[fila]->Cells["Column4"]->Value = juego[i].precio.ToString() + " $";
+				int filas = dataGridView1->Rows->Add();
+				dataGridView1->Rows[filas]->Cells["Column1"]->Value = nombreJuego;
+				dataGridView1->Rows[filas]->Cells["Column2"]->Value = msclr::interop::marshal_as<String^>(generos);
+				dataGridView1->Rows[filas]->Cells["Column3"]->Value = juego[i].calidad.ToString();
+				dataGridView1->Rows[filas]->Cells["Column4"]->Value = juego[i].precio.ToString() + " $";
 			}
 		}
 		if (!encontrado) {
@@ -690,11 +691,11 @@ namespace Koi {
 				for (int j = 0; j < 4 && juego[i].generos[j] != -1; j++) {
 					generos += GeneroAString(juego[i].generos[j]) + " ";
 				}
-				int fila = dataGridView1->Rows->Add();
-				dataGridView1->Rows[fila]->Cells["Column1"]->Value = nombreJuego;
-				dataGridView1->Rows[fila]->Cells["Column2"]->Value = msclr::interop::marshal_as<String^>(generos);
-				dataGridView1->Rows[fila]->Cells["Column3"]->Value = juego[i].calidad.ToString();
-				dataGridView1->Rows[fila]->Cells["Column4"]->Value = juego[i].precio.ToString() + " $";
+				int filas = dataGridView1->Rows->Add();
+				dataGridView1->Rows[filas]->Cells["Column1"]->Value = nombreJuego;
+				dataGridView1->Rows[filas]->Cells["Column2"]->Value = msclr::interop::marshal_as<String^>(generos);
+				dataGridView1->Rows[filas]->Cells["Column3"]->Value = juego[i].calidad.ToString();
+				dataGridView1->Rows[filas]->Cells["Column4"]->Value = juego[i].precio.ToString() + " $";
 			}
 		}
 	}
