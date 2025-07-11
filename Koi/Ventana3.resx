@@ -747,7 +747,7 @@
   <data name="button2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAADICAYAAADGFbfiAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAAEJ9JREFUeF7t3fezLUtZh/EGCQoIKJIlKoKSQZJFzgoiiERFYiEUKDkJFDldckaC
+        vAAADrwBlbxySQAAEJ9JREFUeF7t3fezLUtZh/EGCQoIKJIlKoKSQZJFzgoiiERFYiEUKDkJFDldckaC
         BAmFgFxBonpFUDImcpD0jwz1VM1Udb31zlq937PCuYfnh0/VvWd3z6xZe6/5znS/Pav9tLVJkqSTavEf
         JEkaYYBIkkoMEElSiQEiSSoxQCRJJQaIJKnEAJEklRggkqQSA0SSVGKASJJKDBBJUokBIkkqMUAkSSUG
         iCSpxACRJJUYIJKkEgNEklRigEiSSgwQSVKJASJJKjFAJEklBogkqcQAkSSVGCCSpBIDRJJUYoBIkkoM
@@ -828,6 +828,21 @@
     <value>True</value>
   </metadata>
   <metadata name="Column3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column4.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column4.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

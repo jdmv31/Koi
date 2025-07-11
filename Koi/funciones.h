@@ -94,3 +94,5 @@ void CrearNodoAux(int dato);
 bool NodoRegistrado(int dato);
 bool RegistradoEnHistorial(int dato);
 void Encolar(int dato);
+void BubbleSort(void);
+void BubbleSort2(void);

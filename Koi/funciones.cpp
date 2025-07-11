@@ -20,6 +20,24 @@ int global = 0;
 int final = -1;
 int indices = 0;
 
+void BubbleSort(void) {
+    for (int i = 0; i < CANT_JUEGOS; i++) {
+        for (int j = 0; j < CANT_JUEGOS - 1; j++) {
+            if (juego[j].calidad < juego[j + 1].calidad)
+                swap(juego[j], juego[j + 1]);
+        }
+    }
+}
+
+void BubbleSort2(void) {
+    for (int i = 0; i < CANT_JUEGOS; i++) {
+        for (int j = 0; j < CANT_JUEGOS - 1; j++) {
+            if (juego[j].calidad > juego[j + 1].calidad)
+                swap(juego[j], juego[j + 1]);
+        }
+    }
+}
+
 bool RegistradoEnHistorial(int dato) {
     for (int i = 0; i < indices; i++){
         if (dato == cola[i])
@@ -281,9 +299,9 @@ string GeneroAString(int genero) {
     case FPS: return "FPS";
     case MOBA: return "MOBA";
     case RPG: return "RPG";
-    case Accion: return "Acción";
+    case Accion: return "Accion";
     case Aventura: return "Aventura";
-    case SurvivalHorror: return "Survival Horror";
+    case SurvivalHorror: return "SurvivalHorror";
     case Plataformas: return "Plataformas";
     case Roguelike: return "Roguelike";
     case Carreras: return "Carreras";
@@ -291,7 +309,7 @@ string GeneroAString(int genero) {
     case Sandbox: return "Sandbox";
     case Shooter: return "Shooter";
     case Indie: return "Indie";
-    case MundoAbierto: return "Mundo Abierto";
+    case MundoAbierto: return "MundoAbierto";
     }
 }
 

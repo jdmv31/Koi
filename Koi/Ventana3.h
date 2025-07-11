@@ -49,10 +49,22 @@ namespace Koi {
 	private: System::Windows::Forms::Button^ button2;
 	private: System::Windows::Forms::CheckedListBox^ checkedListBox2;
 	private: System::Windows::Forms::DataGridView^ dataGridView1;
+
+
+
+	private: System::Windows::Forms::TextBox^ textBox1;
+	private: System::Windows::Forms::Button^ button3;
+	private: System::Windows::Forms::Button^ button4;
+	private: System::Windows::Forms::TrackBar^ trackBar1;
+	private: System::Windows::Forms::Label^ label1;
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column1;
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column2;
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column3;
-	private: System::Windows::Forms::TextBox^ textBox1;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column4;
+	private: System::Windows::Forms::Label^ label2;
+	private: System::Windows::Forms::Button^ button5;
+
+
 
 	protected:
 
@@ -60,7 +72,7 @@ namespace Koi {
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
-		System::ComponentModel::Container ^components;
+		System::ComponentModel::Container^ components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -79,9 +91,17 @@ namespace Koi {
 			this->Column1 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Column2 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Column3 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column4 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
+			this->button3 = (gcnew System::Windows::Forms::Button());
+			this->button4 = (gcnew System::Windows::Forms::Button());
+			this->trackBar1 = (gcnew System::Windows::Forms::TrackBar());
+			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->label2 = (gcnew System::Windows::Forms::Label());
+			this->button5 = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->trackBar1))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// pictureBox2
@@ -93,7 +113,6 @@ namespace Koi {
 			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
 			this->pictureBox2->TabIndex = 30;
 			this->pictureBox2->TabStop = false;
-			this->pictureBox2->Click += gcnew System::EventHandler(this, &Ventana3::pictureBox2_Click);
 			// 
 			// checkedListBox2
 			// 
@@ -103,11 +122,11 @@ namespace Koi {
 				static_cast<System::Byte>(0)));
 			this->checkedListBox2->ForeColor = System::Drawing::Color::Firebrick;
 			this->checkedListBox2->FormattingEnabled = true;
-			this->checkedListBox2->Location = System::Drawing::Point(540, 164);
+			this->checkedListBox2->Location = System::Drawing::Point(540, 229);
 			this->checkedListBox2->Name = L"checkedListBox2";
-			this->checkedListBox2->Size = System::Drawing::Size(209, 92);
+			this->checkedListBox2->Size = System::Drawing::Size(268, 92);
 			this->checkedListBox2->TabIndex = 31;
-			this->checkedListBox2->SelectedIndexChanged += gcnew System::EventHandler(this, &Ventana3::checkedListBox2_SelectedIndexChanged);
+			this->checkedListBox2->ItemCheck += gcnew System::Windows::Forms::ItemCheckEventHandler(this, &Ventana3::checkedListBox2_ItemCheck);
 			// 
 			// checkedListBox3
 			// 
@@ -117,17 +136,17 @@ namespace Koi {
 				static_cast<System::Byte>(0)));
 			this->checkedListBox3->ForeColor = System::Drawing::Color::Firebrick;
 			this->checkedListBox3->FormattingEnabled = true;
-			this->checkedListBox3->Location = System::Drawing::Point(540, 294);
+			this->checkedListBox3->Location = System::Drawing::Point(540, 365);
 			this->checkedListBox3->Name = L"checkedListBox3";
-			this->checkedListBox3->Size = System::Drawing::Size(209, 92);
+			this->checkedListBox3->Size = System::Drawing::Size(268, 92);
 			this->checkedListBox3->TabIndex = 32;
-			checkedListBox3->ItemCheck += gcnew System::Windows::Forms::ItemCheckEventHandler(this, &Ventana3::checkedListBox3_ItemCheck);
+			this->checkedListBox3->ItemCheck += gcnew System::Windows::Forms::ItemCheckEventHandler(this, &Ventana3::checkedListBox3_ItemCheck);
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(156, 28);
+			this->button1->Location = System::Drawing::Point(110, 427);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(73, 15);
+			this->button1->Size = System::Drawing::Size(116, 47);
 			this->button1->TabIndex = 33;
 			this->button1->Text = L"Te podria gustar";
 			this->button1->UseVisualStyleBackColor = true;
@@ -136,9 +155,9 @@ namespace Koi {
 			// button2
 			// 
 			this->button2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button2.BackgroundImage")));
-			this->button2->Location = System::Drawing::Point(583, 107);
+			this->button2->Location = System::Drawing::Point(296, 427);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(75, 23);
+			this->button2->Size = System::Drawing::Size(118, 47);
 			this->button2->TabIndex = 34;
 			this->button2->Text = L"Usuarios";
 			this->button2->UseVisualStyleBackColor = true;
@@ -147,19 +166,16 @@ namespace Koi {
 			// dataGridView1
 			// 
 			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView1->Columns->AddRange(gcnew cli::array< System::Windows::Forms::DataGridViewColumn^  >(3) {
+			this->dataGridView1->Columns->AddRange(gcnew cli::array< System::Windows::Forms::DataGridViewColumn^  >(4) {
 				this->Column1,
-					this->Column2, this->Column3
+					this->Column2, this->Column3, this->Column4
 			});
 			this->dataGridView1->Location = System::Drawing::Point(12, 177);
 			this->dataGridView1->Name = L"dataGridView1";
 			this->dataGridView1->ReadOnly = true;
-			this->dataGridView1->Size = System::Drawing::Size(502, 150);
+			this->dataGridView1->Size = System::Drawing::Size(502, 215);
 			this->dataGridView1->TabIndex = 35;
-			this->dataGridView1->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &Ventana3::dataGridView1_CellContentClick);
 			this->dataGridView1->CellClick += gcnew DataGridViewCellEventHandler(this, &Ventana3::dataGridView1_CellClick);
-			
-			/*
 			dataGridView1->AllowUserToAddRows = false;
 			dataGridView1->AllowUserToDeleteRows = false;
 			dataGridView1->ReadOnly = true;
@@ -168,10 +184,8 @@ namespace Koi {
 			dataGridView1->AllowUserToResizeRows = false;
 			dataGridView1->MultiSelect = false;
 			dataGridView1->SelectionMode = DataGridViewSelectionMode::FullRowSelect;
-			*/
-			//dataGridView1->Cursor = Cursors::Hand;
-			//dataGridView1->AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode::AllCells;
-			
+			dataGridView1->Cursor = Cursors::Hand;
+			dataGridView1->AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode::AllCells;
 			// 
 			// Column1
 			// 
@@ -191,6 +205,12 @@ namespace Koi {
 			this->Column3->Name = L"Column3";
 			this->Column3->ReadOnly = true;
 			// 
+			// Column4
+			// 
+			this->Column4->HeaderText = L"Precio";
+			this->Column4->Name = L"Column4";
+			this->Column4->ReadOnly = true;
+			// 
 			// textBox1
 			// 
 			this->textBox1->Location = System::Drawing::Point(12, 139);
@@ -198,12 +218,84 @@ namespace Koi {
 			this->textBox1->Size = System::Drawing::Size(423, 20);
 			this->textBox1->TabIndex = 36;
 			// 
+			// button3
+			// 
+			this->button3->Location = System::Drawing::Point(540, 168);
+			this->button3->Name = L"button3";
+			this->button3->Size = System::Drawing::Size(124, 23);
+			this->button3->TabIndex = 37;
+			this->button3->Text = L"Calidad Descendente";
+			this->button3->UseVisualStyleBackColor = true;
+			this->button3->Click += gcnew System::EventHandler(this, &Ventana3::button3_Click);
+			// 
+			// button4
+			// 
+			this->button4->Location = System::Drawing::Point(684, 168);
+			this->button4->Name = L"button4";
+			this->button4->Size = System::Drawing::Size(124, 23);
+			this->button4->TabIndex = 38;
+			this->button4->Text = L"Calidad Ascendente";
+			this->button4->UseVisualStyleBackColor = true;
+			this->button4->Click += gcnew System::EventHandler(this, &Ventana3::button4_Click);
+			// 
+			// trackBar1
+			// 
+			this->trackBar1->Location = System::Drawing::Point(540, 64);
+			this->trackBar1->Maximum = 60;
+			this->trackBar1->Minimum = 1;
+			this->trackBar1->Name = L"trackBar1";
+			this->trackBar1->Size = System::Drawing::Size(268, 45);
+			this->trackBar1->TabIndex = 39;
+			this->trackBar1->Value = 1;
+			this->trackBar1->Scroll += gcnew System::EventHandler(this, &Ventana3::trackBar1_Scroll);
+			this->trackBar1->ValueChanged += gcnew System::EventHandler(this, &Ventana3::trackBar1_ValueChanged);
+			// 
+			// label1
+			// 
+			this->label1->AutoSize = true;
+			this->label1->Font = (gcnew System::Drawing::Font(L"Segoe UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label1->ForeColor = System::Drawing::SystemColors::ButtonFace;
+			this->label1->Location = System::Drawing::Point(646, 112);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(57, 21);
+			this->label1->TabIndex = 40;
+			this->label1->Text = L"label1";
+			// 
+			// label2
+			// 
+			this->label2->AutoSize = true;
+			this->label2->Font = (gcnew System::Drawing::Font(L"Segoe UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label2->ForeColor = System::Drawing::SystemColors::ButtonFace;
+			this->label2->Location = System::Drawing::Point(606, 28);
+			this->label2->Name = L"label2";
+			this->label2->Size = System::Drawing::Size(141, 21);
+			this->label2->TabIndex = 41;
+			this->label2->Text = L"Rango de Precios";
+			// 
+			// button5
+			// 
+			this->button5->Location = System::Drawing::Point(441, 136);
+			this->button5->Name = L"button5";
+			this->button5->Size = System::Drawing::Size(75, 23);
+			this->button5->TabIndex = 42;
+			this->button5->Text = L"lupa";
+			this->button5->UseVisualStyleBackColor = true;
+			this->button5->Click += gcnew System::EventHandler(this, &Ventana3::button5_Click);
+			// 
 			// Ventana3
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
-			this->ClientSize = System::Drawing::Size(733, 434);
+			this->ClientSize = System::Drawing::Size(941, 515);
+			this->Controls->Add(this->button5);
+			this->Controls->Add(this->label2);
+			this->Controls->Add(this->label1);
+			this->Controls->Add(this->trackBar1);
+			this->Controls->Add(this->button4);
+			this->Controls->Add(this->button3);
 			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->dataGridView1);
 			this->Controls->Add(this->button2);
@@ -218,6 +310,7 @@ namespace Koi {
 			this->Load += gcnew System::EventHandler(this, &Ventana3::Ventana3_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->trackBar1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -228,14 +321,12 @@ namespace Koi {
 		LiberarMemoria(arbol);
 	}
 
-	private: System::Void checkedListBox1_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
-	}
-
 	private: System::Void Ventana3_Load(System::Object^ sender, System::EventArgs^ e) {
 		for each(DataGridViewColumn ^ column in dataGridView1->Columns)
 		{
 			column->SortMode = DataGridViewColumnSortMode::NotSortable;
 		}
+		trackBar1->Value = 60;
 		for (int i = 0; i < CANT_JUEGOS; i++) {
 			std::string texto;
 			std::string aux;
@@ -247,11 +338,11 @@ namespace Koi {
 				aux.append(texto);
 
 			}
-			dataGridView1->Rows->Add();
-			dataGridView1->Rows[i]->Cells["Column1"]->Value = msclr::interop::marshal_as<String^>(juego[i].nombre);
-			dataGridView1->Rows[i]->Cells["Column2"]->Value = msclr::interop::marshal_as<String^>(aux);
-			dataGridView1->Rows[i]->Cells["Column3"]->Value = juego[i].calidad.ToString();
-
+			int filas = dataGridView1->Rows->Add();
+			dataGridView1->Rows[filas]->Cells["Column1"]->Value = msclr::interop::marshal_as<String^>(juego[i].nombre);
+			dataGridView1->Rows[filas]->Cells["Column2"]->Value = msclr::interop::marshal_as<String^>(aux);
+			dataGridView1->Rows[filas]->Cells["Column3"]->Value = juego[i].calidad.ToString();
+			dataGridView1->Rows[filas]->Cells["Column4"]->Value = juego[i].precio.ToString() + " $";
 			if (i == 0) {
 				texto = juego[i].publisher + " (" + std::to_string(CantidadPublisher(juego[i].publisher)) + ")";
 				checkedListBox3->Items->Add(gcnew String(texto.c_str()));
@@ -285,7 +376,7 @@ namespace Koi {
 			checkedListBox2->Items->Add(gcnew String(texto.c_str()));
 		}
 
-		delete [] aux;
+		delete[] aux;
 		aux = nullptr;
 
 	}
@@ -329,7 +420,6 @@ namespace Koi {
 		}
 	}
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-
 		if (final == -1)
 			MessageBox::Show("Error. Visite los juegos registrados antes de visualizar tu lista de descubrimientos", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
 		else {
@@ -337,28 +427,81 @@ namespace Koi {
 			Ov->Show();
 		}
 	}
-	private: System::Void pictureBox2_Click(System::Object^ sender, System::EventArgs^ e) {
+	private: System::Void checkedListBox2_ItemCheck(System::Object^ sender,
+			System::Windows::Forms::ItemCheckEventArgs^ e) {
+		if (e->NewValue == CheckState::Checked) {
+			if (checkedListBox2->CheckedItems->Count != 0) {
+				for (int i = 0; i < checkedListBox2->Items->Count; i++) {
+					checkedListBox2->SetItemChecked(i, false);
+				}
+			}
+			else if (checkedListBox3->CheckedItems->Count != 0) {
+				for (int i = 0; i < checkedListBox3->Items->Count; i++) {
+					checkedListBox3->SetItemChecked(i, false);
+				}
+			}
 
-	}
-	private: System::Void dataGridView1_CellContentClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {
-	
-	
-	}
+			String^ itemText = checkedListBox2->Items[e->Index]->ToString();
+			int pos = itemText->IndexOf("(");
+			String^ nombre = itemText->Substring(0, pos)->Trim();
+			std::string genero = msclr::interop::marshal_as<std::string>(nombre);
+			
+			dataGridView1->Rows->Clear();
+			int row = 0;
+			for (int i = 0; i < CANT_JUEGOS; i++) {
+				if (GeneroComun(genero, i)) {
+					std::string texto;
+					std::string auxiliar;
+					for (int j = 0; j < 4; j++) {
+						if (juego[i].generos[j] == -1)
+							break;
+						texto = GeneroAString(juego[i].generos[j]);
+						texto.append(" ");
+						auxiliar.append(texto);
 
-	private: System::Void checkedListBox2_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
-		if (checkedListBox2->CheckedItems->Count != 0) {
-			for (int i = 0; i < checkedListBox2->Items->Count; i++) {
-				checkedListBox2->SetItemChecked(i, false);
+					}
+					dataGridView1->Rows->Add();
+					dataGridView1->Rows[row]->Cells["Column1"]->Value = msclr::interop::marshal_as<String^>(juego[i].nombre);
+					dataGridView1->Rows[row]->Cells["Column2"]->Value = msclr::interop::marshal_as<String^>(auxiliar);
+					dataGridView1->Rows[row]->Cells["Column3"]->Value = juego[i].calidad.ToString();
+					dataGridView1->Rows[row]->Cells["Column4"]->Value = juego[i].precio.ToString() + " $";
+					row++;
+				}
+			}
+		}
+		else {
+			dataGridView1->Rows->Clear();
+			for (int i = 0; i < CANT_JUEGOS; i++) {
+				std::string texto;
+				std::string aux;
+				for (int j = 0; j < 4; j++) {
+					if (juego[i].generos[j] == -1)
+						break;
+					texto = GeneroAString(juego[i].generos[j]);
+					texto.append(" ");
+					aux.append(texto);
+
+				}
+				dataGridView1->Rows->Add();
+				dataGridView1->Rows[i]->Cells["Column1"]->Value = msclr::interop::marshal_as<String^>(juego[i].nombre);
+				dataGridView1->Rows[i]->Cells["Column2"]->Value = msclr::interop::marshal_as<String^>(aux);
+				dataGridView1->Rows[i]->Cells["Column3"]->Value = juego[i].calidad.ToString();
+				dataGridView1->Rows[i]->Cells["Column4"]->Value = juego[i].precio.ToString() + " $";
 			}
 		}
 	}
 
-	private: System::Void checkedListBox3_ItemCheck(System::Object^ sender, 
+	private: System::Void checkedListBox3_ItemCheck(System::Object^ sender,
 		System::Windows::Forms::ItemCheckEventArgs^ e) {
 		if (e->NewValue == CheckState::Checked) {
 			if (checkedListBox3->CheckedItems->Count != 0) {
 				for (int i = 0; i < checkedListBox3->Items->Count; i++) {
 					checkedListBox3->SetItemChecked(i, false);
+				}
+			}
+			else if (checkedListBox2->CheckedItems->Count != 0) {
+				for (int i = 0; i < checkedListBox2->Items->Count; i++) {
+					checkedListBox2->SetItemChecked(i, false);
 				}
 			}
 
@@ -386,6 +529,7 @@ namespace Koi {
 					dataGridView1->Rows[row]->Cells["Column1"]->Value = msclr::interop::marshal_as<String^>(juego[i].nombre);
 					dataGridView1->Rows[row]->Cells["Column2"]->Value = msclr::interop::marshal_as<String^>(auxiliar);
 					dataGridView1->Rows[row]->Cells["Column3"]->Value = juego[i].calidad.ToString();
+					dataGridView1->Rows[row]->Cells["Column4"]->Value = juego[i].precio.ToString() + " $";
 					row++;
 				}
 			}
@@ -407,6 +551,150 @@ namespace Koi {
 				dataGridView1->Rows[i]->Cells["Column1"]->Value = msclr::interop::marshal_as<String^>(juego[i].nombre);
 				dataGridView1->Rows[i]->Cells["Column2"]->Value = msclr::interop::marshal_as<String^>(aux);
 				dataGridView1->Rows[i]->Cells["Column3"]->Value = juego[i].calidad.ToString();
+				dataGridView1->Rows[i]->Cells["Column4"]->Value = juego[i].precio.ToString() + " $";
+			}
+		}
+	}
+	private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
+		BubbleSort();
+		dataGridView1->Rows->Clear();
+		trackBar1->Value = 60;
+		if (checkedListBox3->CheckedItems->Count != 0) {
+			for (int i = 0; i < checkedListBox3->Items->Count; i++) {
+				checkedListBox3->SetItemChecked(i, false);
+			}
+		}
+		if (checkedListBox2->CheckedItems->Count != 0) {
+			for (int i = 0; i < checkedListBox2->Items->Count; i++) {
+				checkedListBox2->SetItemChecked(i, false);
+			}
+		}
+		for (int i = 0; i < CANT_JUEGOS; i++) {
+			std::string texto;
+			std::string aux;
+			for (int j = 0; j < 4; j++) {
+				if (juego[i].generos[j] == -1)
+					break;
+				texto = GeneroAString(juego[i].generos[j]);
+				texto.append(" ");
+				aux.append(texto);
+
+			}
+			dataGridView1->Rows->Add();
+			dataGridView1->Rows[i]->Cells["Column1"]->Value = msclr::interop::marshal_as<String^>(juego[i].nombre);
+			dataGridView1->Rows[i]->Cells["Column2"]->Value = msclr::interop::marshal_as<String^>(aux);
+			dataGridView1->Rows[i]->Cells["Column3"]->Value = juego[i].calidad.ToString();
+			dataGridView1->Rows[i]->Cells["Column4"]->Value = juego[i].precio.ToString() + " $";
+		}
+	}
+	private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
+		BubbleSort2();
+		dataGridView1->Rows->Clear();
+		trackBar1->Value = 60;
+		if (checkedListBox3->CheckedItems->Count != 0) {
+			for (int i = 0; i < checkedListBox3->Items->Count; i++) {
+				checkedListBox3->SetItemChecked(i, false);
+			}
+		}
+		if (checkedListBox2->CheckedItems->Count != 0) {
+			for (int i = 0; i < checkedListBox2->Items->Count; i++) {
+				checkedListBox2->SetItemChecked(i, false);
+			}
+		}
+
+		for (int i = 0; i < CANT_JUEGOS; i++) {
+			std::string texto;
+			std::string aux;
+			for (int j = 0; j < 4; j++) {
+				if (juego[i].generos[j] == -1)
+					break;
+				texto = GeneroAString(juego[i].generos[j]);
+				texto.append(" ");
+				aux.append(texto);
+
+			}
+			dataGridView1->Rows->Add();
+			dataGridView1->Rows[i]->Cells["Column1"]->Value = msclr::interop::marshal_as<String^>(juego[i].nombre);
+			dataGridView1->Rows[i]->Cells["Column2"]->Value = msclr::interop::marshal_as<String^>(aux);
+			dataGridView1->Rows[i]->Cells["Column3"]->Value = juego[i].calidad.ToString();
+			dataGridView1->Rows[i]->Cells["Column4"]->Value = juego[i].precio.ToString() + " $";
+		}
+	}
+	private: System::Void trackBar1_ValueChanged(System::Object^ sender, System::EventArgs^ e) {
+		int valor = this->trackBar1->Value;
+		label1->Text = String::Format("0 - " + valor.ToString() + " $");
+		dataGridView1->Rows->Clear();
+
+		for (int i = 0; i < CANT_JUEGOS; i++) {
+			std::string texto;
+			std::string aux;
+			if (juego[i].precio <= valor) {
+				for (int j = 0; j < 4; j++) {
+					if (juego[i].generos[j] == -1)
+						break;
+					texto = GeneroAString(juego[i].generos[j]);
+					texto.append(" ");
+					aux.append(texto);
+
+				}
+				int row = dataGridView1->Rows->Add();
+				dataGridView1->Rows[row]->Cells["Column1"]->Value = msclr::interop::marshal_as<String^>(juego[i].nombre);
+				dataGridView1->Rows[row]->Cells["Column2"]->Value = msclr::interop::marshal_as<String^>(texto);
+				dataGridView1->Rows[row]->Cells["Column3"]->Value = juego[i].calidad.ToString();
+				dataGridView1->Rows[row]->Cells["Column4"]->Value = juego[i].precio.ToString() + " $";
+			}
+		}
+	}
+	private: System::Void trackBar1_Scroll(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
+		String^ texto = textBox1->Text->Trim();
+		String^ temp = texto;
+
+		if (String::IsNullOrWhiteSpace(texto)) {
+			MessageBox::Show("Por favor ingrese un término de búsqueda", "Búsqueda",
+				MessageBoxButtons::OK, MessageBoxIcon::Information);
+			return;
+		}
+		else
+			dataGridView1->Rows->Clear();
+
+		texto = texto->ToLower();
+		bool encontrado = false;
+
+		for (int i = 0; i < CANT_JUEGOS; i++) {
+			String^ nombreJuego = msclr::interop::marshal_as<String^>(juego[i].nombre);
+
+			if (nombreJuego->ToLower()->Contains(texto)) {
+				encontrado = true;
+				std::string generos;
+				for (int j = 0; j < 4 && juego[i].generos[j] != -1; j++) {
+					generos += GeneroAString(juego[i].generos[j]) + " ";
+				}
+				int fila = dataGridView1->Rows->Add();
+				dataGridView1->Rows[fila]->Cells["Column1"]->Value = nombreJuego;
+				dataGridView1->Rows[fila]->Cells["Column2"]->Value = msclr::interop::marshal_as<String^>(generos);
+				dataGridView1->Rows[fila]->Cells["Column3"]->Value = juego[i].calidad.ToString();
+				dataGridView1->Rows[fila]->Cells["Column4"]->Value = juego[i].precio.ToString() + " $";
+			}
+		}
+		if (!encontrado) {
+			MessageBox::Show("No se encontraron juegos que coincidan con: " + temp,
+				"Resultados",
+				MessageBoxButtons::OK,
+				MessageBoxIcon::Information);
+			textBox1->Text = "";
+			for (int i = 0; i < CANT_JUEGOS; i++) {
+				String^ nombreJuego = msclr::interop::marshal_as<String^>(juego[i].nombre);
+				std::string generos;
+				for (int j = 0; j < 4 && juego[i].generos[j] != -1; j++) {
+					generos += GeneroAString(juego[i].generos[j]) + " ";
+				}
+				int fila = dataGridView1->Rows->Add();
+				dataGridView1->Rows[fila]->Cells["Column1"]->Value = nombreJuego;
+				dataGridView1->Rows[fila]->Cells["Column2"]->Value = msclr::interop::marshal_as<String^>(generos);
+				dataGridView1->Rows[fila]->Cells["Column3"]->Value = juego[i].calidad.ToString();
+				dataGridView1->Rows[fila]->Cells["Column4"]->Value = juego[i].precio.ToString() + " $";
 			}
 		}
 	}
