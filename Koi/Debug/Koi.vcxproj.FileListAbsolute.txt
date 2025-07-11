@@ -26,3 +26,6 @@ C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\Debug\Koi.Ventana3.resources
 C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\Debug\Koi.VentanaPrincipal.resources
 C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\Debug\Koi.VentanaUsuarios.resources
 C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\Debug\Koi.vcxproj.GenerateResource.cache
+C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\Debug\Koi.Descubrimientos.resources
+C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\Debug\Koi.Historial.resources
+C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\Debug\Koi.VentanaUsuarios.resources
