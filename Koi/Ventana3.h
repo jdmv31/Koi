@@ -63,6 +63,10 @@ namespace Koi {
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column4;
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::Button^ button5;
+	private: System::Windows::Forms::Label^ label3;
+	private: System::Windows::Forms::Label^ label4;
+	private: System::Windows::Forms::Label^ label5;
+
 
 
 
@@ -99,6 +103,9 @@ namespace Koi {
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->button5 = (gcnew System::Windows::Forms::Button());
+			this->label3 = (gcnew System::Windows::Forms::Label());
+			this->label4 = (gcnew System::Windows::Forms::Label());
+			this->label5 = (gcnew System::Windows::Forms::Label());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->trackBar1))->BeginInit();
@@ -107,9 +114,10 @@ namespace Koi {
 			// pictureBox2
 			// 
 			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
-			this->pictureBox2->Location = System::Drawing::Point(-15, -15);
+			this->pictureBox2->Location = System::Drawing::Point(-22, -23);
+			this->pictureBox2->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->pictureBox2->Name = L"pictureBox2";
-			this->pictureBox2->Size = System::Drawing::Size(153, 106);
+			this->pictureBox2->Size = System::Drawing::Size(230, 163);
 			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
 			this->pictureBox2->TabIndex = 30;
 			this->pictureBox2->TabStop = false;
@@ -122,44 +130,52 @@ namespace Koi {
 				static_cast<System::Byte>(0)));
 			this->checkedListBox2->ForeColor = System::Drawing::Color::Firebrick;
 			this->checkedListBox2->FormattingEnabled = true;
-			this->checkedListBox2->Location = System::Drawing::Point(540, 229);
+			this->checkedListBox2->Location = System::Drawing::Point(804, 341);
+			this->checkedListBox2->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->checkedListBox2->Name = L"checkedListBox2";
-			this->checkedListBox2->Size = System::Drawing::Size(268, 92);
+			this->checkedListBox2->Size = System::Drawing::Size(403, 140);
 			this->checkedListBox2->TabIndex = 31;
 			this->checkedListBox2->ItemCheck += gcnew System::Windows::Forms::ItemCheckEventHandler(this, &Ventana3::checkedListBox2_ItemCheck);
 			// 
 			// checkedListBox3
 			// 
+			this->checkedListBox3->BorderStyle = System::Windows::Forms::BorderStyle::None;
 			this->checkedListBox3->CheckOnClick = true;
 			this->checkedListBox3->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->checkedListBox3->Font = (gcnew System::Drawing::Font(L"MS Reference Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->checkedListBox3->ForeColor = System::Drawing::Color::Firebrick;
 			this->checkedListBox3->FormattingEnabled = true;
-			this->checkedListBox3->Location = System::Drawing::Point(540, 365);
+			this->checkedListBox3->Location = System::Drawing::Point(804, 540);
+			this->checkedListBox3->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->checkedListBox3->Name = L"checkedListBox3";
-			this->checkedListBox3->Size = System::Drawing::Size(268, 92);
+			this->checkedListBox3->Size = System::Drawing::Size(403, 170);
 			this->checkedListBox3->TabIndex = 32;
 			this->checkedListBox3->ItemCheck += gcnew System::Windows::Forms::ItemCheckEventHandler(this, &Ventana3::checkedListBox3_ItemCheck);
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(110, 427);
+			this->button1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button1.BackgroundImage")));
+			this->button1->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->button1->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
+			this->button1->Location = System::Drawing::Point(804, 20);
+			this->button1->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(116, 47);
+			this->button1->Size = System::Drawing::Size(92, 83);
 			this->button1->TabIndex = 33;
-			this->button1->Text = L"Te podria gustar";
 			this->button1->UseVisualStyleBackColor = true;
 			this->button1->Click += gcnew System::EventHandler(this, &Ventana3::button1_Click);
 			// 
 			// button2
 			// 
 			this->button2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button2.BackgroundImage")));
-			this->button2->Location = System::Drawing::Point(296, 427);
+			this->button2->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Zoom;
+			this->button2->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
+			this->button2->Location = System::Drawing::Point(1043, 29);
+			this->button2->Margin = System::Windows::Forms::Padding(0);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(118, 47);
+			this->button2->Size = System::Drawing::Size(92, 68);
 			this->button2->TabIndex = 34;
-			this->button2->Text = L"Usuarios";
 			this->button2->UseVisualStyleBackColor = true;
 			this->button2->Click += gcnew System::EventHandler(this, &Ventana3::button2_Click);
 			// 
@@ -170,59 +186,66 @@ namespace Koi {
 				this->Column1,
 					this->Column2, this->Column3, this->Column4
 			});
-			this->dataGridView1->Location = System::Drawing::Point(12, 177);
+			this->dataGridView1->Location = System::Drawing::Point(56, 195);
+			this->dataGridView1->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->dataGridView1->Name = L"dataGridView1";
 			this->dataGridView1->ReadOnly = true;
-			this->dataGridView1->Size = System::Drawing::Size(502, 215);
+			this->dataGridView1->RowHeadersWidth = 62;
+			this->dataGridView1->Size = System::Drawing::Size(661, 515);
 			this->dataGridView1->TabIndex = 35;
-			this->dataGridView1->CellClick += gcnew DataGridViewCellEventHandler(this, &Ventana3::dataGridView1_CellClick);
-			dataGridView1->AllowUserToAddRows = false;
-			dataGridView1->AllowUserToDeleteRows = false;
-			dataGridView1->ReadOnly = true;
-			dataGridView1->AllowUserToOrderColumns = false;
-			dataGridView1->AllowUserToResizeColumns = false;
-			dataGridView1->AllowUserToResizeRows = false;
-			dataGridView1->MultiSelect = false;
-			dataGridView1->SelectionMode = DataGridViewSelectionMode::FullRowSelect;
-			dataGridView1->Cursor = Cursors::Hand;
-			dataGridView1->AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode::AllCells;
 			// 
 			// Column1
 			// 
 			this->Column1->HeaderText = L"Nombre";
+			this->Column1->MinimumWidth = 8;
 			this->Column1->Name = L"Column1";
 			this->Column1->ReadOnly = true;
+			this->Column1->Width = 150;
 			// 
 			// Column2
 			// 
 			this->Column2->HeaderText = L"Generos";
+			this->Column2->MinimumWidth = 8;
 			this->Column2->Name = L"Column2";
 			this->Column2->ReadOnly = true;
+			this->Column2->Width = 150;
 			// 
 			// Column3
 			// 
 			this->Column3->HeaderText = L"Calidad";
+			this->Column3->MinimumWidth = 8;
 			this->Column3->Name = L"Column3";
 			this->Column3->ReadOnly = true;
+			this->Column3->Width = 150;
 			// 
 			// Column4
 			// 
 			this->Column4->HeaderText = L"Precio";
+			this->Column4->MinimumWidth = 8;
 			this->Column4->Name = L"Column4";
 			this->Column4->ReadOnly = true;
+			this->Column4->Width = 150;
 			// 
 			// textBox1
 			// 
-			this->textBox1->Location = System::Drawing::Point(12, 139);
+			this->textBox1->BackColor = System::Drawing::SystemColors::Window;
+			this->textBox1->ForeColor = System::Drawing::Color::Gray;
+			this->textBox1->Location = System::Drawing::Point(208, 46);
+			this->textBox1->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(423, 20);
+			this->textBox1->Size = System::Drawing::Size(459, 26);
 			this->textBox1->TabIndex = 36;
+			this->textBox1->Text = L"Buscar";
+			this->textBox1->TextChanged += gcnew System::EventHandler(this, &Ventana3::textBox1_TextChanged);
+			this->textBox1->Enter += gcnew System::EventHandler(this, &Ventana3::textBox1_Enter);
+			this->textBox1->Leave += gcnew System::EventHandler(this, &Ventana3::textBox1_Leave);
 			// 
 			// button3
 			// 
-			this->button3->Location = System::Drawing::Point(540, 168);
+			this->button3->Location = System::Drawing::Point(812, 250);
+			this->button3->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(124, 23);
+			this->button3->Size = System::Drawing::Size(186, 35);
 			this->button3->TabIndex = 37;
 			this->button3->Text = L"Calidad Descendente";
 			this->button3->UseVisualStyleBackColor = true;
@@ -230,9 +253,10 @@ namespace Koi {
 			// 
 			// button4
 			// 
-			this->button4->Location = System::Drawing::Point(684, 168);
+			this->button4->Location = System::Drawing::Point(1021, 250);
+			this->button4->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->button4->Name = L"button4";
-			this->button4->Size = System::Drawing::Size(124, 23);
+			this->button4->Size = System::Drawing::Size(186, 35);
 			this->button4->TabIndex = 38;
 			this->button4->Text = L"Calidad Ascendente";
 			this->button4->UseVisualStyleBackColor = true;
@@ -240,11 +264,13 @@ namespace Koi {
 			// 
 			// trackBar1
 			// 
-			this->trackBar1->Location = System::Drawing::Point(540, 64);
+			this->trackBar1->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
+			this->trackBar1->Location = System::Drawing::Point(812, 182);
+			this->trackBar1->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->trackBar1->Maximum = 60;
 			this->trackBar1->Minimum = 1;
 			this->trackBar1->Name = L"trackBar1";
-			this->trackBar1->Size = System::Drawing::Size(268, 45);
+			this->trackBar1->Size = System::Drawing::Size(282, 69);
 			this->trackBar1->TabIndex = 39;
 			this->trackBar1->Value = 1;
 			this->trackBar1->Scroll += gcnew System::EventHandler(this, &Ventana3::trackBar1_Scroll);
@@ -256,11 +282,13 @@ namespace Koi {
 			this->label1->Font = (gcnew System::Drawing::Font(L"Segoe UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label1->ForeColor = System::Drawing::SystemColors::ButtonFace;
-			this->label1->Location = System::Drawing::Point(646, 112);
+			this->label1->Location = System::Drawing::Point(1124, 182);
+			this->label1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(57, 21);
+			this->label1->Size = System::Drawing::Size(83, 32);
 			this->label1->TabIndex = 40;
 			this->label1->Text = L"label1";
+			this->label1->Click += gcnew System::EventHandler(this, &Ventana3::label1_Click);
 			// 
 			// label2
 			// 
@@ -268,28 +296,69 @@ namespace Koi {
 			this->label2->Font = (gcnew System::Drawing::Font(L"Segoe UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label2->ForeColor = System::Drawing::SystemColors::ButtonFace;
-			this->label2->Location = System::Drawing::Point(606, 28);
+			this->label2->Location = System::Drawing::Point(911, 145);
+			this->label2->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(141, 21);
+			this->label2->Size = System::Drawing::Size(213, 32);
 			this->label2->TabIndex = 41;
 			this->label2->Text = L"Rango de Precios";
 			// 
 			// button5
 			// 
-			this->button5->Location = System::Drawing::Point(441, 136);
+			this->button5->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button5.BackgroundImage")));
+			this->button5->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->button5->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
+			this->button5->Location = System::Drawing::Point(671, 35);
+			this->button5->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->button5->Name = L"button5";
-			this->button5->Size = System::Drawing::Size(75, 23);
+			this->button5->Size = System::Drawing::Size(55, 48);
 			this->button5->TabIndex = 42;
-			this->button5->Text = L"lupa";
 			this->button5->UseVisualStyleBackColor = true;
 			this->button5->Click += gcnew System::EventHandler(this, &Ventana3::button5_Click);
 			// 
+			// label3
+			// 
+			this->label3->AutoSize = true;
+			this->label3->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
+			this->label3->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
+			this->label3->Location = System::Drawing::Point(52, 157);
+			this->label3->Name = L"label3";
+			this->label3->Size = System::Drawing::Size(249, 20);
+			this->label3->TabIndex = 43;
+			this->label3->Tag = L"";
+			this->label3->Text = L"Elije los juegos que mas te gustan";
+			// 
+			// label4
+			// 
+			this->label4->AutoSize = true;
+			this->label4->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
+			this->label4->ForeColor = System::Drawing::SystemColors::Window;
+			this->label4->Location = System::Drawing::Point(1126, 53);
+			this->label4->Name = L"label4";
+			this->label4->Size = System::Drawing::Size(72, 20);
+			this->label4->TabIndex = 44;
+			this->label4->Text = L"Usuarios";
+			this->label4->Click += gcnew System::EventHandler(this, &Ventana3::label4_Click);
+			// 
+			// label5
+			// 
+			this->label5->AutoSize = true;
+			this->label5->ForeColor = System::Drawing::SystemColors::Window;
+			this->label5->Location = System::Drawing::Point(895, 51);
+			this->label5->Name = L"label5";
+			this->label5->Size = System::Drawing::Size(124, 20);
+			this->label5->TabIndex = 45;
+			this->label5->Text = L"Te podria gustar";
+			this->label5->Click += gcnew System::EventHandler(this, &Ventana3::label5_Click);
+			// 
 			// Ventana3
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
-			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::None;
 			this->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
-			this->ClientSize = System::Drawing::Size(941, 515);
+			this->ClientSize = System::Drawing::Size(1300, 760);
+			this->Controls->Add(this->label5);
+			this->Controls->Add(this->label4);
+			this->Controls->Add(this->label3);
 			this->Controls->Add(this->button5);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label1);
@@ -304,6 +373,7 @@ namespace Koi {
 			this->Controls->Add(this->checkedListBox2);
 			this->Controls->Add(this->pictureBox2);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
+			this->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->Name = L"Ventana3";
 			this->Text = L"Koi";
 			this->FormClosing += gcnew System::Windows::Forms::FormClosingEventHandler(this, &Ventana3::Ventana3_FormClosing);
@@ -380,6 +450,8 @@ namespace Koi {
 		aux = nullptr;
 
 	}
+
+		   
 	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
 		bool aux2;
 		nodo* temp = arbol;
@@ -647,9 +719,14 @@ namespace Koi {
 	}
 	private: System::Void trackBar1_Scroll(System::Object^ sender, System::EventArgs^ e) {
 	}
+
+
 	private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
 		String^ texto = textBox1->Text->Trim();
 		String^ temp = texto;
+
+
+
 		textBox1->Text = "";
 
 		if (String::IsNullOrWhiteSpace(texto)) {
@@ -699,5 +776,31 @@ namespace Koi {
 			}
 		}
 	}
+
+		private:
+			System::Void textBox1_Enter(System::Object^ sender, System::EventArgs^ e) {
+				if (this->textBox1->Text == L"Buscar") {
+					this->textBox1->Text = L""; 
+					this->textBox1->ForeColor = System::Drawing::Color::Black;
+				}
+			}
+
+			System::Void textBox1_Leave(System::Object^ sender, System::EventArgs^ e) {
+			
+				if (System::String::IsNullOrWhiteSpace(this->textBox1->Text)) {
+					this->textBox1->Text = L"Buscar"; 
+					this->textBox1->ForeColor = System::Drawing::Color::Gray; 
+				}
+			}
+
+private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+
+}
+private: System::Void label5_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void label4_Click(System::Object^ sender, System::EventArgs^ e) {
+}
 };
 }

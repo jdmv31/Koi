@@ -29,3 +29,4 @@ C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\Debug\Koi.vcxproj.GenerateResource.c
 C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\Debug\Koi.Descubrimientos.resources
 C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\Debug\Koi.Historial.resources
 C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\Debug\Koi.VentanaUsuarios.resources
+C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\Debug\Koi.fondoblanco1.resources

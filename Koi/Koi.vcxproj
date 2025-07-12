@@ -154,6 +154,7 @@
     <EmbeddedResource Include="Descubrimientos.resx">
       <DependentUpon>Descubrimientos.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fondoblanco1.resx" />
     <EmbeddedResource Include="Historial.resx">
       <DependentUpon>Historial.h</DependentUpon>
     </EmbeddedResource>
@@ -175,6 +176,7 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\imagenes\portadas\Balatro.jpg" />
+    <Image Include="fondoven2.jpg" />
     <Image Include="logopetit.png" />
     <Image Include="portada.png" />
     <Image Include="sagee.png" />
