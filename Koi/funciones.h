@@ -96,3 +96,6 @@ bool RegistradoEnHistorial(int dato);
 void Encolar(int dato);
 void BubbleSort(void);
 void BubbleSort2(void);
+int BuscarPosicion(int ID);
+void PriorizarCalidad(int calidad);
+void PriorizarPrecio(int precio);

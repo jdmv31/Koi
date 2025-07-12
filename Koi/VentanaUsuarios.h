@@ -115,10 +115,10 @@ namespace Koi {
 			this->dataGridView1->Location = System::Drawing::Point(12, 170);
 			this->dataGridView1->Name = L"dataGridView1";
 			this->dataGridView1->ReadOnly = true;
-			this->dataGridView1->Size = System::Drawing::Size(736, 150);
+			this->dataGridView1->Size = System::Drawing::Size(736, 205);
 			this->dataGridView1->TabIndex = 31;
-			this->dataGridView1->UseWaitCursor = true;
 			this->dataGridView1->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &VentanaUsuarios::dataGridView1_CellContentClick);
+			dataGridView1->ReadOnly = true;
 			// 
 			// ID
 			// 
@@ -166,6 +166,10 @@ namespace Koi {
 	private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
 	private: System::Void VentanaUsuarios_Load(System::Object^ sender, System::EventArgs^ e) {
+		for each (DataGridViewColumn ^ column in dataGridView1->Columns)
+		{
+			column->SortMode = DataGridViewColumnSortMode::NotSortable;
+		}
 		dataGridView1->Rows->Clear();
 		PreOrder(arbol);
 	}

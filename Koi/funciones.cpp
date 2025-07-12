@@ -20,6 +20,44 @@ int global = 0;
 int final = -1;
 int indices = 0;
 
+
+void PriorizarPrecio(int precio) {
+    for (int i = 0; i < CANT_JUEGOS; i++) {
+        for (int j = 0; j < CANT_JUEGOS - 1; j++) {
+            bool j0 = (juego[j].calidad == precio);
+            bool j1 = (juego[j + 1].calidad == precio);
+
+            if (j0 && !j1)
+                continue;
+            else if (!j0 && j1) {
+                swap(juego[j], juego[j + 1]);
+            }
+        }
+    }
+}
+
+void PriorizarCalidad(int calidad) {
+    for (int i = 0; i < CANT_JUEGOS; i++) {
+        for (int j = 0; j < CANT_JUEGOS - 1; j++) {
+            bool j0 = (juego[j].calidad == calidad);
+            bool j1 = (juego[j + 1].calidad == calidad);
+
+            if (j0 && !j1) 
+                continue;
+            else if (!j0 && j1) {
+                swap(juego[j], juego[j + 1]);
+            }
+        }
+    }
+}
+
+int BuscarPosicion(int ID) {
+    for (int i = 0; i < CANT_JUEGOS; i++) {
+        if (ID == juego[i].ID)
+            return i;
+    }
+}
+
 void BubbleSort(void) {
     for (int i = 0; i < CANT_JUEGOS; i++) {
         for (int j = 0; j < CANT_JUEGOS - 1; j++) {
