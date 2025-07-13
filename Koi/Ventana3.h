@@ -218,17 +218,6 @@ namespace Koi {
 			this->dataGridView1->RowHeadersWidth = 62;
 			this->dataGridView1->Size = System::Drawing::Size(665, 491);
 			this->dataGridView1->TabIndex = 35;
-			this->dataGridView1->CellClick += gcnew DataGridViewCellEventHandler(this, &Ventana3::dataGridView1_CellClick);
-			dataGridView1->AllowUserToAddRows = false;
-			dataGridView1->AllowUserToDeleteRows = false;
-			dataGridView1->ReadOnly = true;
-			dataGridView1->AllowUserToOrderColumns = false;
-			dataGridView1->AllowUserToResizeColumns = false;
-			dataGridView1->AllowUserToResizeRows = false;
-			dataGridView1->MultiSelect = false;
-			dataGridView1->SelectionMode = DataGridViewSelectionMode::FullRowSelect;
-			dataGridView1->Cursor = Cursors::Hand;
-			dataGridView1->AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode::AllCells;
 			// 
 			// Column1
 			// 
