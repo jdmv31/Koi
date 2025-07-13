@@ -156,12 +156,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fondo1.resx" />
     <EmbeddedResource Include="fondoblanco1.resx" />
+    <EmbeddedResource Include="fondoven3.resx" />
     <EmbeddedResource Include="Historial.resx">
       <DependentUpon>Historial.h</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="juegoo.resx" />
-    <EmbeddedResource Include="Mario.resx" />
     <EmbeddedResource Include="omen.resx" />
+    <EmbeddedResource Include="phoenix.resx" />
     <EmbeddedResource Include="Recurso.resx" />
     <EmbeddedResource Include="Resource.resx" />
     <EmbeddedResource Include="sage.resx" />
@@ -180,12 +180,12 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\imagenes\portadas\Balatro.jpg" />
-    <Image Include="eligejuego.jpg" />
     <Image Include="fondo1.jpg" />
     <Image Include="fondoven2.jpg" />
+    <Image Include="fondoven3.png" />
     <Image Include="logopetit.png" />
-    <Image Include="Mariobross.png" />
     <Image Include="omen.jpg" />
+    <Image Include="phoenix.png" />
     <Image Include="portada.png" />
     <Image Include="sagee.png" />
   </ItemGroup>

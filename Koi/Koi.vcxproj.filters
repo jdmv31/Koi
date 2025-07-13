@@ -76,16 +76,16 @@
     <EmbeddedResource Include="fondoblanco1.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
-    <EmbeddedResource Include="juegoo.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
     <EmbeddedResource Include="fondo1.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
-    <EmbeddedResource Include="Mario.resx">
+    <EmbeddedResource Include="omen.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
-    <EmbeddedResource Include="omen.resx">
+    <EmbeddedResource Include="fondoven3.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="phoenix.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
   </ItemGroup>
@@ -105,16 +105,16 @@
     <Image Include="fondoven2.jpg">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="eligejuego.jpg">
-      <Filter>Resource Files</Filter>
-    </Image>
     <Image Include="fondo1.jpg">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="Mariobross.png">
+    <Image Include="omen.jpg">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="omen.jpg">
+    <Image Include="fondoven3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="phoenix.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
