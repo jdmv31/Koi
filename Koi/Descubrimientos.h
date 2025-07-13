@@ -150,13 +150,13 @@ namespace Koi {
 			// 
 			this->label2->AutoSize = true;
 			this->label2->BackColor = System::Drawing::SystemColors::Window;
-			this->label2->Font = (gcnew System::Drawing::Font(L"Palatino Linotype", 21, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->label2->Font = (gcnew System::Drawing::Font(L"Palatino Linotype", 20, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label2->ForeColor = System::Drawing::Color::Firebrick;
 			this->label2->Location = System::Drawing::Point(687, 208);
 			this->label2->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(142, 57);
+			this->label2->Size = System::Drawing::Size(134, 55);
 			this->label2->TabIndex = 39;
 			this->label2->Text = L"label2";
 			// 
@@ -164,13 +164,13 @@ namespace Koi {
 			// 
 			this->label3->AutoSize = true;
 			this->label3->BackColor = System::Drawing::SystemColors::Window;
-			this->label3->Font = (gcnew System::Drawing::Font(L"Myanmar Text", 20, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->label3->Font = (gcnew System::Drawing::Font(L"Myanmar Text", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label3->ForeColor = System::Drawing::SystemColors::Desktop;
 			this->label3->Location = System::Drawing::Point(855, 280);
 			this->label3->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(144, 71);
+			this->label3->Size = System::Drawing::Size(128, 63);
 			this->label3->TabIndex = 40;
 			this->label3->Text = L"label3";
 			// 
@@ -232,7 +232,7 @@ namespace Koi {
 			this->pictureBox3->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox3.Image")));
 			this->pictureBox3->Location = System::Drawing::Point(662, 178);
 			this->pictureBox3->Name = L"pictureBox3";
-			this->pictureBox3->Size = System::Drawing::Size(405, 287);
+			this->pictureBox3->Size = System::Drawing::Size(437, 287);
 			this->pictureBox3->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBox3->TabIndex = 45;
 			this->pictureBox3->TabStop = false;

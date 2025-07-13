@@ -218,6 +218,17 @@ namespace Koi {
 			this->dataGridView1->RowHeadersWidth = 62;
 			this->dataGridView1->Size = System::Drawing::Size(665, 491);
 			this->dataGridView1->TabIndex = 35;
+			this->dataGridView1->CellClick += gcnew DataGridViewCellEventHandler(this, &Ventana3::dataGridView1_CellClick);
+			dataGridView1->AllowUserToAddRows = false;
+			dataGridView1->AllowUserToDeleteRows = false;
+			dataGridView1->ReadOnly = true;
+			dataGridView1->AllowUserToOrderColumns = false;
+			dataGridView1->AllowUserToResizeColumns = false;
+			dataGridView1->AllowUserToResizeRows = false;
+			dataGridView1->MultiSelect = false;
+			dataGridView1->SelectionMode = DataGridViewSelectionMode::FullRowSelect;
+			dataGridView1->Cursor = Cursors::Hand;
+			dataGridView1->AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode::AllCells;
 			// 
 			// Column1
 			// 
@@ -378,9 +389,9 @@ namespace Koi {
 			this->label6->ForeColor = System::Drawing::SystemColors::Window;
 			this->label6->Location = System::Drawing::Point(893, 203);
 			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(251, 43);
+			this->label6->Size = System::Drawing::Size(230, 43);
 			this->label6->TabIndex = 46;
-			this->label6->Text = L"Calidad Descendiente";
+			this->label6->Text = L"Calidad Ascendente";
 			// 
 			// label7
 			// 
@@ -390,9 +401,9 @@ namespace Koi {
 			this->label7->ForeColor = System::Drawing::SystemColors::Window;
 			this->label7->Location = System::Drawing::Point(894, 257);
 			this->label7->Name = L"label7";
-			this->label7->Size = System::Drawing::Size(230, 43);
+			this->label7->Size = System::Drawing::Size(245, 43);
 			this->label7->TabIndex = 47;
-			this->label7->Text = L"Calidad Ascendente";
+			this->label7->Text = L"Calidad Descendente";
 			// 
 			// pictureBox3
 			// 
