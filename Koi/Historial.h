@@ -45,7 +45,9 @@ namespace Koi {
 	private: System::Windows::Forms::Label^ label5;  
 	private: System::Windows::Forms::PictureBox^ pictureBox1;  
 	private: System::Windows::Forms::Label^ label6;  
-	protected:  
+	private: System::Windows::Forms::PictureBox^ pictureBox3;
+
+	protected:
 
 	private:  
 		/// <summary>  
@@ -60,134 +62,160 @@ namespace Koi {
 		/// </summary>  
 		void InitializeComponent(void)  
 		{  
-			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(Historial::typeid));  
-			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());  
-			this->label1 = (gcnew System::Windows::Forms::Label());  
-			this->label2 = (gcnew System::Windows::Forms::Label());  
-			this->label3 = (gcnew System::Windows::Forms::Label());  
-			this->label4 = (gcnew System::Windows::Forms::Label());  
-			this->label5 = (gcnew System::Windows::Forms::Label());  
-			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());  
-			this->label6 = (gcnew System::Windows::Forms::Label());  
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();  
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();  
-			this->SuspendLayout();  
-			//  
-			// pictureBox2  
-			//  
-			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));  
-			this->pictureBox2->Location = System::Drawing::Point(-8, -10);  
-			this->pictureBox2->Name = L"pictureBox2";  
-			this->pictureBox2->Size = System::Drawing::Size(153, 106);  
-			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;  
-			this->pictureBox2->TabIndex = 30;  
-			this->pictureBox2->TabStop = false;  
-			//  
-			// label1  
-			//  
-			this->label1->AutoSize = true;  
-			this->label1->Font = (gcnew System::Drawing::Font(L"Palatino Linotype", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,  
-				static_cast<System::Byte>(0)));  
-			this->label1->ForeColor = System::Drawing::SystemColors::ButtonHighlight;  
-			this->label1->Location = System::Drawing::Point(389, 59);  
-			this->label1->Name = L"label1";  
-			this->label1->Size = System::Drawing::Size(94, 37);  
-			this->label1->TabIndex = 31;  
-			this->label1->Text = L"label1";  
-			//  
-			// label2  
-			//  
-			this->label2->AutoSize = true;  
-			this->label2->Font = (gcnew System::Drawing::Font(L"Palatino Linotype", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,  
-				static_cast<System::Byte>(0)));  
-			this->label2->ForeColor = System::Drawing::SystemColors::ButtonHighlight;  
-			this->label2->Location = System::Drawing::Point(389, 102);  
-			this->label2->Name = L"label2";  
-			this->label2->Size = System::Drawing::Size(66, 26);  
-			this->label2->TabIndex = 32;  
-			this->label2->Text = L"label2";  
-			//  
-			// label3  
-			//  
-			this->label3->AutoSize = true;  
-			this->label3->Font = (gcnew System::Drawing::Font(L"Palatino Linotype", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,  
-				static_cast<System::Byte>(0)));  
-			this->label3->ForeColor = System::Drawing::SystemColors::ButtonHighlight;  
-			this->label3->Location = System::Drawing::Point(608, 102);  
-			this->label3->Name = L"label3";  
-			this->label3->Size = System::Drawing::Size(94, 37);  
-			this->label3->TabIndex = 33;  
-			this->label3->Text = L"label3";  
-			//  
-			// label4  
-			//  
-			this->label4->AutoSize = true;  
-			this->label4->Font = (gcnew System::Drawing::Font(L"Palatino Linotype", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,  
-				static_cast<System::Byte>(0)));  
-			this->label4->ForeColor = System::Drawing::SystemColors::ButtonHighlight;  
-			this->label4->Location = System::Drawing::Point(608, 149);  
-			this->label4->Name = L"label4";  
-			this->label4->Size = System::Drawing::Size(94, 37);  
-			this->label4->TabIndex = 34;  
-			this->label4->Text = L"label4";  
-			//  
-			// label5  
-			//  
-			this->label5->AutoSize = true;  
-			this->label5->Font = (gcnew System::Drawing::Font(L"Palatino Linotype", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,  
-				static_cast<System::Byte>(0)));  
-			this->label5->ForeColor = System::Drawing::SystemColors::ButtonHighlight;  
-			this->label5->Location = System::Drawing::Point(389, 264);  
-			this->label5->Name = L"label5";  
-			this->label5->Size = System::Drawing::Size(94, 37);  
-			this->label5->TabIndex = 35;  
-			this->label5->Text = L"label5";  
-			//  
-			// pictureBox1  
-			//  
-			this->pictureBox1->Location = System::Drawing::Point(21, 102);  
-			this->pictureBox1->Name = L"pictureBox1";  
-			this->pictureBox1->Size = System::Drawing::Size(315, 367);  
-			this->pictureBox1->TabIndex = 36;  
-			this->pictureBox1->TabStop = false;  
-			//  
-			// label6  
-			//  
-			this->label6->AutoSize = true;  
-			this->label6->Font = (gcnew System::Drawing::Font(L"Palatino Linotype", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,  
-				static_cast<System::Byte>(0)));  
-			this->label6->ForeColor = System::Drawing::SystemColors::ButtonHighlight;  
-			this->label6->Location = System::Drawing::Point(608, 196);  
-			this->label6->Name = L"label6";  
-			this->label6->Size = System::Drawing::Size(94, 37);  
-			this->label6->TabIndex = 37;  
-			this->label6->Text = L"label6";  
-			//  
-			// Historial  
-			//  
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);  
-			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;  
-			this->BackColor = System::Drawing::SystemColors::ActiveCaptionText;  
-			this->ClientSize = System::Drawing::Size(815, 503);  
-			this->Controls->Add(this->label6);  
-			this->Controls->Add(this->pictureBox1);  
-			this->Controls->Add(this->label5);  
-			this->Controls->Add(this->label4);  
-			this->Controls->Add(this->label3);  
-			this->Controls->Add(this->label2);  
-			this->Controls->Add(this->label1);  
-			this->Controls->Add(this->pictureBox2);  
-			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));  
-			this->Name = L"Historial";  
-			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;  
-			this->Text = L"Historial";  
-			this->Load += gcnew System::EventHandler(this, &Historial::Historial_Load);  
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->EndInit();  
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();  
-			this->ResumeLayout(false);  
-			this->PerformLayout();  
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(Historial::typeid));
+			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
+			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->label2 = (gcnew System::Windows::Forms::Label());
+			this->label3 = (gcnew System::Windows::Forms::Label());
+			this->label4 = (gcnew System::Windows::Forms::Label());
+			this->label5 = (gcnew System::Windows::Forms::Label());
+			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
+			this->label6 = (gcnew System::Windows::Forms::Label());
+			this->pictureBox3 = (gcnew System::Windows::Forms::PictureBox());
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->BeginInit();
+			this->SuspendLayout();
+			// 
+			// pictureBox2
+			// 
+			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
+			this->pictureBox2->Location = System::Drawing::Point(-12, -15);
+			this->pictureBox2->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->pictureBox2->Name = L"pictureBox2";
+			this->pictureBox2->Size = System::Drawing::Size(230, 163);
+			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
+			this->pictureBox2->TabIndex = 30;
+			this->pictureBox2->TabStop = false;
+			// 
+			// label1
+			// 
+			this->label1->AutoSize = true;
+			this->label1->Font = (gcnew System::Drawing::Font(L"Palatino Linotype", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label1->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
+			this->label1->Location = System::Drawing::Point(587, 58);
+			this->label1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(140, 56);
+			this->label1->TabIndex = 31;
+			this->label1->Text = L"label1";
+			// 
+			// label2
+			// 
+			this->label2->AutoSize = true;
+			this->label2->BackColor = System::Drawing::SystemColors::Window;
+			this->label2->Font = (gcnew System::Drawing::Font(L"Myanmar Text", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label2->ForeColor = System::Drawing::Color::Firebrick;
+			this->label2->Location = System::Drawing::Point(612, 202);
+			this->label2->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label2->Name = L"label2";
+			this->label2->Size = System::Drawing::Size(128, 63);
+			this->label2->TabIndex = 32;
+			this->label2->Text = L"label2";
+			// 
+			// label3
+			// 
+			this->label3->AutoSize = true;
+			this->label3->BackColor = System::Drawing::SystemColors::Window;
+			this->label3->Font = (gcnew System::Drawing::Font(L"Myanmar Text", 14, System::Drawing::FontStyle::Bold));
+			this->label3->ForeColor = System::Drawing::Color::Black;
+			this->label3->Location = System::Drawing::Point(940, 202);
+			this->label3->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label3->Name = L"label3";
+			this->label3->Size = System::Drawing::Size(101, 50);
+			this->label3->TabIndex = 33;
+			this->label3->Text = L"label3";
+			// 
+			// label4
+			// 
+			this->label4->AutoSize = true;
+			this->label4->BackColor = System::Drawing::SystemColors::Window;
+			this->label4->Font = (gcnew System::Drawing::Font(L"Myanmar Text", 14, System::Drawing::FontStyle::Bold));
+			this->label4->ForeColor = System::Drawing::Color::Black;
+			this->label4->Location = System::Drawing::Point(940, 274);
+			this->label4->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label4->Name = L"label4";
+			this->label4->Size = System::Drawing::Size(101, 50);
+			this->label4->TabIndex = 34;
+			this->label4->Text = L"label4";
+			// 
+			// label5
+			// 
+			this->label5->AutoSize = true;
+			this->label5->BackColor = System::Drawing::SystemColors::WindowText;
+			this->label5->Font = (gcnew System::Drawing::Font(L"Myanmar Text", 14, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label5->ForeColor = System::Drawing::SystemColors::Window;
+			this->label5->Location = System::Drawing::Point(577, 477);
+			this->label5->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label5->Name = L"label5";
+			this->label5->Size = System::Drawing::Size(101, 50);
+			this->label5->TabIndex = 35;
+			this->label5->Text = L"label5";
+			// 
+			// pictureBox1
+			// 
+			this->pictureBox1->Location = System::Drawing::Point(32, 157);
+			this->pictureBox1->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->pictureBox1->Name = L"pictureBox1";
+			this->pictureBox1->Size = System::Drawing::Size(472, 565);
+			this->pictureBox1->TabIndex = 36;
+			this->pictureBox1->TabStop = false;
+			// 
+			// label6
+			// 
+			this->label6->AutoSize = true;
+			this->label6->BackColor = System::Drawing::SystemColors::Window;
+			this->label6->Font = (gcnew System::Drawing::Font(L"Myanmar Text", 14, System::Drawing::FontStyle::Bold));
+			this->label6->ForeColor = System::Drawing::Color::Black;
+			this->label6->Location = System::Drawing::Point(940, 347);
+			this->label6->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label6->Name = L"label6";
+			this->label6->Size = System::Drawing::Size(101, 50);
+			this->label6->TabIndex = 37;
+			this->label6->Text = L"label6";
+			// 
+			// pictureBox3
+			// 
+			this->pictureBox3->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox3.Image")));
+			this->pictureBox3->Location = System::Drawing::Point(586, 173);
+			this->pictureBox3->Name = L"pictureBox3";
+			this->pictureBox3->Size = System::Drawing::Size(542, 254);
+			this->pictureBox3->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->pictureBox3->TabIndex = 38;
+			this->pictureBox3->TabStop = false;
+			this->pictureBox3->Click += gcnew System::EventHandler(this, &Historial::pictureBox3_Click);
+			// 
+			// Historial
+			// 
+			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
+			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
+			this->ClientSize = System::Drawing::Size(1222, 774);
+			this->Controls->Add(this->label6);
+			this->Controls->Add(this->pictureBox1);
+			this->Controls->Add(this->label5);
+			this->Controls->Add(this->label4);
+			this->Controls->Add(this->label3);
+			this->Controls->Add(this->label2);
+			this->Controls->Add(this->label1);
+			this->Controls->Add(this->pictureBox2);
+			this->Controls->Add(this->pictureBox3);
+			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
+			this->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->Name = L"Historial";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
+			this->Text = L"Historial";
+			this->Load += gcnew System::EventHandler(this, &Historial::Historial_Load);
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->EndInit();
+			this->ResumeLayout(false);
+			this->PerformLayout();
 
-		}  
+		}
 #pragma endregion  
 	private: System::Void Historial_Load(System::Object^ sender, System::EventArgs^ e) { 
 		this->Text = msclr::interop::marshal_as<String^>(juego[global].nombre);
@@ -241,5 +269,7 @@ namespace Koi {
 				MessageBoxIcon::Warning);
 		}
 	}  
-	};  
+	private: System::Void pictureBox3_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+};
 }

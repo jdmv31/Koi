@@ -261,7 +261,7 @@ namespace Koi {
 			// textBox1
 			// 
 			this->textBox1->BackColor = System::Drawing::SystemColors::Window;
-			this->textBox1->ForeColor = System::Drawing::Color::Gray;
+			this->textBox1->ForeColor = System::Drawing::Color::Black;
 			this->textBox1->Location = System::Drawing::Point(168, 36);
 			this->textBox1->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->textBox1->Name = L"textBox1";

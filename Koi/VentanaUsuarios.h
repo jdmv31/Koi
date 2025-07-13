@@ -87,13 +87,13 @@ namespace Koi {
 			// 
 			this->label1->AutoSize = true;
 			this->label1->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
-			this->label1->Font = (gcnew System::Drawing::Font(L"Myanmar Text", 22, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->label1->Font = (gcnew System::Drawing::Font(L"Myanmar Text", 21, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label1->ForeColor = System::Drawing::SystemColors::ButtonFace;
-			this->label1->Location = System::Drawing::Point(106, 22);
+			this->label1->Location = System::Drawing::Point(108, 21);
 			this->label1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(691, 78);
+			this->label1->Size = System::Drawing::Size(656, 75);
 			this->label1->TabIndex = 0;
 			this->label1->Text = L"Usuarios con intereses similares";
 			this->label1->UseWaitCursor = true;
@@ -127,7 +127,7 @@ namespace Koi {
 			this->dataGridView1->Name = L"dataGridView1";
 			this->dataGridView1->ReadOnly = true;
 			this->dataGridView1->RowHeadersWidth = 62;
-			this->dataGridView1->Size = System::Drawing::Size(742, 387);
+			this->dataGridView1->Size = System::Drawing::Size(723, 387);
 			this->dataGridView1->TabIndex = 31;
 			this->dataGridView1->UseWaitCursor = true;
 			this->dataGridView1->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &VentanaUsuarios::dataGridView1_CellContentClick);
@@ -159,22 +159,24 @@ namespace Koi {
 			// pictureBox1
 			// 
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(811, -2);
+			this->pictureBox1->Location = System::Drawing::Point(791, -2);
 			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(398, 703);
+			this->pictureBox1->Size = System::Drawing::Size(418, 703);
 			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBox1->TabIndex = 32;
 			this->pictureBox1->TabStop = false;
+			this->pictureBox1->UseWaitCursor = true;
 			// 
 			// pictureBox3
 			// 
 			this->pictureBox3->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox3.Image")));
 			this->pictureBox3->Location = System::Drawing::Point(28, 154);
 			this->pictureBox3->Name = L"pictureBox3";
-			this->pictureBox3->Size = System::Drawing::Size(761, 428);
+			this->pictureBox3->Size = System::Drawing::Size(742, 428);
 			this->pictureBox3->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBox3->TabIndex = 33;
 			this->pictureBox3->TabStop = false;
+			this->pictureBox3->UseWaitCursor = true;
 			// 
 			// VentanaUsuarios
 			// 

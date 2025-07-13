@@ -1,20 +1,20 @@
 ﻿  Descubrimientos.cpp
-C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\Descubrimientos.h(250,13): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\Descubrimientos.h(272,13): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
   (compilando archivo de origen "Descubrimientos.cpp")
   
   Ventana2.cpp
-C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\Descubrimientos.h(250,13): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\Descubrimientos.h(272,13): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
   (compilando archivo de origen "Ventana2.cpp")
   
 C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\Ventana2.h(260,11): warning C4101: 'aux2': variable local sin referencia
   (compilando archivo de origen "Ventana2.cpp")
   
   Ventana3.cpp
-C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\Descubrimientos.h(250,13): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\Descubrimientos.h(272,13): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
   (compilando archivo de origen "Ventana3.cpp")
   
   VentanaPrincipal.cpp
-C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\Descubrimientos.h(250,13): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\Descubrimientos.h(272,13): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
   (compilando archivo de origen "VentanaPrincipal.cpp")
   
 C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\Ventana2.h(260,11): warning C4101: 'aux2': variable local sin referencia
