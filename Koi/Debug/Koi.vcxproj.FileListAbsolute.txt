@@ -34,3 +34,8 @@ C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\Debug\Koi.fondo1.resources
 C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\Debug\Koi.omen.resources
 C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\Debug\Koi.fondoven3.resources
 C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\Debug\Koi.phoenix.resources
+C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\Debug\Koi.fondo1.resources
+C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\Debug\Koi.fondoblanco1.resources
+C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\Debug\Koi.fondoven3.resources
+C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\Debug\Koi.omen.resources
+C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\Debug\Koi.phoenix.resources
