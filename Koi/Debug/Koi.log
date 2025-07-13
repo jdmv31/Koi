@@ -1,38 +1,34 @@
-﻿  Descubrimientos.cpp
-C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\Descubrimientos.h(250,13): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-  (compilando archivo de origen "Descubrimientos.cpp")
+﻿  Ventana2.cpp
+C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\Descubrimientos.h(250,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  (compiling source file 'Ventana2.cpp')
   
-  Ventana2.cpp
-C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\Descubrimientos.h(250,13): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-  (compilando archivo de origen "Ventana2.cpp")
-  
-C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\Ventana2.h(260,11): warning C4101: 'aux2': variable local sin referencia
-  (compilando archivo de origen "Ventana2.cpp")
+C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\Ventana2.h(260,11): warning C4101: 'aux2': unreferenced local variable
+  (compiling source file 'Ventana2.cpp')
   
   Ventana3.cpp
-C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\Descubrimientos.h(250,13): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-  (compilando archivo de origen "Ventana3.cpp")
+C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\Descubrimientos.h(250,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  (compiling source file 'Ventana3.cpp')
   
   VentanaPrincipal.cpp
-C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\Descubrimientos.h(250,13): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-  (compilando archivo de origen "VentanaPrincipal.cpp")
+C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\Descubrimientos.h(250,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  (compiling source file 'VentanaPrincipal.cpp')
   
-C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\Ventana2.h(260,11): warning C4101: 'aux2': variable local sin referencia
-  (compilando archivo de origen "VentanaPrincipal.cpp")
+C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\Ventana2.h(260,11): warning C4101: 'aux2': unreferenced local variable
+  (compiling source file 'VentanaPrincipal.cpp')
   
-C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\VentanaPrincipal.h(269,13): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-  (compilando archivo de origen "VentanaPrincipal.cpp")
+C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\VentanaPrincipal.h(269,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  (compiling source file 'VentanaPrincipal.cpp')
   
-C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\VentanaPrincipal.h(327,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-  (compilando archivo de origen "VentanaPrincipal.cpp")
+C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\VentanaPrincipal.h(327,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  (compiling source file 'VentanaPrincipal.cpp')
   
-C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\VentanaPrincipal.h(334,20): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-  (compilando archivo de origen "VentanaPrincipal.cpp")
+C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\VentanaPrincipal.h(334,20): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'VentanaPrincipal.cpp')
   
-C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\VentanaPrincipal.h(328,13): warning C4101: 'aux2': variable local sin referencia
-  (compilando archivo de origen "VentanaPrincipal.cpp")
+C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\VentanaPrincipal.h(328,13): warning C4101: 'aux2': unreferenced local variable
+  (compiling source file 'VentanaPrincipal.cpp')
   
-C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\VentanaPrincipal.cpp(6,6): warning C4829: Parámetros posiblemente incorrectos para la función main. Utilice 'int main(Platform::Array<Platform::String^>^ argv)'
-  Generando código...
-  Descubrimientos.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
-  Koi.vcxproj -> C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Debug\Koi.exe
+C:\Users\josue\OneDrive\Desktop\Koi\Koi\Koi\VentanaPrincipal.cpp(6,6): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
+  Generating Code...
+  Descubrimientos.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  Koi.vcxproj -> C:\Users\josue\OneDrive\Desktop\Koi\Koi\Debug\Koi.exe

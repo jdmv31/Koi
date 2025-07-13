@@ -506,12 +506,18 @@ namespace Koi {
 
 		}
 #pragma endregion
+	private:
+		bool datos = false;
 	private: System::Void Ventana3_FormClosing(System::Object^ sender,
 		System::Windows::Forms::FormClosingEventArgs^ e) {
 		LiberarMemoria(arbol);
 	}
 
 	private: System::Void Ventana3_Load(System::Object^ sender, System::EventArgs^ e) {
+		if (datos)
+			return;
+		datos = true;
+
 		for each(DataGridViewColumn ^ column in dataGridView1->Columns)
 		{
 			column->SortMode = DataGridViewColumnSortMode::NotSortable;

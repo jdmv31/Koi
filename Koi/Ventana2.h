@@ -91,7 +91,7 @@ namespace Koi {
 			this->labelBienvenida->Location = System::Drawing::Point(87, 48);
 			this->labelBienvenida->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->labelBienvenida->Name = L"labelBienvenida";
-			this->labelBienvenida->Size = System::Drawing::Size(0, 20);
+			this->labelBienvenida->Size = System::Drawing::Size(0, 13);
 			this->labelBienvenida->TabIndex = 0;
 			// 
 			// label1
@@ -105,7 +105,7 @@ namespace Koi {
 			this->label1->Location = System::Drawing::Point(95, 20);
 			this->label1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(42, 69);
+			this->label1->Size = System::Drawing::Size(28, 47);
 			this->label1->TabIndex = 1;
 			this->label1->Text = L".";
 			this->label1->Click += gcnew System::EventHandler(this, &Ventana2::label1_Click);
@@ -142,7 +142,7 @@ namespace Koi {
 			this->checkedListBox1->Location = System::Drawing::Point(41, 173);
 			this->checkedListBox1->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->checkedListBox1->Name = L"checkedListBox1";
-			this->checkedListBox1->Size = System::Drawing::Size(828, 468);
+			this->checkedListBox1->Size = System::Drawing::Size(828, 432);
 			this->checkedListBox1->TabIndex = 5;
 			this->checkedListBox1->SelectedIndexChanged += gcnew System::EventHandler(this, &Ventana2::checkedListBox1_SelectedIndexChanged);
 			// 
@@ -163,7 +163,7 @@ namespace Koi {
 			this->button1->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->button1->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->button1->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
-			this->button1->Location = System::Drawing::Point(313, 682);
+			this->button1->Location = System::Drawing::Point(313, 671);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(251, 57);
 			this->button1->TabIndex = 7;
@@ -178,7 +178,7 @@ namespace Koi {
 			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
 			this->pictureBox2->Location = System::Drawing::Point(815, -6);
 			this->pictureBox2->Name = L"pictureBox2";
-			this->pictureBox2->Size = System::Drawing::Size(577, 771);
+			this->pictureBox2->Size = System::Drawing::Size(577, 760);
 			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBox2->TabIndex = 8;
 			this->pictureBox2->TabStop = false;
@@ -199,7 +199,7 @@ namespace Koi {
 			// 
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::None;
 			this->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
-			this->ClientSize = System::Drawing::Size(1300, 760);
+			this->ClientSize = System::Drawing::Size(1300, 749);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->checkedListBox1);
 			this->Controls->Add(this->label1);
