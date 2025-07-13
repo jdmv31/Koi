@@ -47,6 +47,8 @@ namespace Koi {
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^ ID;
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^ usuario;
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^ intereses;
+	private: System::Windows::Forms::PictureBox^ pictureBox1;
+	private: System::Windows::Forms::PictureBox^ pictureBox3;
 
 
 
@@ -73,20 +75,25 @@ namespace Koi {
 			this->ID = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->usuario = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->intereses = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
+			this->pictureBox3 = (gcnew System::Windows::Forms::PictureBox());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// label1
 			// 
 			this->label1->AutoSize = true;
 			this->label1->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
-			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 21.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->label1->Font = (gcnew System::Drawing::Font(L"Myanmar Text", 22, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label1->ForeColor = System::Drawing::SystemColors::ButtonFace;
-			this->label1->Location = System::Drawing::Point(27, 95);
+			this->label1->Location = System::Drawing::Point(106, 22);
+			this->label1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(471, 33);
+			this->label1->Size = System::Drawing::Size(691, 78);
 			this->label1->TabIndex = 0;
 			this->label1->Text = L"Usuarios con intereses similares";
 			this->label1->UseWaitCursor = true;
@@ -95,9 +102,10 @@ namespace Koi {
 			// pictureBox2
 			// 
 			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
-			this->pictureBox2->Location = System::Drawing::Point(-13, -14);
+			this->pictureBox2->Location = System::Drawing::Point(-19, -1);
+			this->pictureBox2->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->pictureBox2->Name = L"pictureBox2";
-			this->pictureBox2->Size = System::Drawing::Size(153, 106);
+			this->pictureBox2->Size = System::Drawing::Size(152, 104);
 			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
 			this->pictureBox2->TabIndex = 30;
 			this->pictureBox2->TabStop = false;
@@ -106,24 +114,29 @@ namespace Koi {
 			// dataGridView1
 			// 
 			this->dataGridView1->AutoSizeRowsMode = System::Windows::Forms::DataGridViewAutoSizeRowsMode::DisplayedCells;
+			this->dataGridView1->BackgroundColor = System::Drawing::SystemColors::Window;
+			this->dataGridView1->BorderStyle = System::Windows::Forms::BorderStyle::None;
 			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridView1->Columns->AddRange(gcnew cli::array< System::Windows::Forms::DataGridViewColumn^  >(3) {
 				this->ID, this->usuario,
 					this->intereses
 			});
-			this->dataGridView1->GridColor = System::Drawing::SystemColors::ActiveCaptionText;
-			this->dataGridView1->Location = System::Drawing::Point(12, 170);
+			this->dataGridView1->GridColor = System::Drawing::Color::Firebrick;
+			this->dataGridView1->Location = System::Drawing::Point(36, 169);
+			this->dataGridView1->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->dataGridView1->Name = L"dataGridView1";
 			this->dataGridView1->ReadOnly = true;
-			this->dataGridView1->Size = System::Drawing::Size(736, 205);
+			this->dataGridView1->RowHeadersWidth = 62;
+			this->dataGridView1->Size = System::Drawing::Size(742, 387);
 			this->dataGridView1->TabIndex = 31;
+			this->dataGridView1->UseWaitCursor = true;
 			this->dataGridView1->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &VentanaUsuarios::dataGridView1_CellContentClick);
-			dataGridView1->ReadOnly = true;
 			// 
 			// ID
 			// 
 			this->ID->AutoSizeMode = System::Windows::Forms::DataGridViewAutoSizeColumnMode::Fill;
 			this->ID->HeaderText = L"ID";
+			this->ID->MinimumWidth = 8;
 			this->ID->Name = L"ID";
 			this->ID->ReadOnly = true;
 			// 
@@ -131,6 +144,7 @@ namespace Koi {
 			// 
 			this->usuario->AutoSizeMode = System::Windows::Forms::DataGridViewAutoSizeColumnMode::Fill;
 			this->usuario->HeaderText = L"Username";
+			this->usuario->MinimumWidth = 8;
 			this->usuario->Name = L"usuario";
 			this->usuario->ReadOnly = true;
 			// 
@@ -138,19 +152,43 @@ namespace Koi {
 			// 
 			this->intereses->AutoSizeMode = System::Windows::Forms::DataGridViewAutoSizeColumnMode::Fill;
 			this->intereses->HeaderText = L"Gustos en Comun";
+			this->intereses->MinimumWidth = 8;
 			this->intereses->Name = L"intereses";
 			this->intereses->ReadOnly = true;
 			// 
+			// pictureBox1
+			// 
+			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
+			this->pictureBox1->Location = System::Drawing::Point(811, -2);
+			this->pictureBox1->Name = L"pictureBox1";
+			this->pictureBox1->Size = System::Drawing::Size(398, 703);
+			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->pictureBox1->TabIndex = 32;
+			this->pictureBox1->TabStop = false;
+			// 
+			// pictureBox3
+			// 
+			this->pictureBox3->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox3.Image")));
+			this->pictureBox3->Location = System::Drawing::Point(28, 154);
+			this->pictureBox3->Name = L"pictureBox3";
+			this->pictureBox3->Size = System::Drawing::Size(761, 428);
+			this->pictureBox3->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->pictureBox3->TabIndex = 33;
+			this->pictureBox3->TabStop = false;
+			// 
 			// VentanaUsuarios
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
-			this->ClientSize = System::Drawing::Size(800, 449);
+			this->ClientSize = System::Drawing::Size(1200, 691);
+			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->dataGridView1);
-			this->Controls->Add(this->pictureBox2);
 			this->Controls->Add(this->label1);
+			this->Controls->Add(this->pictureBox3);
+			this->Controls->Add(this->pictureBox2);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
+			this->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->Name = L"VentanaUsuarios";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Usuarios";
@@ -158,6 +196,8 @@ namespace Koi {
 			this->Load += gcnew System::EventHandler(this, &VentanaUsuarios::VentanaUsuarios_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 

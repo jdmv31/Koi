@@ -73,7 +73,8 @@ namespace Koi {
 	private: System::Windows::Forms::PictureBox^ pictureBox4;
 	private: System::Windows::Forms::Label^ label3;
 	private: System::Windows::Forms::Label^ label8;
-	private: System::Windows::Forms::PictureBox^ pictureBox5;
+	private: System::Windows::Forms::Label^ label9;
+
 
 
 
@@ -122,14 +123,13 @@ namespace Koi {
 			this->pictureBox4 = (gcnew System::Windows::Forms::PictureBox());
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->label8 = (gcnew System::Windows::Forms::Label());
-			this->pictureBox5 = (gcnew System::Windows::Forms::PictureBox());
+			this->label9 = (gcnew System::Windows::Forms::Label());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->trackBar1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox4))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox5))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// pictureBox2
@@ -152,7 +152,7 @@ namespace Koi {
 				static_cast<System::Byte>(0)));
 			this->checkedListBox2->ForeColor = System::Drawing::Color::Firebrick;
 			this->checkedListBox2->FormattingEnabled = true;
-			this->checkedListBox2->Location = System::Drawing::Point(830, 367);
+			this->checkedListBox2->Location = System::Drawing::Point(830, 362);
 			this->checkedListBox2->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->checkedListBox2->Name = L"checkedListBox2";
 			this->checkedListBox2->Size = System::Drawing::Size(370, 124);
@@ -169,7 +169,7 @@ namespace Koi {
 				static_cast<System::Byte>(0)));
 			this->checkedListBox3->ForeColor = System::Drawing::Color::Firebrick;
 			this->checkedListBox3->FormattingEnabled = true;
-			this->checkedListBox3->Location = System::Drawing::Point(830, 561);
+			this->checkedListBox3->Location = System::Drawing::Point(830, 556);
 			this->checkedListBox3->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->checkedListBox3->Name = L"checkedListBox3";
 			this->checkedListBox3->Size = System::Drawing::Size(370, 124);
@@ -212,7 +212,7 @@ namespace Koi {
 			});
 			this->dataGridView1->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->dataGridView1->GridColor = System::Drawing::Color::Firebrick;
-			this->dataGridView1->Location = System::Drawing::Point(80, 202);
+			this->dataGridView1->Location = System::Drawing::Point(80, 197);
 			this->dataGridView1->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->dataGridView1->Name = L"dataGridView1";
 			this->dataGridView1->RowHeadersWidth = 62;
@@ -396,16 +396,18 @@ namespace Koi {
 			// pictureBox1
 			// 
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(80, 103);
+			this->pictureBox1->Location = System::Drawing::Point(-38, 626);
 			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(669, 73);
+			this->pictureBox1->Size = System::Drawing::Size(1343, 147);
+			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBox1->TabIndex = 48;
 			this->pictureBox1->TabStop = false;
+			this->pictureBox1->Click += gcnew System::EventHandler(this, &Ventana3::pictureBox1_Click);
 			// 
 			// pictureBox3
 			// 
 			this->pictureBox3->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox3.Image")));
-			this->pictureBox3->Location = System::Drawing::Point(820, 359);
+			this->pictureBox3->Location = System::Drawing::Point(820, 354);
 			this->pictureBox3->Name = L"pictureBox3";
 			this->pictureBox3->Size = System::Drawing::Size(380, 140);
 			this->pictureBox3->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
@@ -415,7 +417,7 @@ namespace Koi {
 			// pictureBox4
 			// 
 			this->pictureBox4->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox4.Image")));
-			this->pictureBox4->Location = System::Drawing::Point(820, 553);
+			this->pictureBox4->Location = System::Drawing::Point(820, 548);
 			this->pictureBox4->Name = L"pictureBox4";
 			this->pictureBox4->Size = System::Drawing::Size(380, 140);
 			this->pictureBox4->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
@@ -428,7 +430,7 @@ namespace Koi {
 			this->label3->Font = (gcnew System::Drawing::Font(L"Myanmar Text", 11, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label3->ForeColor = System::Drawing::SystemColors::Window;
-			this->label3->Location = System::Drawing::Point(814, 317);
+			this->label3->Location = System::Drawing::Point(814, 312);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(166, 39);
 			this->label3->TabIndex = 51;
@@ -440,31 +442,32 @@ namespace Koi {
 			this->label8->Font = (gcnew System::Drawing::Font(L"Myanmar Text", 11, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label8->ForeColor = System::Drawing::SystemColors::Window;
-			this->label8->Location = System::Drawing::Point(814, 512);
+			this->label8->Location = System::Drawing::Point(814, 507);
 			this->label8->Name = L"label8";
 			this->label8->Size = System::Drawing::Size(130, 39);
 			this->label8->TabIndex = 52;
 			this->label8->Text = L"Por Marca:";
 			// 
-			// pictureBox5
+			// label9
 			// 
-			this->pictureBox5->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox5.Image")));
-			this->pictureBox5->Location = System::Drawing::Point(1081, 191);
-			this->pictureBox5->Name = L"pictureBox5";
-			this->pictureBox5->Size = System::Drawing::Size(128, 128);
-			this->pictureBox5->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
-			this->pictureBox5->TabIndex = 53;
-			this->pictureBox5->TabStop = false;
-			this->pictureBox5->Click += gcnew System::EventHandler(this, &Ventana3::pictureBox5_Click);
+			this->label9->AutoSize = true;
+			this->label9->Font = (gcnew System::Drawing::Font(L"Myanmar Text", 20, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label9->ForeColor = System::Drawing::SystemColors::Window;
+			this->label9->Location = System::Drawing::Point(32, 119);
+			this->label9->Name = L"label9";
+			this->label9->Size = System::Drawing::Size(786, 71);
+			this->label9->TabIndex = 53;
+			this->label9->Text = L"ELIGE LOS JUEGOS QUE MÁS TE GUSTEN";
 			// 
 			// Ventana3
 			// 
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::None;
 			this->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
 			this->ClientSize = System::Drawing::Size(1300, 760);
+			this->Controls->Add(this->label9);
 			this->Controls->Add(this->label8);
 			this->Controls->Add(this->label3);
-			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->label7);
 			this->Controls->Add(this->label6);
 			this->Controls->Add(this->label5);
@@ -484,7 +487,7 @@ namespace Koi {
 			this->Controls->Add(this->pictureBox2);
 			this->Controls->Add(this->pictureBox3);
 			this->Controls->Add(this->pictureBox4);
-			this->Controls->Add(this->pictureBox5);
+			this->Controls->Add(this->pictureBox1);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->Name = L"Ventana3";
@@ -497,7 +500,6 @@ namespace Koi {
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox4))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox5))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -926,6 +928,8 @@ private: System::Void checkedListBox2_SelectedIndexChanged(System::Object^ sende
 private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void pictureBox5_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }

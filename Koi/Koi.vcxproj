@@ -161,6 +161,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="juegoo.resx" />
     <EmbeddedResource Include="Mario.resx" />
+    <EmbeddedResource Include="omen.resx" />
     <EmbeddedResource Include="Recurso.resx" />
     <EmbeddedResource Include="Resource.resx" />
     <EmbeddedResource Include="sage.resx" />
@@ -184,6 +185,7 @@
     <Image Include="fondoven2.jpg" />
     <Image Include="logopetit.png" />
     <Image Include="Mariobross.png" />
+    <Image Include="omen.jpg" />
     <Image Include="portada.png" />
     <Image Include="sagee.png" />
   </ItemGroup>

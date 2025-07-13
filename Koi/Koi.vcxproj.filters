@@ -85,6 +85,9 @@
     <EmbeddedResource Include="Mario.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
+    <EmbeddedResource Include="omen.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Image Include="portada.png">
@@ -109,6 +112,9 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="Mariobross.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="omen.jpg">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
