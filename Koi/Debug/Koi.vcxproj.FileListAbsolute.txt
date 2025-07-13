@@ -30,3 +30,6 @@ C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\Debug\Koi.Descubrimientos.resour
 C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\Debug\Koi.Historial.resources
 C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\Debug\Koi.VentanaUsuarios.resources
 C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\Debug\Koi.fondoblanco1.resources
+C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\Debug\Koi.juegoo.resources
+C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\Debug\Koi.fondo1.resources
+C:\Users\Nicole Flores\Desktop\clonekoi\Koi\Koi\Debug\Koi.Mario.resources

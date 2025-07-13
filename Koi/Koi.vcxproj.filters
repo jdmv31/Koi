@@ -76,6 +76,15 @@
     <EmbeddedResource Include="fondoblanco1.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
+    <EmbeddedResource Include="juegoo.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fondo1.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mario.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Image Include="portada.png">
@@ -91,6 +100,15 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="fondoven2.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="eligejuego.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="fondo1.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Mariobross.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
