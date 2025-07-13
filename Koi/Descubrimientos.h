@@ -101,7 +101,7 @@ namespace Koi {
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 26.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label1->ForeColor = System::Drawing::SystemColors::ButtonFace;
-			this->label1->Location = System::Drawing::Point(243, 86);
+			this->label1->Location = System::Drawing::Point(243, 28);
 			this->label1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(640, 61);
@@ -110,7 +110,7 @@ namespace Koi {
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(1311, 380);
+			this->button1->Location = System::Drawing::Point(1095, 380);
 			this->button1->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(106, 48);
@@ -132,10 +132,10 @@ namespace Koi {
 			// 
 			// pictureBox1
 			// 
-			this->pictureBox1->Location = System::Drawing::Point(186, 186);
+			this->pictureBox1->Location = System::Drawing::Point(209, 125);
 			this->pictureBox1->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(513, 606);
+			this->pictureBox1->Size = System::Drawing::Size(460, 550);
 			this->pictureBox1->TabIndex = 37;
 			this->pictureBox1->TabStop = false;
 			// 
@@ -145,7 +145,7 @@ namespace Koi {
 			this->label2->Font = (gcnew System::Drawing::Font(L"Palatino Linotype", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label2->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
-			this->label2->Location = System::Drawing::Point(777, 186);
+			this->label2->Location = System::Drawing::Point(743, 125);
 			this->label2->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(140, 56);
@@ -158,7 +158,7 @@ namespace Koi {
 			this->label3->Font = (gcnew System::Drawing::Font(L"Palatino Linotype", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label3->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
-			this->label3->Location = System::Drawing::Point(1126, 249);
+			this->label3->Location = System::Drawing::Point(922, 200);
 			this->label3->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(140, 56);
@@ -171,7 +171,7 @@ namespace Koi {
 			this->label4->Font = (gcnew System::Drawing::Font(L"Palatino Linotype", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label4->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
-			this->label4->Location = System::Drawing::Point(777, 266);
+			this->label4->Location = System::Drawing::Point(753, 200);
 			this->label4->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(98, 39);
@@ -184,7 +184,7 @@ namespace Koi {
 			this->label5->Font = (gcnew System::Drawing::Font(L"Palatino Linotype", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label5->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
-			this->label5->Location = System::Drawing::Point(1126, 309);
+			this->label5->Location = System::Drawing::Point(922, 260);
 			this->label5->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(140, 56);
@@ -197,7 +197,7 @@ namespace Koi {
 			this->label6->Font = (gcnew System::Drawing::Font(L"Palatino Linotype", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label6->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
-			this->label6->Location = System::Drawing::Point(777, 478);
+			this->label6->Location = System::Drawing::Point(743, 449);
 			this->label6->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label6->Name = L"label6";
 			this->label6->Size = System::Drawing::Size(140, 56);
@@ -210,7 +210,7 @@ namespace Koi {
 			this->label7->Font = (gcnew System::Drawing::Font(L"Palatino Linotype", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label7->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
-			this->label7->Location = System::Drawing::Point(1126, 369);
+			this->label7->Location = System::Drawing::Point(922, 320);
 			this->label7->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label7->Name = L"label7";
 			this->label7->Size = System::Drawing::Size(140, 56);
@@ -219,10 +219,9 @@ namespace Koi {
 			// 
 			// Descubrimientos
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
-			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::None;
 			this->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
-			this->ClientSize = System::Drawing::Size(1610, 1152);
+			this->ClientSize = System::Drawing::Size(1228, 724);
 			this->Controls->Add(this->label7);
 			this->Controls->Add(this->label6);
 			this->Controls->Add(this->label5);
