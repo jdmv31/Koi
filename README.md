@@ -1,6 +1,6 @@
 # 🎮 Koi - Sistema de Recomendación de Videojuegos
 
-![Logo Koi](https://imgur.com/a/SD5F4PV.png)
+![Logo Koi](https://imgur.com/tXbPVOj.jpg)
 
 > Sistema inteligente de recomendación de videojuegos basado en preferencias de usuario y análisis de calidad
 
