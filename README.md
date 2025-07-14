@@ -1,6 +1,6 @@
 # 🎮 Koi - Sistema de Recomendación de Videojuegos
 
-![Logo Koi](https://imgur.com/a/SD5F4PV.png)
+![Logo Koi](https://imgur.com/gallery/koi-logo-SD5F4PV#otlkXKy.png)
 
 > Sistema inteligente de recomendación de videojuegos basado en preferencias de usuario y análisis de calidad
 
@@ -26,7 +26,7 @@ Koi es una aplicación desarrollada en C++/CLI con Windows Forms que recomienda 
 ## 📸 Capturas de Pantalla
 | Login | Videojuegos Disponibles y Filtros | Usuarios |
 |-----------------|-----------------|---------|
-| ![Login](https://imgur.com/PUZmskV.png) | ![Videojuegos Disponibles y Filtros]([screenshots/recommendations](https://imgur.com/fvSTXhC).png) | ![Usuarios]([screenshots/filters](https://imgur.com/55CviyP).png) |
+| ![Login](https://imgur.com/PUZmskV.png) | ![Videojuegos Disponibles y Filtros](https://imgur.com/fvSTXhC.png) | ![Usuarios](https://imgur.com/55CviyP.png) |
 
 ## 🛠 Tecnologías Utilizadas
 - **Lenguaje principal**: C++/CLI
